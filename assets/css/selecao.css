@@ -1178,6 +1178,16 @@ a:hover {
       align-items: center;
   }
 
+  .pricing .pricingBoxCotent {
+    background-color: darkgoldenrod;
+    /* width: 35%; */
+  }
+
+  .helpButton {
+    margin-top: 30px;
+    color: #000;
+  }
+
   .pricing .box {
     padding: 40px 20px;
     background: #fff;
@@ -1426,11 +1436,11 @@ a:hover {
   
   .contact .info i {
     font-size: 20px;
-    color: #ef6603;
+    color: #1a76d2;
     float: left;
     width: 44px;
     height: 44px;
-    background: #ffecde;
+    background: #d2e9ff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1447,18 +1457,24 @@ a:hover {
   }
   
   .contact .info p {
-    padding: 0 0 0 60px;
+    /* padding: 0 0 0 60px; */
+    padding-left: 10px;
     margin-bottom: 0;
     font-size: 14px;
-    color: #555974;
+    color: #888888;
+  }
+
+  .contact .info .address, .contact .info .phone, .contact .info .email {
+    display: flex;
+    align-items: center;
   }
   
-  .contact .info .email, .contact .info .phone {
+  .contact .info .address, .contact .info .phone {
     margin-top: 40px;
   }
   
   .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-    background: #ef6603;
+    background: #1a76d2;
     color: #fff;
   }
   
@@ -1547,6 +1563,22 @@ a:hover {
   .contact .php-email-form button[type="submit"]:hover {
     background: #fc8129;
   }
+
+  .contact .sectionSubTitle {
+    color: #1a76d2;
+  }
+
+  .contact .sectionSubTitle1 {
+    color: #1a76d2;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 17%;
+    width: 100%;
+  }
+
+  .contact .sectionTitleDiv {
+    margin: 0px;
+  }
   
   @-webkit-keyframes animate-loading {
     0% {
@@ -1563,6 +1595,16 @@ a:hover {
     }
     100% {
       transform: rotate(360deg);
+    }
+  }
+
+  @media (max-width: 991px) {
+    .contact .sectionTitleDiv {
+      margin: 0px auto 20px auto;
+    }
+
+    .contact .sectionSubTitle1 {
+      margin-left: 0%;
     }
   }
   
@@ -1708,60 +1750,60 @@ a:hover {
   # Footer
   --------------------------------------------------------------*/
   #footer {
-    background: #14151c;
-    color: #fff;
-    font-size: 14px;
-    text-align: center;
-    padding: 30px 0;
-  }
-  
-  #footer h3 {
-    font-size: 36px;
-    font-weight: 700;
-    color: #fff;
-    position: relative;
-    font-family: "Poppins", sans-serif;
-    padding: 0;
-    margin: 0 0 15px 0;
-  }
-  
-  #footer p {
-    font-size: 15;
-    font-style: italic;
-    padding: 0;
-    margin: 0 0 40px 0;
-  }
-  
-  #footer .social-links {
-    margin: 0 0 40px 0;
-  }
-  
-  #footer .social-links a {
-    font-size: 18px;
-    display: inline-block;
-    background: #ef6603;
-    color: #fff;
-    line-height: 1;
-    padding: 8px 0;
-    margin-right: 4px;
-    border-radius: 50%;
-    text-align: center;
-    width: 36px;
-    height: 36px;
-    transition: 0.3s;
-  }
-  
-  #footer .social-links a:hover {
-    background: #bd5102;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  #footer .copyright {
-    margin: 0 0 5px 0;
-  }
-  
-  #footer .credits {
-    font-size: 13px;
-  }
+  background: #14151c;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+#footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+#footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links {
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #ef6603;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: #bd5102;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .copyright {
+  margin: 0 0 5px 0;
+}
+
+#footer .credits {
+  font-size: 13px;
+}
   
