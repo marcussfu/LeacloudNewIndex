@@ -366,7 +366,7 @@ a:hover {
   #hero {
     width: 100%;
     overflow: hidden;
-    position: relative;
+    /* position: relative; */
     background-color: #dfefff;
     background-image: url(/assets/img/Banner.png);
     padding: 0;
@@ -792,8 +792,9 @@ a:hover {
   }
 
   .features .featuresItemContainer {
-    display: flex; 
-    justify-content: space-between; 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin: 0 20%;
   }
   
