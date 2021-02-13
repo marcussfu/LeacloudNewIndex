@@ -1179,11 +1179,12 @@ a:hover {
     color: #ffbf00;
   }
 
-  @media (max-width: 991px) {
-    /* .globe .description, .globe .globeSection {
-      width: 100%;
-    } */
+  .globe p {
+    color: #66757f;
+    text-align: center;
+  }
 
+  @media (max-width: 991px) {
     .globe .container {
       display: flex;
       flex-direction: column;
