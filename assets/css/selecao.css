@@ -1431,32 +1431,19 @@ a:hover {
   --------------------------------------------------------------*/
   .contact {
     padding-top: 0px;
-    padding-bottom: 0px;
+    padding-bottom: 30px;
   }
 
   .contact .info {
     width: 100%;
     background: #fff;
-    /* margin-left: 45px; */
     margin-top: 30px;
     padding-left: 45px;
   }
 
-  /* .contact .contactInfo {
-    border-right: 4px solid #1976D2;
-  } */
-
   .contact .contactInputs {
-    margin-left: 8.3%;
+    margin-left: 4.3%;
   }
-
-  /* .contact .vl {
-    border-left: 4px solid rgb(0, 0, 0);
-    height: 350px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-  } */
   
   .contact .info i {
     font-size: 15px;
@@ -1491,6 +1478,11 @@ a:hover {
   .contact .info .address, .contact .info .phone, .contact .info .email {
     display: flex;
     align-items: center;
+  }
+
+  .contact .vhr {
+    border-left: 1px solid #1a76d2;
+    margin-bottom: 40px;
   }
 
   /* .contact .container {
@@ -1647,6 +1639,16 @@ a:hover {
 
     .contact .contactInputs {
       margin-left: 0px;
+    }
+
+    .contact .contactInputsTitle {
+      text-align: center;
+    }
+
+    .contact .vhr {
+      border-bottom: 1px solid #1a76d2;
+      width: 80%;
+      margin-left: 10%;
     }
   }
   
