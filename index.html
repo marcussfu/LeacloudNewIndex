@@ -389,14 +389,20 @@
             <p>Contact Us</p>
           </div> -->
 
-          <div class="sectionTitleDiv">
+          <!-- <div class="sectionTitleDiv">
             <div class="sectionTitle">LEACLOUD</div>
             <h1 class="sectionSubTitle">想獲得更多資訊</h1>
             <h2 class="sectionSubTitle1">MORE INFORMATION</h2>
-          </div>
+          </div> -->
 
           <div class="row mt-5">
-            <div class="col-lg-4" data-aos="fade-right" style="background-color: #65c600;">
+            <div class="col-lg-6 contactInfo" data-aos="fade-right" style="background-color: #65c600;">
+              <div class="sectionTitleDiv">
+                <div class="sectionTitle">LEACLOUD</div>
+                <h1 class="sectionSubTitle">想獲得更多資訊</h1>
+                <h2 class="sectionSubTitle1">MORE INFORMATION</h2>
+              </div>
+
               <div class="info">
                 <div class="email">
                   <i class="fas fa-envelope"></i>
@@ -416,15 +422,12 @@
                   <!-- <h4>Call:</h4> -->
                   <p>+1 5589 55488 55s</p>
                 </div>
-
               </div>
-
             </div>
-
-            <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left">
-
+            <div class="col-lg-5 mt-5 mt-lg-0 contactInputs" data-aos="fade-left" style="background-color: #911cff;">
+              <h2 class="contactInputsTitle">留下寶貴意見</h2>
               <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                <div class="row">
+                <!-- <div class="row">
                   <div class="col-md-6 form-group">
                     <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                     <div class="validate"></div>
@@ -433,13 +436,21 @@
                     <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
                     <div class="validate"></div>
                   </div>
-                </div>
-                <div class="form-group mt-3">
+                </div> -->
+                <!-- <div class="form-group mt-3">
                   <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validate"></div>
+                </div> -->
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="name" id="name" placeholder="名字" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validate"></div>
                 </div>
                 <div class="form-group mt-3">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <input type="text" class="form-control" name="email" id="email" placeholder="信箱" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="留言"></textarea>
                   <div class="validate"></div>
                 </div>
                 <div class="mb-3">
@@ -447,7 +458,7 @@
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
                 </div>
-                <div class=""><button type="submit">Send Message</button></div>
+                <div class=""><button type="submit">送出</button></div>
               </form>
 
             </div>

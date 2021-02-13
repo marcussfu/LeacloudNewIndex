@@ -1430,21 +1430,41 @@ a:hover {
   # Contact
   --------------------------------------------------------------*/
   .contact {
-    /* height: 300px; */
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .contact .info {
     width: 100%;
     background: #fff;
+    /* margin-left: 45px; */
+    margin-top: 30px;
+    padding-left: 45px;
   }
+
+  /* .contact .contactInfo {
+    border-right: 4px solid #1976D2;
+  } */
+
+  .contact .contactInputs {
+    margin-left: 8.3%;
+  }
+
+  /* .contact .vl {
+    border-left: 4px solid rgb(0, 0, 0);
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  } */
   
   .contact .info i {
-    font-size: 20px;
-    color: #1a76d2;
+    font-size: 15px;
+    color: #888888;
     float: left;
     width: 44px;
     height: 44px;
-    background: #d2e9ff;
+    /* background: #d2e9ff; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1462,7 +1482,7 @@ a:hover {
   
   .contact .info p {
     /* padding: 0 0 0 60px; */
-    padding-left: 10px;
+    /* padding-left: 10px; */
     margin-bottom: 0;
     font-size: 14px;
     color: #888888;
@@ -1472,15 +1492,21 @@ a:hover {
     display: flex;
     align-items: center;
   }
+
+  /* .contact .container {
+    display: flex;
+    flex-direction: row;
+
+  } */
   
-  .contact .info .address, .contact .info .phone {
+  /* .contact .info .address, .contact .info .phone {
     margin-top: 40px;
-  }
+  } */
   
-  .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+  /* .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
     background: #1a76d2;
     color: #fff;
-  }
+  } */
   
   .contact .php-email-form {
     width: 100%;
@@ -1556,16 +1582,18 @@ a:hover {
   }
   
   .contact .php-email-form button[type="submit"] {
-    background: #ef6603;
-    border: 0;
-    padding: 10px 24px;
+    background-color: #1a76d2;
+    border: 3px solid #1a76d2;
+    padding: 10px 34px;
     color: #fff;
     transition: 0.4s;
-    border-radius: 50px;
+    border-radius: 3px;
   }
   
   .contact .php-email-form button[type="submit"]:hover {
-    background: #fc8129;
+    background-color: #fff;
+    color: #1a76d2;
+    border: 3px solid #1a76d2;
   }
 
   .contact .sectionSubTitle {
@@ -1578,6 +1606,12 @@ a:hover {
     font-weight: bold;
     margin-left: 17%;
     width: 100%;
+  }
+
+  .contact .contactInputsTitle {
+    color: #1a76d2;
+    font-size: 30px;
+    font-weight: bold;
   }
 
   .contact .sectionTitleDiv {
@@ -1609,6 +1643,10 @@ a:hover {
 
     .contact .sectionSubTitle1 {
       margin-left: 0%;
+    }
+
+    .contact .contactInputs {
+      margin-left: 0px;
     }
   }
   
