@@ -898,6 +898,11 @@ a:hover {
   /*--------------------------------------------------------------
   # Services
   --------------------------------------------------------------*/
+  .services {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
   .services .container {
     margin-top: -60px;
   }
@@ -1166,7 +1171,9 @@ a:hover {
 
   /* globe */
   .globe {
-    background-color: turquoise;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: -60px;
   }
 
   .globe .container {
@@ -1182,6 +1189,16 @@ a:hover {
   .globe p {
     color: #66757f;
     text-align: center;
+  }
+
+  .globe #globeSection {
+    height: 400px;
+  }
+
+  .globe .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   @media (max-width: 991px) {
