@@ -40,9 +40,9 @@ function setupLoaderElement() {
     progress.style.margin = '0 auto';
     progress.style.transition = 'width 0.15s';
 
-    progressCtn.appendChild(progress);
-    container.appendChild(text);
-    container.appendChild(progressCtn);
+    // progressCtn.appendChild(progress);
+    // container.appendChild(text);
+    // container.appendChild(progressCtn);
 
     globeContainer.appendChild(container);
 }
@@ -185,7 +185,7 @@ function init() {
     var ambient = new THREE.AmbientLight(0xffffff, 1);
     scene.add(ambient);
 
-    var direcitonal = new THREE.DirectionalLight(0xffffff, 0.5);
+    var direcitonal = new THREE.DirectionalLight(0xffffff, 1);
     direcitonal.position.set(5.0, 2.0, 5.0).normalize();
     scene.add(direcitonal);
 
@@ -194,7 +194,7 @@ function init() {
 
     var texLoader = new THREE.TextureLoader(manager).setCrossOrigin(true);
 
-    var texture = texLoader.load('assets/img/world.jpg');
+    var texture = texLoader.load('assets/img/world1.jpg');
     texture.anisotropy = renderer.capabilities.getMaxAnisotropy();
 
     earth = new Earth(1.0, texture);
