@@ -2,7 +2,10 @@ const galleryContainer1 = document.querySelector('.galleryCooperationContainer')
 const galleryControlsContainer1 = document.querySelector('.galleryCooperationControls');
 const galleryControls1 = ['previous', 'next'];
 const galleryItems1 = document.querySelectorAll('.galleryCooperationItem');
-const galleryNav = document.querySelector('.galleryNav');
+const galleryNav = document.querySelector('.galleryNavContainer');
+const galleryCooperationContent = document.querySelector('.cooperationContent');
+
+const galleryItemClassNames = ['gallery-item-first', 'gallery-item-previous', 'gallery-item-selected', 'gallery-item-next', 'gallery-item-last'];
 
 class Carousel1 {
   constructor(container, items, controls) {
@@ -13,17 +16,10 @@ class Carousel1 {
 
   // Assign initial css classes for gallery and nav items
   setInitialState() {
-    this.carouselArray[0].classList.add('gallery-item-first');
-    this.carouselArray[1].classList.add('gallery-item-previous');
-    this.carouselArray[2].classList.add('gallery-item-selected');
-    this.carouselArray[3].classList.add('gallery-item-next');
-    this.carouselArray[4].classList.add('gallery-item-last');
-
-    document.querySelector('.gallery-nav').childNodes[0].className = 'gallery-nav-item gallery-item-first';
-    document.querySelector('.gallery-nav').childNodes[1].className = 'gallery-nav-item gallery-item-previous';
-    document.querySelector('.gallery-nav').childNodes[2].className = 'gallery-nav-item gallery-item-selected';
-    document.querySelector('.gallery-nav').childNodes[3].className = 'gallery-nav-item gallery-item-next';
-    document.querySelector('.gallery-nav').childNodes[4].className = 'gallery-nav-item gallery-item-last';
+    for (let i=0; i<5; i++) {
+        this.carouselArray[i].classList.add(galleryItemClassNames[i]);
+        galleryNav.childNodes[i].className = 'galleryNavItem ' +  galleryItemClassNames[i];
+    }
   }
 
   // Update the order state of the carousel with css classes
@@ -81,12 +77,16 @@ class Carousel1 {
 
   // Construct the carousel navigation
   setNav() {
-    galleryContainer1.appendChild(document.createElement('ul')).className = 'gallery-nav';
-
     this.carouselArray.forEach(item => {
-      const nav = galleryContainer1.lastElementChild;
-      nav.appendChild(document.createElement('li'));
+        galleryNav.appendChild(document.createElement('div'));//.className = 'galleryNavItem';;
     }); 
+
+    // galleryNav.appendChild(document.createElement('ul')).className = 'gallery-nav';
+
+    // this.carouselArray.forEach(item => {
+    //   const nav = galleryNav.lastElementChild;
+    //   nav.appendChild(document.createElement('li'));
+    // }); 
   }
 
   // Construct the carousel controls
@@ -110,11 +110,11 @@ class Carousel1 {
       
       control.addEventListener('click', () => {
         const target = control;
-        const selectedItem = galleryContainer1.querySelectorAll('.gallery-item-selected');
-        const previousSelectedItem = galleryContainer1.querySelectorAll('.gallery-item-previous');
-        const nextSelectedItem = galleryContainer1.querySelectorAll('.gallery-item-next');
-        const firstCarouselItem = galleryContainer1.querySelectorAll('.gallery-item-first');
-        const lastCarouselItem = galleryContainer1.querySelectorAll('.gallery-item-last');
+        const selectedItem = galleryCooperationContent.querySelectorAll('.gallery-item-selected');
+        const previousSelectedItem = galleryCooperationContent.querySelectorAll('.gallery-item-previous');
+        const nextSelectedItem = galleryCooperationContent.querySelectorAll('.gallery-item-next');
+        const firstCarouselItem = galleryCooperationContent.querySelectorAll('.gallery-item-first');
+        const lastCarouselItem = galleryCooperationContent.querySelectorAll('.gallery-item-last');
 
         this.setCurrentState(target, selectedItem, previousSelectedItem, nextSelectedItem, firstCarouselItem, lastCarouselItem);
       });

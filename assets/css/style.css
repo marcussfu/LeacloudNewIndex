@@ -1214,11 +1214,6 @@ a:hover {
     /* z-index: 2; */
   }
 
-  .cooperation .galleryNav {
-    background-color: rgb(0, 110, 255); 
-    width: 50px;
-  }
-
   .cooperation .sectionTitleDiv {
     background-color: yellow;
     margin: 0 20px 0 0;
@@ -1241,10 +1236,6 @@ a:hover {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-    }
-
-    .cooperation .galleryNav {
-      display: none;
     }
 
     .cooperation .sectionTitleDiv {
