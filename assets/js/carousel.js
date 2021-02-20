@@ -2,6 +2,7 @@ const galleryContainer = document.querySelector('.gallery-container');
 const galleryControlsContainer = document.querySelector('.gallery-controls');
 const galleryControls = ['previous', 'next'];
 const galleryItems = document.querySelectorAll('.gallery-item');
+const servicesControlPre = document.querySelector('#servicesControlPre');
 
 class Carousel {
   constructor(container, items, controls) {
@@ -119,6 +120,12 @@ class Carousel {
       });
     });
   }
+
+  autoPlay() {
+    setInterval(function() {
+      servicesControlPre.dispatchEvent(new Event('click'));
+     }, 6000);
+  }
 }
 
 const servicesCarousel = new Carousel(galleryContainer, galleryItems, galleryControls);
@@ -127,3 +134,4 @@ servicesCarousel.setControls();
 // servicesCarousel.setNav();
 servicesCarousel.setInitialState();
 servicesCarousel.useControls();
+servicesCarousel.autoPlay();

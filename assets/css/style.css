@@ -606,6 +606,7 @@ a:hover {
     position: relative;
     z-index: 1;
     margin: -40px auto;
+    cursor: pointer;
   }
 
   .customerServiceButton:hover {

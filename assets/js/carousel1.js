@@ -5,6 +5,9 @@ const galleryItems1 = document.querySelectorAll('.galleryCooperationItem');
 const galleryNav = document.querySelector('.galleryNavContainer');
 const galleryCooperationContent = document.querySelector('.cooperationContent');
 
+const cooperationControlPre = document.querySelector('#cooperationControlPre');
+const cooperationControlNex = document.querySelector('#cooperationControlNex');
+
 const galleryItemClassNames = ['gallery-item-first', 'gallery-item-previous', 'gallery-item-selected', 'gallery-item-next', 'gallery-item-last'];
 
 class Carousel1 {
@@ -24,7 +27,6 @@ class Carousel1 {
 
   // Update the order state of the carousel with css classes
   setCurrentState(target, selected, previous, next, first, last) {
-    
     selected.forEach(el => {
       el.classList.remove('gallery-item-selected');
       if (target.className.includes('gallery-controls-previous')) {
@@ -33,7 +35,7 @@ class Carousel1 {
         el.classList.add('gallery-item-previous');
       }
     });
-
+    
     previous.forEach(el => {
       el.classList.remove('gallery-item-previous');
 
@@ -78,8 +80,34 @@ class Carousel1 {
   // Construct the carousel navigation
   setNav() {
     this.carouselArray.forEach(item => {
-        galleryNav.appendChild(document.createElement('div'));//.className = 'galleryNavItem';;
-    }); 
+        galleryNav.appendChild(document.createElement('div'));
+    });
+
+    for(var child=galleryNav.firstChild; child!==null; child=child.nextSibling) {
+        child.addEventListener('click', (event) => {
+            console.log("RRRRR  ", event.target);
+            // cooperationControlPre.dispatchEvent(new Event('click'));
+
+            const galleryContainerChildNodes = [...galleryContainer1.childNodes];
+            const galleryContainerFilteredChildNodes = galleryContainerChildNodes.filter(item => {
+                if (String(item.className).includes("gallery-item")) {
+                    return item;
+                }
+            });
+            // console.log("MMMMMMMMMM   ", galleryContainerFilteredChildNodes);
+
+            // last.forEach(el => {
+            //     el.classList.remove('gallery-item-last');
+          
+            //     if (target.className.includes('gallery-controls-previous')) {
+            //       el.classList.add('gallery-item-first');
+            //     } else {
+            //       el.classList.add('gallery-item-next');
+            //     }
+            //   });
+        });
+        // console.log(child);
+    }
 
     // galleryNav.appendChild(document.createElement('ul')).className = 'gallery-nav';
 
@@ -101,15 +129,19 @@ class Carousel1 {
  
   // Add a click event listener to trigger setCurrentState method to rearrange carousel
   useControls() {
-    const triggers = [...galleryControlsContainer1.childNodes];
+    const triggers = [...galleryControlsContainer1.childNodes, ...galleryContainer1.childNodes];
 
     triggers.forEach(control => {
-      if (control.className === undefined) {
+      if (control.className === undefined || !String(control.className).includes("-")) {
         return;
       }
       
       control.addEventListener('click', () => {
-        const target = control;
+        if (!(String(control.className).includes("previous") || String(control.className).includes("next"))) {
+            return;
+        }
+        
+        const target = String(control.className).includes("previous") ? cooperationControlPre : cooperationControlNex;
         const selectedItem = galleryCooperationContent.querySelectorAll('.gallery-item-selected');
         const previousSelectedItem = galleryCooperationContent.querySelectorAll('.gallery-item-previous');
         const nextSelectedItem = galleryCooperationContent.querySelectorAll('.gallery-item-next');
@@ -120,6 +152,12 @@ class Carousel1 {
       });
     });
   }
+
+  autoPlay() {
+    setInterval(function() {
+        cooperationControlNex.dispatchEvent(new Event('click'));
+     }, 5000);
+  }
 }
 
 const cooperationCarousel = new Carousel1(galleryContainer1, galleryItems1, galleryControls1);
@@ -128,3 +166,4 @@ cooperationCarousel.setControls();
 cooperationCarousel.setNav();
 cooperationCarousel.setInitialState();
 cooperationCarousel.useControls();
+cooperationCarousel.autoPlay();

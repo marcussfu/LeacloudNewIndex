@@ -1,3 +1,27 @@
+
+/* .carousel-indicators {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0px;
+}
+
+.carousel-indicators li{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 4px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+.carousel-indicators .active {
+   width: 20px;
+   height: 20px;
+   margin-bottom: 4px;
+   background-color: #ffbf00;
+} */
+
 .cooperation .gallery {
     width: 100%;
 }
@@ -180,6 +204,7 @@
     height: 16px;
     margin: 8px 0px;
     width: 16px;
+    cursor: pointer;
 }
 
 .cooperation .galleryNavContainer .gallery-item-selected {
