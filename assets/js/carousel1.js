@@ -8,7 +8,8 @@ const galleryCooperationContent = document.querySelector('.cooperationContent');
 const cooperationControlPre = document.querySelector('#cooperationControlPre');
 const cooperationControlNex = document.querySelector('#cooperationControlNex');
 
-const galleryItemClassNames = ['gallery-item-first', 'gallery-item-previous', 'gallery-item-selected', 'gallery-item-next', 'gallery-item-last'];
+const galleryItemClassNames = ['gallery-item-first', 'gallery-item-previous', 
+                      'gallery-item-selected', 'gallery-item-next', 'gallery-item-last'];
 
 class Carousel1 {
   constructor(container, items, controls) {
@@ -85,26 +86,45 @@ class Carousel1 {
 
     for(var child=galleryNav.firstChild; child!==null; child=child.nextSibling) {
         child.addEventListener('click', (event) => {
-            console.log("RRRRR  ", event.target);
-            // cooperationControlPre.dispatchEvent(new Event('click'));
+            var tempArray = [
+              [2,3,4,0,1],
+              [1,2,3,4,0],
+              [0,1,2,3,4],
+              [4,0,1,2,3],
+              [3,4,0,1,2],
+            ];
+            var targetIndex = 0;
 
-            const galleryContainerChildNodes = [...galleryContainer1.childNodes];
-            const galleryContainerFilteredChildNodes = galleryContainerChildNodes.filter(item => {
-                if (String(item.className).includes("gallery-item")) {
-                    return item;
+            for (var i = 0; i<galleryNav.childNodes.length; i++) {
+                if (galleryNav.childNodes[i].className === event.target.className) {
+                    targetIndex = i;
                 }
-            });
-            // console.log("MMMMMMMMMM   ", galleryContainerFilteredChildNodes);
+            }
 
-            // last.forEach(el => {
-            //     el.classList.remove('gallery-item-last');
-          
-            //     if (target.className.includes('gallery-controls-previous')) {
-            //       el.classList.add('gallery-item-first');
-            //     } else {
-            //       el.classList.add('gallery-item-next');
+            // const galleryContainerChildNodes = [...galleryContainer1.childNodes, ...galleryNav.childNodes];
+            // galleryContainerChildNodes.filter(item => {
+            //     if (String(item.className).includes("gallery-item")) {
+            //       item.classList.remove('gallery-item-first', 'gallery-item-previous', 
+            //       'gallery-item-selected', 'gallery-item-next', 'gallery-item-last');
+            //         return item;
             //     }
-            //   });
+            // });
+
+            // for (var i = 0; i<galleryNav.childNodes.length; i++) {
+            //   galleryNav.childNodes[i].classList.add(galleryItemClassNames[tempArray[targetIndex][i]]);
+            // }
+
+            // var tempGalleryContainer1ChildNodes = [...galleryContainer1.childNodes].filter(item => {
+            //   if (String(item.className).includes("galleryCooperationItem")) {
+            //     return item;
+            //   }
+            // });
+
+            // for (var i = 0; i<tempGalleryContainer1ChildNodes.length; i++) {
+            //   if (tempGalleryContainer1ChildNodes.className.includes('galleryCooperationItem')) {
+            //     tempGalleryContainer1ChildNodes.classList.add(galleryItemClassNames[tempArray[targetIndex][i]]);
+            //   }
+            // }
         });
         // console.log(child);
     }
