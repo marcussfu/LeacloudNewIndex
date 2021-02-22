@@ -128,7 +128,7 @@ a:hover {
   } */
   
   #header .logo img.header-scrolled {
-      content: url(/assets/img/LeaCloud_logo_white.png);
+      content: url("../../assets/img/LeaCloud_logo_white.png");
       width: 85%;
       max-height: 100%;
       margin-left: -7px;
@@ -414,7 +414,7 @@ a:hover {
     overflow: hidden;
     /* position: relative; */
     background-color: #dfefff;
-    background-image: url(/assets/img/Banner.png);
+    background-image: url('../../assets/img/Banner.png');
     padding: 0;
     background-size: cover;
   }
