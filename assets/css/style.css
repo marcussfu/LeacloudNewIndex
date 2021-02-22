@@ -30,7 +30,8 @@ a:hover {
 }
 
 .sectionTitle {
-    color: #bbbbbb;
+    color: #202020;
+    opacity: 0.1;
     font-size: 50px;
 }
 
@@ -1262,8 +1263,8 @@ a:hover {
 
   /* globe */
   .globe {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    /* padding-top: 0px;
+    padding-bottom: 0px; */
     margin-bottom: -60px;
   }
 
@@ -1312,7 +1313,7 @@ a:hover {
   }
 
   .pricing .pricingBoxCotent {
-    background-color: darkgoldenrod;
+    /* background-color: darkgoldenrod; */
     /* width: 35%; */
   }
 
@@ -1330,11 +1331,14 @@ a:hover {
     position: relative;
     overflow: hidden;
     transition: 0.3s;
+    margin-left: -10px;
+    margin-right: -10px;
   }
   
   .pricing .box:hover {
     transform: scale(1.1);
     box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+    z-index: 2;
   }
 
   .pricing p {
@@ -1343,16 +1347,17 @@ a:hover {
   }
   
   .pricing h3 {
-    font-weight: 700;
-    font-size: 18px;
+    /* font-weight: 700; */
+    font-size: 16px;
     margin-bottom: 15px;
   }
   
   .pricing .price {
     font-size: 36px;
-    color: #444444;
-    font-weight: 600;
+    color: #1A76D2;
+    font-weight: 400;
     font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
   }
   
   .pricing .price sup {
@@ -1362,8 +1367,8 @@ a:hover {
   }
   
   .pricing .price span {
-    color: #bababa;
-    font-size: 16px;
+    color: #000;
+    font-size: 24px;
     font-weight: 300;
   }
   
@@ -1372,17 +1377,30 @@ a:hover {
   }
   
   .pricing ul {
-    padding: 0;
+    /* padding: 0; */
     list-style: none;
     color: #444444;
     text-align: center;
     line-height: 26px;
     font-size: 16px;
     margin-bottom: 25px;
+    padding-top: 8px;
+    border-top: 2px solid rgb(226, 226, 226, 0.5);
+    /* list-style: disc inside; */
+  }
+
+  .pricing ul li::before {
+    content: "\2022";
+    color: #FF9F00;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
   }
   
   .pricing ul li {
     padding-bottom: 10px;
+    margin-left: -20px;
   }
   
   .pricing ul .na {
@@ -1394,32 +1412,32 @@ a:hover {
     display: inline-block;
     padding: 8px 40px 10px 40px;
     border-radius: 50px;
-    color: #4154f1;
+    color: #000;
     transition: none;
     font-size: 16px;
     font-weight: 400;
     font-family: "Nunito", sans-serif;
     font-weight: 600;
     transition: 0.3s;
-    border: 1px solid #4154f1;
+    border: 1px solid #E8EDFA;
   }
   
   .pricing .btn-buy:hover {
-    background: #4154f1;
+    background: linear-gradient(to bottom, #b9dcff, #1976d2);
     color: #fff;
   }
   
   .pricing .featured {
     width: 200px;
     position: absolute;
-    top: 18px;
-    right: -68px;
+    top: 8px;
+    right: -100px;
     transform: rotate(45deg);
     z-index: 1;
     font-size: 14px;
     padding: 1px 0 3px 0;
-    background: #4154f1;
-    color: #fff;
+    background: #1976D2;
+    /* color: #fff; */
   }
 
   
