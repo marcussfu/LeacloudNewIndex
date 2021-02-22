@@ -101,32 +101,27 @@ class Carousel1 {
                 }
             }
 
-            // const galleryContainerChildNodes = [...galleryContainer1.childNodes, ...galleryNav.childNodes];
-            // galleryContainerChildNodes.filter(item => {
-            //     if (String(item.className).includes("gallery-item")) {
-            //       item.classList.remove('gallery-item-first', 'gallery-item-previous', 
-            //       'gallery-item-selected', 'gallery-item-next', 'gallery-item-last');
-            //         return item;
-            //     }
-            // });
+            const galleryNavChildNodes = [...galleryNav.childNodes].filter(item => {
+                if (String(item.className).includes("gallery-item")) {
+                  item.classList.remove('gallery-item-first', 'gallery-item-previous', 
+                  'gallery-item-selected', 'gallery-item-next', 'gallery-item-last');
+                    return item;
+                }
+            });
 
-            // for (var i = 0; i<galleryNav.childNodes.length; i++) {
-            //   galleryNav.childNodes[i].classList.add(galleryItemClassNames[tempArray[targetIndex][i]]);
-            // }
+            const galleryContainerChildNodes = [...galleryContainer1.childNodes].filter(item => {
+                if (String(item.className).includes("gallery-item")) {
+                  item.classList.remove('gallery-item-first', 'gallery-item-previous', 
+                  'gallery-item-selected', 'gallery-item-next', 'gallery-item-last');
+                    return item;
+                }
+            });
 
-            // var tempGalleryContainer1ChildNodes = [...galleryContainer1.childNodes].filter(item => {
-            //   if (String(item.className).includes("galleryCooperationItem")) {
-            //     return item;
-            //   }
-            // });
-
-            // for (var i = 0; i<tempGalleryContainer1ChildNodes.length; i++) {
-            //   if (tempGalleryContainer1ChildNodes.className.includes('galleryCooperationItem')) {
-            //     tempGalleryContainer1ChildNodes.classList.add(galleryItemClassNames[tempArray[targetIndex][i]]);
-            //   }
-            // }
+            for (var i = 0; i<galleryNavChildNodes.length; i++) {
+                galleryNavChildNodes[i].classList.add(galleryItemClassNames[tempArray[targetIndex][i]]);
+                galleryContainerChildNodes[i].classList.add(galleryItemClassNames[tempArray[targetIndex][i]]);
+            }
         });
-        // console.log(child);
     }
 
     // galleryNav.appendChild(document.createElement('ul')).className = 'gallery-nav';
