@@ -164,6 +164,10 @@ a:hover {
     transition: all 0.4s ease-in-out;
   }
 
+  /* #header .navMenuImg:focus + ul {
+    visibility: visible;
+  } */
+
   #header .mobile-ul {
     display: none;
     width: 200px;
