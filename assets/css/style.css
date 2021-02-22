@@ -670,6 +670,8 @@ a:hover {
     z-index: 1;
     margin: -40px auto;
     cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    /* border: 1px solid #d1d1d1; */
   }
 
   .customerServiceButton:hover {
@@ -827,16 +829,18 @@ a:hover {
   .features h4 {
     color: black;
     font-size: 18px;
+    text-align: center;
   }
 
   .features a {
-    display: flex; 
-    /* align-items: center; */
+    display: flex;
     flex-direction: column;
-    padding: 0px 20px;
     border-radius: 10px;
     border: 3px solid #ffffff;
     transition: all 0.4s ease-in-out;
+    width: 120px;
+    margin-left: 20px;
+    margin-top: 20px;
   }
 
   .features a:hover {
@@ -857,9 +861,8 @@ a:hover {
 
   .features .featuresItemContainer {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0 20%;
+    flex-direction: row;
+    justify-content: center;
   }
   
   @media (max-width: 768px) {
