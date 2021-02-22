@@ -914,9 +914,8 @@ a:hover {
   # Services
   --------------------------------------------------------------*/
   .services {
-    padding-top: 0px;
+    /* padding-top: 0px; */
     padding-bottom: 0px;
-    background-color: brown;
   }
   
   /*--------------------------------------------------------------
