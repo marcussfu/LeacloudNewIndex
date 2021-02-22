@@ -414,13 +414,13 @@ a:hover {
   # Hero Section
   --------------------------------------------------------------*/
   #hero {
-    width: 100%;
-    overflow: hidden;
-    /* position: relative; */
     background-color: #dfefff;
     background-image: url('../../assets/img/Banner.png');
-    padding: 0;
+    padding: 0px 0px;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
   }
   
   #hero .carousel-container {
@@ -438,7 +438,7 @@ a:hover {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 120vh;
+    height: 90vh;
     padding-top: 60px;
   }
 
@@ -499,6 +499,8 @@ a:hover {
 
   #hero .tryNowBtn {
     font-size: 30px;
+    position: relative;
+    top: 20%;
   }
 
   #hero .tryNowBtn:hover {
