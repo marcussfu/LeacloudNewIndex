@@ -1,47 +1,143 @@
-
-/* .carousel-indicators {
+/* cooperation */
+.cooperation {
+    /* padding-bottom: 0px; */
+    background-color: rgb(213, 230, 179, 0.5);
     position: relative;
+    width: 100%;
+    /* padding-top: 37%; */
+    padding-top: 43%;
+}
+
+.cooperation .cooperationContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    margin: 0px 0px;
 }
 
-.carousel-indicators li{
-    width: 20px;
-    height: 20px;
-    margin-bottom: 4px;
-    border-radius: 50%;
-    background-color: #ccc;
+.cooperation .curveLineImg {
+    width: 80%;
+    z-index: -1;
+    background-color: rgb(176, 111, 236, 0.5);
 }
 
-.carousel-indicators .active {
-   width: 20px;
-   height: 20px;
-   margin-bottom: 4px;
-   background-color: #ffbf00;
-} */
+.cooperation .cooperationContent {
+    width: 95%;
+    height: 100%;
+    margin-top: -14%;
+    background-color: rgb(236, 174, 236, 0.5);
+
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.cooperation .sectionTitleDiv {
+    background-color: yellow;
+    /* margin: 0 20px 0 0; */
+    width: 33%;
+    /* height: 70%; */
+    /* margin-right: -30px; */
+}
+
+
+
+.cooperation .companyInfo {
+    margin-left: 16px;
+    background-color: darkorange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cooperation .paddingTopRight {
+    padding-top: 30px;
+    padding-right: 20px;
+}
+
+.cooperation .vertical {
+    height: 20%;
+    width: 12%;
+    border-left: 5px solid rgba(0, 0, 0, 0.05);
+    border-right: 5px solid rgba(0, 0, 0, 0.05);
+    background-color: rgb(243, 173, 147, 0.5);
+}
+
+
+
+
+
+.cooperation hr {
+    width: 60%;
+    color: #888;
+}
+
+.cooperation .cooperationCarousel {
+    background-color: chartreuse; 
+    width: 60%;
+}
+
+.cooperation .cooperationIntro {
+    margin: 10% 15% 0px 15%;
+    color: #ffbf00;
+}
+
+@media (max-width: 991px) {
+    .cooperation .cooperationContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      /* margin-top: 0%; */
+    }
+
+    .cooperation .sectionTitleDiv {
+      margin: 0px auto 20px auto;
+      width: 100%;
+    }
+
+    .cooperation .cooperationIntro {
+      margin-top: 5%;
+      font-size: 10px;
+    }
+
+    .cooperation .cooperationCarousel {
+      width: 100%;
+      height: 57%;
+    }
+
+    /* .cooperation img {
+      position: static;
+    } */
+}
 
 .cooperation .gallery {
-    width: 100%;
+    /* width: 100%; */
 }
 
 .cooperation .galleryCooperationContainer {
     align-items: center;
     display: flex;
-    height: 300px;
-    margin: 0 auto;
-    max-width: 100%;
+    /* height: 300px; */
+    /* margin: 0 auto; */
+    /* max-width: 100%; */
     position: relative;
 }
 
 .cooperation .galleryCooperationItem {
-    height: 200px;
+    /* height: 200px; */
     opacity: .4;
     position: absolute;
     transition: all 0.3s ease-in-out;
     /* width: 150px; */
-    width: 30%;
+    /* width: 30%; */
     z-index: 0;
     background-color: #ffffff;
     border-radius: 5px;
@@ -54,13 +150,10 @@
 
 .cooperation .galleryCooperationItem img {
     width: 20%;
-    height: auto;
-    z-index: 3;
+    /* height: auto; */
+    /* z-index: 3; */
     object-fit: contain;
-}
-
-.cooperation .companyInfo {
-    margin-left: 23%;
+    /* align-self: flex-start; */
 }
 
 .cooperation .galleryCooperationItem .positionTitle,
@@ -74,7 +167,7 @@
 
 .cooperation .galleryCooperationItem .positionTitle,
 .cooperation .galleryCooperationItem .companyName {
-    font-size: 16px;
+    font-size: 1vw;
 }
 
 .cooperation .galleryCooperationItem h3 {
@@ -90,42 +183,43 @@
     padding-bottom: 3%; */
     margin-left: 10px;
     text-align: center;
-    font-size: 10px;
+    font-size: 1vw;
     color: #535353;
 }
 
 .cooperation .galleryCooperationItemContent {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    /* flex-direction: row; */
+    /* justify-content: flex-start; */
     
     height: 50%;
     margin-left: 20px;
-}
-
-.cooperation .alignItemCenter {
-    align-items: center;
-}
-
-.cooperation .paddingTopRight {
-    padding-top: 30px;
-    padding-right: 20px;
+    background-color: darkturquoise;
 }
 
 .cooperation .galleryCooperationItem.gallery-item-selected {
     /* box-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1); */
     
-    height: 300px;
+    height: 250px;
     opacity: 1;
 
     /* width: 300px; */
-    width: 50%;
+    width: 55%;
     z-index: 2;
+}
+
+.cooperation .galleryCooperationItem.gallery-item-selected .companyInfo {
+    /* margin-top: 10px; */
+    text-align: start;
+}
+
+.cooperation .galleryCooperationItem.gallery-item-selected .companyName {
+    font-size: 1.5vw;
 }
 
 .galleryCooperationItem.gallery-item-previous,
 .galleryCooperationItem.gallery-item-next {
-    height: 250px;
+    height: 230px;
     opacity: 1;
     /* width: 200px; */
     width: 40%;
@@ -133,39 +227,19 @@
 }
 
 .cooperation .galleryCooperationItem.gallery-item-previous {
-    transform: translate(150%, -40%);
+    transform: translate(130%, -50%);
 }
 
 .cooperation .galleryCooperationItem.gallery-item-next {
-    transform: translate(150%, 70%);
+    transform: translate(130%, 60%);
 }
 
 .cooperation .galleryCooperationItem.gallery-item-first {
-    transform: translate(200%, -40%);
+    transform: translate(130%, -20%);
 }
 
 .cooperation .galleryCooperationItem.gallery-item-last {
-    transform: translate(200%, 80%);
-}
-
-.cooperation .galleryCooperationItem .item1 {
-    background: red;
-}
-
-.cooperation .galleryCooperationItem .item2 {
-    background: green;
-}
-
-.cooperation .galleryCooperationItem .item3 {
-    background: yellow;
-}
-
-.cooperation .galleryCooperationItem .item4 {
-    background: blue;
-}
-
-.cooperation .galleryCooperationItem .item5 {
-    background: orange;
+    transform: translate(130%, 60%);
 }
 
 .cooperation .galleryCooperationControls {
@@ -196,13 +270,17 @@
 
 .cooperation .galleryNavContainer {
     width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkgreen;
 }
 
 .cooperation .galleryNavItem {
     background: #ccc;
     border-radius: 50%;
     height: 16px;
-    margin: 8px 0px;
+    margin: 4px 0px;
     width: 16px;
     cursor: pointer;
 }
