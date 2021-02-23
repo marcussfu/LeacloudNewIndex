@@ -1920,6 +1920,7 @@ a:hover {
   .footer h4 {
     font-size: 14px;
     color: #ccc;
+    margin: 18px 0px;
   }
 
   .footer p {
@@ -1935,6 +1936,10 @@ a:hover {
     color: #ffb600;
   }
 
+  .footer .a-Interval {
+    margin-bottom: 8px;
+  }
+
   .footer .container {
     display: flex;
     flex-direction: row;
@@ -1948,6 +1953,7 @@ a:hover {
   .footer hr {
     height: 5px;
     margin: 0px 0px 20px 0px;
+    opacity: 1;
   }
 
   .footer .aboutUs {
