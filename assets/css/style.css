@@ -1269,14 +1269,11 @@ a:hover {
       align-items: center;
   }
 
-  .pricing .pricingBoxCotent {
-    /* background-color: darkgoldenrod; */
-    /* width: 35%; */
-  }
-
-  .helpButton {
-    margin-top: 30px;
+  .pricing .helpButton {
+    margin-top: 60px;
+    margin-bottom: -20px;
     color: #000;
+    
   }
 
   .pricing .box {
@@ -1291,8 +1288,8 @@ a:hover {
     margin-left: -10px;
     margin-right: -10px;
   }
-  
-  .pricing .box:hover {
+
+  .pricing .onHover {
     transform: scale(1.1);
     box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
     z-index: 2;
@@ -1394,9 +1391,26 @@ a:hover {
     font-size: 14px;
     padding: 1px 0 3px 0;
     background: #1976D2;
-    /* color: #fff; */
+    display: none;
   }
 
+  .pricing .onDisplay {
+    display: block;
+  }
+
+  .pricing .featured .star {
+    color: #ff9f00;
+    margin-left: -30px;
+    margin-top: 10px;
+  }
+
+  @media (max-width: 991px) {
+    .pricing .featured .star {
+      margin-top: 20px;
+      margin-left: -60px;
+      font-size: 20px;
+    }
+  }
   
   /*--------------------------------------------------------------
   # F.A.Q

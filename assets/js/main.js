@@ -17,3 +17,23 @@
     $('.logoImg').addClass('header-scrolled');
   }
 })(jQuery);
+
+$('.pricingBoxCotent').hover(
+  function() { // entry
+    // clear hover state on every one
+    if ($('.pricingBoxCotent').hasClass('onHover')) {
+      $('.pricingBoxCotent').removeClass('onHover');
+    }
+    if ($('.featured').hasClass('onDisplay')) {
+      $('.featured').removeClass('onDisplay');
+    }
+
+    // add hover state on specify
+    if (!$(this).hasClass('onHover')) {
+      $(this).addClass('onHover');
+    }
+    if (!$(this).find('.featured').hasClass('onDisplay')) {
+      $(this).find('.featured').addClass('onDisplay');
+    }
+  },
+);
