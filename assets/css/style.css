@@ -1573,7 +1573,6 @@ a:hover {
     float: left;
     width: 44px;
     height: 44px;
-    /* background: #d2e9ff; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1590,10 +1589,8 @@ a:hover {
   }
   
   .contact .info p {
-    /* padding: 0 0 0 60px; */
-    /* padding-left: 10px; */
     margin-bottom: 0;
-    font-size: 14px;
+    font-size: 15px;
     color: #888888;
   }
 
@@ -1606,21 +1603,6 @@ a:hover {
     border-left: 1px solid #1a76d2;
     margin-bottom: 40px;
   }
-
-  /* .contact .container {
-    display: flex;
-    flex-direction: row;
-
-  } */
-  
-  /* .contact .info .address, .contact .info .phone {
-    margin-top: 40px;
-  } */
-  
-  /* .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-    background: #1a76d2;
-    color: #fff;
-  } */
   
   .contact .php-email-form {
     width: 100%;
@@ -1629,10 +1611,20 @@ a:hover {
   
   .contact .php-email-form .form-group {
     padding-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact .php-email-form .form-group i {
+    margin-top: 15px;
+    margin-left: -25px;
+    z-index: 2;
+    color: #888888;
+    background-color: #fff;
   }
   
   .contact .php-email-form .validate {
-    display: none;
+    display: block;
     color: red;
     margin: 0 0 15px 0;
     font-weight: 400;
