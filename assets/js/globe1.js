@@ -182,10 +182,10 @@ function init() {
     controls.autoRotateSpeed = -1.0;
     controls.enablePan = false;
 
-    var ambient = new THREE.AmbientLight(0xffffff, 1);
+    var ambient = new THREE.AmbientLight(0xffffff, 2);
     scene.add(ambient);
 
-    var direcitonal = new THREE.DirectionalLight(0xffffff, 1);
+    var direcitonal = new THREE.DirectionalLight(0xffffff, 2);
     direcitonal.position.set(5.0, 2.0, 5.0).normalize();
     scene.add(direcitonal);
 
