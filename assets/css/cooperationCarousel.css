@@ -1,43 +1,45 @@
 /* cooperation */
 .cooperation {
-    /* padding-bottom: 0px; */
+    padding-top: 0px;
+    padding-bottom: 0px;
     background-color: rgb(213, 230, 179, 0.5);
-    position: relative;
-    width: 100%;
-    /* padding-top: 37%; */
-    padding-top: 43%;
 }
 
 .cooperation .cooperationContainer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    text-align: center;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    background-color: rgba(230, 28, 28, 0.5);
+    /* height: 100%; */
 }
 
-.cooperation .curveLineImg {
+.cooperation img {
     width: 80%;
+    height: auto;
     z-index: -1;
-    background-color: rgb(176, 111, 236, 0.5);
+    /* position: absolute; */
+}
+
+.cooperation .vertical {
+    width: 8%;
+    height: 100px;
+    border-left: 5px solid rgba(0, 0, 0, 0.05);
+    border-right: 5px solid rgba(0, 0, 0, 0.05);
+    margin-top: 10px;
 }
 
 .cooperation .cooperationContent {
-    width: 95%;
-    height: 300%;
-    margin-top: -14%;
-    background-color: rgb(236, 174, 236, 0.5);
+    width: 100%;
+    /* height: 100%; */
+    /* margin-top: 10%; */
+    background-color: violet;
 
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
+    justify-content: space-between;
     align-items: center;
+    /* z-index: 2; */
 }
 
 .cooperation .galleryNavContainer {
@@ -45,168 +47,79 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: darkgreen;
-    height: 100%;
 }
 
-.cooperation .cooperationSectionTitleDiv {
+.cooperation .cooperationSectionTitleContainer {
     background-color: yellow;
-    width: 30%;
-    /* height: 70%; */
-    /* margin-right: -30px; */
+    /* margin: 0 20px 0 0; */
+    width: 38%;
+    height: 70%;
+    /* margin-left: 5%; */
+    /* margin-right: 2%; */
+    
     display: flex;
-    flex-direction: column;
-    align-items: center;
-
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
-.cooperation .vertical {
-    height: 20%;
-    width: 12%;
-    border-left: 5px solid rgba(0, 0, 0, 0.05);
-    border-right: 5px solid rgba(0, 0, 0, 0.05);
-    background-color: rgb(243, 173, 147, 0.5);
+.cooperation .cooperationSectionContent {
+      width: 400px;
+      background-color: greenyellow;
+      text-align: center;
+      /* padding: 0px 10px; */
 }
 
-.cooperation hr {
-    width: 60%;
-    color: #888;
+.cooperation .cooperationSectionContent hr {
+    width: 250px;
+    margin: auto;
 }
 
 .cooperation .cooperationIntro {
-    margin: 5% 14% 0px 14%;
-    color: #ffbf00;
-    font-size: 1.3vw;
-}
-
-.cooperation .cooperationGallery {
-    background-color: chartreuse; 
-    width: 57%;
-    height: 100%;
-
-    /* display: flex;
-    align-items: center;
-    position: relative; */
-}
-
-.cooperation .galleryCooperationContainer {
-    align-items: center;
-    display: flex;
-    position: relative;
-}
-
-.cooperation .galleryCooperationItem {
-    /* position: absolute; */
-    transition: all 0.3s ease-in-out;
-    z-index: 0;
-    background-color: #ffffff;
-    border-radius: 5px;
-    border: solid #ececec;
-    padding: 24px 14px;
-/* opacity: .4; */
-    width: 30%;
-}
-
-.cooperation .galleryCooperationItem:hover {
-    box-shadow: 0 5px 10px rgba(68, 88, 144);
-}
-
-.cooperation .galleryCooperationItemContent {
-    display: flex;
-    margin-top: 10px;
-    background-color: darkturquoise;
-}
-
-.cooperation .galleryCooperationItem .fas,
-.cooperation .galleryCooperationItem .positionTitle {
-    font-size: 1vw;
+    margin: 10% 5%;
     color: #ffbf00;
 }
 
-.cooperation .galleryCooperationItem p {
-    margin-left: 4px;
-    text-align: center;
-    font-size: 1vw;
-    color: #535353;
+  .cooperation .cooperationCarousel {
+    background-color: rgb(46, 66, 25); 
+    width: 60%
+  }
+
+  
+
+
+/* selected */
+.cooperation .galleryNavContainer .gallery-item-selected {
+    background: #ffbf00;
 }
 
-.cooperation .galleryCooperationItem img {
-    width: 20%;
-    object-fit: contain;
-}
-
-.cooperation .galleryCooperationItem .companyInfo {
-    margin-left: 16px;
-    background-color: darkorange;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: flex-start;
-}
-
-.cooperation .galleryCooperationItem .companyName {
-    font-size: 1vw;
-}
-
-/* =================================================================*/
-.cooperation .galleryCooperationItem.gallery-item-selected {
-    /* height: 250px; */
-    opacity: 1;
-    width: 55%;
-    z-index: 2;
-}
-
-.cooperation .galleryCooperationItem.gallery-item-selected .companyName {
-    font-weight: bold;
-    font-size: 1.5vw;
-}
-
-.galleryCooperationItem.gallery-item-previous,
-.galleryCooperationItem.gallery-item-next {
-    /* height: 230px; */
-    opacity: 1;
-    width: 40%;
-    z-index: 1;
-}
-
-/* .cooperation .galleryCooperationItem.gallery-item-previous {
-    transform: translate(130%, -50%);
-}
-
-.cooperation .galleryCooperationItem.gallery-item-next {
-    transform: translate(130%, 60%);
-} */
-
-/* .cooperation .galleryCooperationItem.gallery-item-first {
-    transform: translate(130%, -20%);
-}
-
-.cooperation .galleryCooperationItem.gallery-item-last {
-    transform: translate(130%, 60%);
-} */
-
-@media (max-width: 1270px) {
-    .cooperation .cooperationGallery {
-        width: 62%;
-    }
-}
-
-
-
-/*
 
 @media (max-width: 991px) {
+    .cooperation .galleryNavContainer {
+        display: none;
+    }
+
+    .cooperation .cooperationSectionTitleContainer {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .cooperation .cooperationSectionContent {
+        width: 80%;
+    }
+
+    .cooperation .cooperationIntro {
+        margin: 30px 30px;
+    }
+
     .cooperation .cooperationContent {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
+      margin-top: 0%;
     }
 
-    .cooperation .sectionTitleDiv {
-      margin: 0px auto 20px auto;
-      width: 100%;
-    }
-
+    
+/* 
     .cooperation .cooperationIntro {
       margin-top: 5%;
       font-size: 10px;
@@ -216,6 +129,80 @@
       width: 100%;
       height: 57%;
     }
+
+    .cooperation img {
+      position: static;
+    } */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cooperation .gallery {
+    width: 100%;
+}
+
+.cooperation .galleryCooperationContainer {
+    align-items: center;
+    display: flex;
+    height: 300px;
+    margin: 0 auto;
+    max-width: 100%;
+    position: relative;
+}
+
+.cooperation .galleryCooperationItem {
+    height: 200px;
+    opacity: .4;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    /* width: 150px; */
+    width: 30%;
+    z-index: 0;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: solid rgb(209, 208, 208);
+}
+
+.cooperation .galleryCooperationItem:hover {
+    box-shadow: 0 5px 10px rgba(68, 88, 144);
+}
+
+.cooperation .galleryCooperationItem img {
+    width: 20%;
+    height: auto;
+    z-index: 3;
+    object-fit: contain;
+}
+
+.cooperation .companyInfo {
+    margin-left: 23%;
+}
+
+.cooperation .galleryCooperationItem .positionTitle,
+.cooperation .galleryCooperationItem .fas {
+    color: #ffbf00;
+}
+
+.cooperation .galleryCooperationItem .companyName {
+    font-weight: bold;
+}
+
+.cooperation .galleryCooperationItem .positionTitle,
+.cooperation .galleryCooperationItem .companyName {
+    font-size: 16px;
 }
 
 .cooperation .galleryCooperationItem h3 {
@@ -226,20 +213,79 @@
     height: 75%;
 }
 
+.cooperation .galleryCooperationItem p {
+    /* padding-top: 3%;
+    padding-bottom: 3%; */
+    margin-left: 10px;
+    text-align: center;
+    font-size: 10px;
+    color: #535353;
+}
 
+.cooperation .galleryCooperationItemContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+    height: 50%;
+    margin-left: 20px;
+}
 
+.cooperation .alignItemCenter {
+    align-items: center;
+}
 
+.cooperation .paddingTopRight {
+    padding-top: 30px;
+    padding-right: 20px;
+}
 
+.cooperation .galleryCooperationItem.gallery-item-selected {
+    /* box-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1); */
+    
+    height: 300px;
+    opacity: 1;
 
+    /* width: 300px; */
+    width: 50%;
+    z-index: 2;
+}
+
+.galleryCooperationItem.gallery-item-previous,
+.galleryCooperationItem.gallery-item-next {
+    height: 250px;
+    opacity: 1;
+    /* width: 200px; */
+    width: 40%;
+    z-index: 1;
+}
+
+.cooperation .galleryCooperationItem.gallery-item-previous {
+    transform: translate(150%, -40%);
+}
+
+.cooperation .galleryCooperationItem.gallery-item-next {
+    transform: translate(150%, 70%);
+}
+
+.cooperation .galleryCooperationItem.gallery-item-first {
+    transform: translate(200%, -40%);
+}
+
+.cooperation .galleryCooperationItem.gallery-item-last {
+    transform: translate(200%, 80%);
+}
 
 .cooperation .galleryCooperationControls {
     display: flex;
     justify-content: space-between;
+    /* margin: 30px 0; */
     position: absolute;
     z-index: 2;
     top: 50%;
     left: 25%;
     width: 50%;
+    /* background-color: crimson; */
 }
 
 .cooperation .galleryCooperationControls .controlButton {
@@ -252,6 +298,7 @@
 .cooperation .galleryCooperationControls .controlButton:hover {
     color: #ffffff;
     background-color: #1976D2;
+    /* border-radius: 50%; */
     box-shadow: 0 0 20px rgba(33, 33, 33, .2);
 }
 
@@ -261,22 +308,20 @@
     background: #ccc;
     border-radius: 50%;
     height: 16px;
-    margin: 4px 0px;
+    margin: 8px 0px;
     width: 16px;
     cursor: pointer;
 }
 
-.cooperation .galleryNavContainer .gallery-item-selected {
-    background: #ffbf00;
-}
 
-@media (min-width: 991px) {
+
+/* @media (min-width: 991px) {
     .cooperation .galleryCooperationControls {
         display: none;
     }
-}
+} */
 
-@media (max-width: 910px) {
+/* @media (max-width: 910px) {
     .cooperation .galleryCooperationItem {
         width: 150px;
         height: 250px;
@@ -285,9 +330,9 @@
         height: 150px;
         font-size: 5px;
     }
-}
+} */
 
-@media (min-width: 365px) and (max-width: 991px) {
+/* @media (min-width: 365px) and (max-width: 991px) {
     .cooperation .galleryCooperationItem {
         width: 200px;
         height: 250px;
