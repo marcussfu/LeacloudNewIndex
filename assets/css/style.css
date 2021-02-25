@@ -1183,7 +1183,10 @@ a:hover {
     margin-top: 60px;
     margin-bottom: -20px;
     color: #000;
-    
+  }
+
+  .pricing .helpButton:hover {
+    color: #1976D2;
   }
 
   .pricing .box {
@@ -1478,7 +1481,7 @@ a:hover {
   }
   
   .contact .info i {
-    font-size: 15px;
+    font-size: 18px;
     color: #888888;
     float: left;
     width: 44px;
@@ -1500,7 +1503,7 @@ a:hover {
   
   .contact .info p {
     margin-bottom: 0;
-    font-size: 15px;
+    font-size: 18px;
     color: #888888;
   }
 
@@ -1528,6 +1531,7 @@ a:hover {
   .contact .php-email-form .form-group i {
     margin-top: 15px;
     margin-left: -25px;
+    margin-bottom: 10px;
     z-index: 2;
     color: #888888;
     background-color: #fff;
