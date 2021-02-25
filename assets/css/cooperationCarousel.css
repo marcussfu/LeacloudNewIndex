@@ -2,7 +2,6 @@
 .cooperation {
     padding-top: 0px;
     padding-bottom: 0px;
-    background-color: rgb(213, 230, 179, 0.5);
 }
 
 .cooperation .cooperationContainer {
@@ -10,15 +9,12 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(230, 28, 28, 0.5);
-    /* height: 100%; */
 }
 
 .cooperation img {
     width: 80%;
     height: auto;
     z-index: -1;
-    /* position: absolute; */
 }
 
 .cooperation .vertical {
@@ -29,17 +25,21 @@
     margin-top: 10px;
 }
 
+.cooperation .galleryNavItem {
+    background: #ccc;
+    border-radius: 50%;
+    height: 16px;
+    margin: 8px 0px;
+    width: 16px;
+    cursor: pointer;
+}
+
 .cooperation .cooperationContent {
     width: 100%;
-    /* height: 100%; */
-    /* margin-top: 10%; */
-    background-color: violet;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* z-index: 2; */
 }
 
 .cooperation .galleryNavContainer {
@@ -50,13 +50,8 @@
 }
 
 .cooperation .cooperationSectionTitleContainer {
-    background-color: yellow;
-    /* margin: 0 20px 0 0; */
     width: 38%;
     height: 70%;
-    /* margin-left: 5%; */
-    /* margin-right: 2%; */
-    
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -64,9 +59,7 @@
 
 .cooperation .cooperationSectionContent {
       width: 400px;
-      background-color: greenyellow;
       text-align: center;
-      /* padding: 0px 10px; */
 }
 
 .cooperation .cooperationSectionContent hr {
@@ -77,21 +70,136 @@
 .cooperation .cooperationIntro {
     margin: 10% 5%;
     color: #ffbf00;
+    font-size: 1vw;
 }
 
-  .cooperation .cooperationCarousel {
-    background-color: rgb(46, 66, 25); 
+.cooperation .cooperationCarousel {
     width: 60%
-  }
+}
 
-  
+.cooperation .galleryCooperationContainer {
+    align-items: center;
+    display: flex;
+    height: 300px;
+    position: relative;
+}
+
+.cooperation .galleryCooperationItem {
+    height: 200px;
+    opacity: .4;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    width: 30%;
+    z-index: 0;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: solid #ececec;
+}
+
+.cooperation .galleryCooperationItem:hover {
+    box-shadow: 0 5px 10px rgba(68, 88, 144);
+}
+
+.cooperation .galleryCooperationItemContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+    height: 45%;
+    margin: 10px;
+}
+
+.cooperation .alignItemCenter {
+    align-items: center;
+}
+
+/* .cooperation .paddingTopRight {
+    padding-top: 30px;
+    padding-right: 20px;
+} */
+
+.cooperation .galleryCooperationItem .fas {
+    font-size: 1vw;
+    color: #ffbf00;
+}
+
+.cooperation .galleryCooperationItem p {
+    margin-left: 10px;
+    text-align: center;
+    font-size: 1vw;
+    color: #535353;
+}
+
+.cooperation .galleryCooperationItem img {
+    width: 18%;
+    height: auto;
+    z-index: 3;
+    object-fit: contain;
+}
+
+.cooperation .companyInfo {
+    margin-left: 20px;
+}
+
+.cooperation .galleryCooperationItem .positionTitle {
+    font-size: 1vw;
+    color: #ffbf00;
+}
+
+.cooperation .galleryCooperationItem .companyName {
+    font-size: 1vw;
+}
+
+.cooperation .galleryCooperationControls {
+    display: none;
+}
 
 
-/* selected */
+/* selected previous next first last */
 .cooperation .galleryNavContainer .gallery-item-selected {
     background: #ffbf00;
 }
 
+.cooperation .galleryCooperationItem.gallery-item-selected {
+    height: 300px;
+    opacity: 1;
+    width: 50%;
+    z-index: 2;
+}
+
+.cooperation .galleryCooperationItem.gallery-item-selected .positionTitle {
+    font-size: 1.3vw;
+}
+
+.cooperation .galleryCooperationItem.gallery-item-selected .companyName {
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+
+.galleryCooperationItem.gallery-item-previous,
+.galleryCooperationItem.gallery-item-next {
+    height: 260px;
+    opacity: 1;
+    width: 35%;
+    z-index: 1;
+}
+
+.cooperation .galleryCooperationItem.gallery-item-previous {
+    transform: translate(120%, -60%);
+}
+
+.cooperation .galleryCooperationItem.gallery-item-next {
+    transform: translate(120%, 45%);
+}
+
+.cooperation .galleryCooperationItem.gallery-item-first {
+    transform: translate(140%, -70%);
+}
+
+.cooperation .galleryCooperationItem.gallery-item-last {
+    transform: translate(140%, 60%);
+}
 
 @media (max-width: 991px) {
     .cooperation .galleryNavContainer {
@@ -103,324 +211,90 @@
         justify-content: center;
     }
 
+    .cooperation .vertical {
+        height: 50px;
+    }
+
     .cooperation .cooperationSectionContent {
-        width: 80%;
+        width: 100%;
+    }
+
+    .cooperation .cooperationCarousel {
+        width: 80%
     }
 
     .cooperation .cooperationIntro {
-        margin: 30px 30px;
+        margin: 20px 50px 5px 50px;
     }
 
     .cooperation .cooperationContent {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      margin-top: 0%;
+      align-items: center;
     }
 
-    
-/* 
-    .cooperation .cooperationIntro {
-      margin-top: 5%;
-      font-size: 10px;
-    }
-
-    .cooperation .cooperationCarousel {
-      width: 100%;
-      height: 57%;
-    }
-
-    .cooperation img {
-      position: static;
-    } */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.cooperation .gallery {
-    width: 100%;
-}
-
-.cooperation .galleryCooperationContainer {
-    align-items: center;
-    display: flex;
-    height: 300px;
-    margin: 0 auto;
-    max-width: 100%;
-    position: relative;
-}
-
-.cooperation .galleryCooperationItem {
-    height: 200px;
-    opacity: .4;
-    position: absolute;
-    transition: all 0.3s ease-in-out;
-    /* width: 150px; */
-    width: 30%;
-    z-index: 0;
-    background-color: #ffffff;
-    border-radius: 5px;
-    border: solid rgb(209, 208, 208);
-}
-
-.cooperation .galleryCooperationItem:hover {
-    box-shadow: 0 5px 10px rgba(68, 88, 144);
-}
-
-.cooperation .galleryCooperationItem img {
-    width: 20%;
-    height: auto;
-    z-index: 3;
-    object-fit: contain;
-}
-
-.cooperation .companyInfo {
-    margin-left: 23%;
-}
-
-.cooperation .galleryCooperationItem .positionTitle,
-.cooperation .galleryCooperationItem .fas {
-    color: #ffbf00;
-}
-
-.cooperation .galleryCooperationItem .companyName {
-    font-weight: bold;
-}
-
-.cooperation .galleryCooperationItem .positionTitle,
-.cooperation .galleryCooperationItem .companyName {
-    font-size: 16px;
-}
-
-.cooperation .galleryCooperationItem h3 {
-    display: flex;
-    align-items: flex-end;
-    margin-right: 4%;
-    font-size: 2vw;
-    height: 75%;
-}
-
-.cooperation .galleryCooperationItem p {
-    /* padding-top: 3%;
-    padding-bottom: 3%; */
-    margin-left: 10px;
-    text-align: center;
-    font-size: 10px;
-    color: #535353;
-}
-
-.cooperation .galleryCooperationItemContent {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    
-    height: 50%;
-    margin-left: 20px;
-}
-
-.cooperation .alignItemCenter {
-    align-items: center;
-}
-
-.cooperation .paddingTopRight {
-    padding-top: 30px;
-    padding-right: 20px;
-}
-
-.cooperation .galleryCooperationItem.gallery-item-selected {
-    /* box-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1); */
-    
-    height: 300px;
-    opacity: 1;
-
-    /* width: 300px; */
-    width: 50%;
-    z-index: 2;
-}
-
-.galleryCooperationItem.gallery-item-previous,
-.galleryCooperationItem.gallery-item-next {
-    height: 250px;
-    opacity: 1;
-    /* width: 200px; */
-    width: 40%;
-    z-index: 1;
-}
-
-.cooperation .galleryCooperationItem.gallery-item-previous {
-    transform: translate(150%, -40%);
-}
-
-.cooperation .galleryCooperationItem.gallery-item-next {
-    transform: translate(150%, 70%);
-}
-
-.cooperation .galleryCooperationItem.gallery-item-first {
-    transform: translate(200%, -40%);
-}
-
-.cooperation .galleryCooperationItem.gallery-item-last {
-    transform: translate(200%, 80%);
-}
-
-.cooperation .galleryCooperationControls {
-    display: flex;
-    justify-content: space-between;
-    /* margin: 30px 0; */
-    position: absolute;
-    z-index: 2;
-    top: 50%;
-    left: 25%;
-    width: 50%;
-    /* background-color: crimson; */
-}
-
-.cooperation .galleryCooperationControls .controlButton {
-    font-size: 1.5em;
-    color: #1976D2;
-    background-color: #fff;
-    border-radius: 50%;
-}
-
-.cooperation .galleryCooperationControls .controlButton:hover {
-    color: #ffffff;
-    background-color: #1976D2;
-    /* border-radius: 50%; */
-    box-shadow: 0 0 20px rgba(33, 33, 33, .2);
-}
-
-
-
-.cooperation .galleryNavItem {
-    background: #ccc;
-    border-radius: 50%;
-    height: 16px;
-    margin: 8px 0px;
-    width: 16px;
-    cursor: pointer;
-}
-
-
-
-/* @media (min-width: 991px) {
-    .cooperation .galleryCooperationControls {
-        display: none;
-    }
-} */
-
-/* @media (max-width: 910px) {
-    .cooperation .galleryCooperationItem {
-        width: 150px;
-        height: 250px;
-    }
-    .cooperation .galleryCooperationItem p {
-        height: 150px;
-        font-size: 5px;
-    }
-} */
-
-/* @media (min-width: 365px) and (max-width: 991px) {
-    .cooperation .galleryCooperationItem {
-        width: 200px;
-        height: 250px;
-    }
-
-    .cooperation .galleryCooperationItem.gallery-item-previous,
-    .cooperation .galleryCooperationItem.gallery-item-next {
-        width: 45%;
-        height: 280px;
+    .cooperation .galleryCooperationContainer {
+        align-items: flex-start;
+        height: 200px;
+        width: 120%;
     }
 
     .cooperation .galleryCooperationItem.gallery-item-selected {
-        width: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .cooperation .galleryCooperationControls {
-        width: 70%;
-        left: 15%;
-    }
-
-    .cooperation .galleryCooperationItem.gallery-item-selected img {
-        width: 15%;
-        height: inherit;
+        width: 80%;
+        height: 100%;
     }
 
     .cooperation .galleryCooperationItem.gallery-item-previous,
     .cooperation .galleryCooperationItem.gallery-item-next,
     .cooperation .galleryCooperationItem.gallery-item-first,
     .cooperation .galleryCooperationItem.gallery-item-last {
-        left: 50%;
-        transform: translateX(-50%);
+        width: 80%;
+        transform: none;
+        height: 40%;
     }
 
-    .cooperation .companyInfo {
-        margin-left: 1%;
+    .cooperation .galleryCooperationItem img {
+        width: 50px
     }
 
     .cooperation .galleryCooperationItemContent {
-        margin-left: 0px;
+        height: 43%;
     }
-
-    .cooperation .galleryNavContainer {
-        display: none;
-    }
-}
-
-@media (max-width: 364px) {
-    .cooperation .galleryCooperationItem.gallery-item-previous,
-    .cooperation .galleryCooperationItem.gallery-item-next {
-        width: 200px;
-        height: 280px;
-    }
-
-    .cooperation .galleryCooperationItem.gallery-item-selected {
-        width: 100%;
-        left: 50%;
-        transform: translateX(-50%);
+    
+    .cooperation .companyInfo {
+        margin-left: 20px;
     }
 
     .cooperation .galleryCooperationControls {
-        width: 90%;
-        left: 5%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
+        top: 44%;
+        width: 83%;
+        margin-left: -12px;
     }
 
-    .cooperation .galleryCooperationItem.gallery-item-selected img {
-        width: 20%;
-        height: 30%;
+    .cooperation .galleryCooperationControls .controlButton {
+        font-size: 3.5vw;
+        color: #ffbf00;
+        background-color: #fff;
+        border-radius: 50%;
     }
+    
+    .cooperation .galleryCooperationControls .controlButton:hover {
+        color: #ffffff;
+        background-color: #ffbf00;
+        box-shadow: 0 0 20px rgba(33, 33, 33, .2);
+    }
+}
 
-    .cooperation .galleryCooperationItem.gallery-item-previous,
-    .cooperation .galleryCooperationItem.gallery-item-next,
-    .cooperation .galleryCooperationItem.gallery-item-first,
-    .cooperation .galleryCooperationItem.gallery-item-last {
-        left: 50%;
-        transform: translateX(-50%);
+@media (max-width: 541px) {
+    .cooperation .galleryCooperationControls {
+        margin-left: -4px;
     }
-
-    .cooperation .companyInfo {
-        margin-left: 0%;
+    .cooperation .galleryCooperationControls .controlButton {
+        font-size: 5.5vw;
     }
-
-    .cooperation .galleryCooperationItemContent {
-        margin-left: 0px;
-    }
-
-    .cooperation .galleryNavContainer {
-        display: none;
-    }
-} */
+}
