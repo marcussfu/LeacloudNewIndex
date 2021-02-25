@@ -29,12 +29,12 @@
           <nav class="nav-menu  d-lg-block headerList">
             <!-- d-none -->
             <ul>
-              <li class="headerList-li"><a href="#">登入</a></li>
+              <li class="headerList-li"><a href="#" id="login">登入</a></li>
               <li class="headerList-li"><a href="#">註冊</a></li>
               <li class="headerList-li drop-down"><a>語言選擇</a>
                 <ul>
-                  <li><a href="#">EN</a></li>
-                  <li><a href="#">繁體中文</a></li>
+                  <li><a href="#" onclick="changeLng('en')">EN</a></li>
+                  <li><a href="#" onclick="changeLng('tw')">繁體中文</a></li>
                 </ul>
               </li>
               <li class="headerList-li"><a href="#">聯繫我們</a></li>
@@ -549,10 +549,12 @@
     <script src="assets/vendor/three/three.min.js"></script>
     <script src="assets/vendor/three/three.js"></script>
     <script src="assets/vendor/OrbitControls.js"></script>
+    <script src="assets/vendor/i18next/i18next.js"></script>
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/servicesCarousel.js"></script>
     <script src="assets/js/cooperationCarousel.js"></script>
+    <script src="assets/js/changeLanguage.js"></script>
     <!-- <script src="assets/js/globe.js"></script> -->
     <script src="assets/js/globe1.js"></script>
     <script>
