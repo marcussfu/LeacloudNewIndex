@@ -6,12 +6,21 @@ i18next.init({
     resources: {
       en: {
         translation: {
-          "login": "Login"
+          "login": "Login",
+          "logup": "Logup"
         }
       },
       tw: {
         translation: {
-          "login": "登入"
+          "login": "登入",
+          "logup": "註冊"
+        }
+      },
+      sc: {
+        translation: {
+          "login": "登入",
+          "logup": "註册"
+
         }
       }
     }
@@ -22,6 +31,7 @@ i18next.init({
   
   function updateContent() {
     document.getElementById('login').innerHTML = i18next.t('login');
+    document.getElementById('logup').innerHTML = i18next.t('logup');
   }
 
   function getChangeLang(text) {

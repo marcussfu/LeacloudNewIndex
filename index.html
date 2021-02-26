@@ -19,22 +19,25 @@
   
   <body>
     <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
-      <div class="container d-flex align-items-center justify-content-between">
-
+      <!-- <div id="headerContainer" class="container d-flex align-items-center justify-content-between"> -->
+      <div class="headerContainer">
         <div class="logo">
           <a href="index.html"><img src="assets/img/LeaCloud_logo.png" class="img-fluid logoImg" ></a>
+          <img class="navMenuImg" src="assets/img/headerList.png" alt="">
         </div>
 
         <div class="normal-ul">
-          <nav class="nav-menu  d-lg-block headerList">
+          <nav class="nav-menu">
             <!-- d-none -->
             <ul>
               <li class="headerList-li"><a href="#" id="login">登入</a></li>
-              <li class="headerList-li"><a href="#">註冊</a></li>
+              <li class="headerList-li"><a href="#" id="logup">註冊</a></li>
               <li class="headerList-li drop-down"><a>語言選擇</a>
                 <ul>
+                  <div class="triangle"></div>
                   <li><a href="#" onclick="changeLng('en')">EN</a></li>
                   <li><a href="#" onclick="changeLng('tw')">繁體中文</a></li>
+                  <li><a href="#" onclick="changeLng('sc')">簡體中文</a></li>
                 </ul>
               </li>
               <li class="headerList-li"><a href="#">聯繫我們</a></li>
@@ -43,16 +46,15 @@
           <img class="navMenuImg" src="assets/img/headerList.png" alt="">
         </div>
 
-        <div class="mobile-ul">
-          <nav class="nav-menu  d-lg-block headerList">
-            <!-- d-none -->
-            <!-- <ul>
+        <!-- <div class="mobile-ul">
+          <nav class="nav-menu headerList">
+            <ul>
               <li class="headerList-li"><a href="#">登入</a></li>
               <li class="headerList-li"><a href="#">註冊</a></li>
-            </ul> -->
+            </ul>
           </nav>
           <img class="navMenuImg" src="assets/img/headerList.png" alt="">
-        </div>
+        </div> -->
 
         <!-- <nav class="nav-menu  d-lg-block headerList">
           <ul>

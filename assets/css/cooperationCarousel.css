@@ -93,7 +93,7 @@
     z-index: 0;
     background-color: #ffffff;
     border-radius: 5px;
-    border: solid #ececec;
+    border: 1px solid #ececec;
 }
 
 .cooperation .galleryCooperationItem:hover {
