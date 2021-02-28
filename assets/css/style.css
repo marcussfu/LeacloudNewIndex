@@ -152,6 +152,8 @@ a:hover {
     cursor: pointer;
   }
 
+  
+
   #header .logo .navMenuImg {
     display: none;
   }
@@ -165,9 +167,7 @@ a:hover {
     margin-left: 20px;
   }
 
-  /* #header .navMenuImg:focus + ul {
-    visibility: visible;
-  } */
+  
 
   .nav-menu, .nav-menu * {
     margin: 0;
@@ -1767,163 +1767,156 @@ a:hover {
     margin: 0 0 5px 0;
   } */
 
-    /* Detail*/
-    .detail {
-      background: #3a3a3a;
-      opacity: 0.9;
-      color: #fff;
-      font-size: 14px;
-      position: absolute;
-      top: 0px;
-      width: 100%;
-      height: 100%;
-      z-index: 11;
-      padding-top: 0px;
+  /* Detail*/
+  .detail {
+    background: #3a3a3a;
+    opacity: 0.9;
+    color: #fff;
+    font-size: 14px;
+    position: fixed;
+    top: 0px;
+    width: 0%;
+    height: 100%;
+    z-index: 11;
+    padding-top: 0px;
 
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: ease all 0.3s;
+  }
 
-    .detail .closebutton {
-      /* display: flex;
-      flex-direction: column;
-      justify-content: center; */
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      background-color: wheat;
-      height: 25%;
-    }
+  .detail .closebutton {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 25%;
+  }
 
-    .detail img {
-      /* max-width: 240px; height: auto;
-      margin-top: 20px; */
-      width: 40px;
-      height: 40px;
-      margin-top: 16px;
-      margin-right: 4vw;
-    }
+  .detail img {
+    width: 40px;
+    height: 40px;
+    margin-top: 16px;
+    margin-right: 5vw;
+    cursor: pointer;
+  }
 
+  .detail img:hover {
+    opacity: 0.5;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .detail .detailContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .detail .detailButtons {
+    height: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 38%;
+  }
+
+  .detail .detailButton {
+    background: linear-gradient(to bottom, #80c3f3, #4a90e2);
+    border: 1px solid transparent;
+    padding: 10px 34px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 24px;
+  }
+
+  .detail .detailButton:hover {
+    background: transparent;
+    border: 1px solid #fff;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+  }
+
+  .detail .detailColumn {
+    text-align: center;
+  }
+
+  .detail h2 {
+    font-size: 33px;
+    color: #fff;
+    margin: 18px 0px;
+  }
+
+  .detail hr {
+    height: 1px;
+    margin: 0px 0px 20px 0px;
+    opacity: 1;
+    background-color: #ccc;
+  }
+
+  .detail a {
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .detail a:hover {
+    color: #1976D2;
+  }
+
+  .detail .a-Interval {
+    margin-bottom: 20px;
+  }
+
+  .detail .interval {
+    margin-right: 20px;
+  }
+
+  @media (max-width: 991px) {
     .detail .detailContainer {
       display: flex;
-      flex-direction: row;
-      justify-content: center;
-      background-color: chocolate;
-      width: 100%;
-    }
-
-    .detail .detailButtons {
-      background-color: teal;
-      height: 35%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      width: 38%;
-    }
-
-    .detail .detailButton {
-      background: linear-gradient(to bottom, #80c3f3, #4a90e2);
-      border: 1px solid transparent;
-      padding: 10px 34px;
-      color: #fff;
-      transition: 0.4s;
-      border-radius: 24px;
-    }
-
-    .detail .detailButton:hover {
-      background: transparent;
-      border: 1px solid #fff;
-      transition: all 0.4s ease-in-out;
-      cursor: pointer;
+      flex-direction: column;
     }
 
     .detail .detailColumn {
-      text-align: center;
+      text-align: start;
     }
-  
+
     .detail h2 {
-      font-size: 33px;
+      font-size: 23px;
       color: #fff;
-      margin: 18px 0px;
+      margin: 0px 0px;
+      padding: 2px 40px;
+    }
+
+    .detail a {
+      padding: 0px 40px;
+    }
+
+    .detail .closebutton {
+      height: 15%;
+      width: 100%;
+    }
+
+    .detail .a-Interval {
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+      padding: 2px 0px;
+    }
+
+    .detail .detailButtons {
+      display: none;
     }
 
     .detail hr {
-      height: 1px;
-      margin: 0px 0px 20px 0px;
-      opacity: 1;
-      background-color: #ccc;
+      height: 2px;
+      margin: 0px 0px;
     }
-  
-    .detail a {
-      font-size: 16px;
-      color: #fff;
+  }
+
+  @media (max-width: 625px) {
+    .detail img {
+      margin-top: 10px;
+      margin-right: 2vw;
     }
-  
-    .detail a:hover {
-      color: #1976D2;
-    }
-  
-    .detail .a-Interval {
-      margin-bottom: 20px;
-    }
-  
-    .detail .interval {
-      margin-right: 20px;
-    }
-    
-  
-    @media (max-width: 991px) {
-      .detail .detailContainer {
-        display: flex;
-        flex-direction: column;
-        background-color: chocolate;
-      }
-
-      .detail .detailColumn {
-        text-align: start;
-      }
-
-      .detail h2 {
-        font-size: 23px;
-        color: #fff;
-        margin: 0px 0px;
-        padding: 2px 40px;
-      }
-
-      .detail a {
-        padding: 0px 40px;
-      }
-
-      .detail .closebutton {
-        height: 15%;
-        width: 100%;
-      }
-
-      .detail .a-Interval {
-        margin-bottom: 10px;
-        border-bottom: 1px solid #ccc;
-        padding: 2px 0px;
-      }
-
-      .detail .detailButtons {
-        display: none;
-      }
-
-      .detail hr {
-        height: 2px;
-        margin: 0px 0px;
-      }
-
-      .detail a {
-        
-      }
-    }
-
-    @media (max-width: 625px) {
-      .detail img {
-        margin-top: 10px;
-        margin-right: 0px;
-      }
-    }
+  }

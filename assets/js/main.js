@@ -40,3 +40,13 @@ $('.pricingBoxCotent').hover(
     }
   },
 );
+
+$( "#detailCloseBtn" ).click(() => {
+  $(".navMenuImg").css('visibility','visible');
+  $('.detail').css('width','0%');
+});
+
+$( ".navMenuImg" ).click(() => {
+  $(".navMenuImg").css('visibility','hidden');
+  $('.detail').css('width','100%');
+});
