@@ -44,9 +44,11 @@ $('.pricingBoxCotent').hover(
 $( "#detailCloseBtn" ).click(() => {
   $(".navMenuImg").css('visibility','visible');
   $('.detail').css('width','0%');
+  $('.detail > .content').css('opacity', '0');
 });
 
 $( ".navMenuImg" ).click(() => {
   $(".navMenuImg").css('visibility','hidden');
   $('.detail').css('width','100%');
+  $('.detail > .content').css('opacity', '1');
 });
