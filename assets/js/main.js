@@ -6,15 +6,18 @@
     if ($(this).scrollTop() > 100) {
       $('#header').addClass('header-scrolled');
       $('.logoImg').addClass('header-scrolled');
+      $('.logo > .navMenuImg').addClass('header-scrolled-detailbtn');
     } else {
       $('#header').removeClass('header-scrolled');
       $('.logoImg').removeClass('header-scrolled');
+      $('.logo > .navMenuImg').removeClass('header-scrolled-detailbtn');
     }
   });
 
   if ($(window).scrollTop() > 100) {
     $('#header').addClass('header-scrolled');
     $('.logoImg').addClass('header-scrolled');
+    $('.logo > .navMenuImg').addClass('header-scrolled-detailbtn');
   }
 })(jQuery);
 
