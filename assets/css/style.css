@@ -1912,6 +1912,10 @@ a:hover {
       height: 2px;
       margin: 0px 0px;
     }
+
+    .detail .interval {
+      margin-right: 0px;
+    }
   }
 
   @media (max-width: 625px) {
