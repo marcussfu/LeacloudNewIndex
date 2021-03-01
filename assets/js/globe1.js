@@ -182,12 +182,12 @@ function init() {
     controls.autoRotateSpeed = -1.0;
     controls.enablePan = false;
 
-    var ambient = new THREE.AmbientLight(0xffffff, 2);
+    var ambient = new THREE.AmbientLight(0xffffff, 4);
     scene.add(ambient);
 
-    var direcitonal = new THREE.DirectionalLight(0xffffff, 2);
-    direcitonal.position.set(5.0, 2.0, 5.0).normalize();
-    scene.add(direcitonal);
+    // var direcitonal = new THREE.DirectionalLight(0xffffff, 2);
+    // direcitonal.position.set(5.0, 2.0, 5.0).normalize();
+    // scene.add(direcitonal);
 
     // just some code for the loading
     var manager = createLoader(renderer.domElement, animate);
