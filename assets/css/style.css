@@ -1365,13 +1365,18 @@ a:hover {
     color: #2a2c39;
   }
   
-  .contact .info p {
+  .contact .info p, .contact .info a {
     margin-bottom: 0;
     font-size: 18px;
     color: #888888;
   }
 
-  .contact .info .address, .contact .info .phone, .contact .info .email {
+  .contact .info a:hover {
+    color: #1976D2;
+  }
+
+
+  .contact .info .item {
     display: flex;
     align-items: center;
   }
