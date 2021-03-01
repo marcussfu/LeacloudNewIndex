@@ -243,15 +243,17 @@
     .cooperation .galleryCooperationItem.gallery-item-selected {
         width: 80%;
         height: 100%;
+        opacity: 1;
     }
 
     .cooperation .galleryCooperationItem.gallery-item-previous,
     .cooperation .galleryCooperationItem.gallery-item-next,
     .cooperation .galleryCooperationItem.gallery-item-first,
     .cooperation .galleryCooperationItem.gallery-item-last {
-        width: 80%;
+        width: 60%;
         transform: none;
-        height: 40%;
+        height: 10%;
+        opacity: 0;
     }
 
     .cooperation .galleryCooperationItem img {
