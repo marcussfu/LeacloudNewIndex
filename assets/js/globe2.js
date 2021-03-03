@@ -364,8 +364,8 @@ function addGlobeDots() {
 
   var material = new THREE.PointsMaterial({
     map: texture,
-    size: props.globeRadius / 100,
-    color: 'red'
+    size: props.globeRadius / 50,
+    color: 0x1976D2
   });
 
   var addDot = function(targetX, targetY) {

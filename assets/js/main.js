@@ -7,10 +7,12 @@
       $('#header').addClass('header-scrolled');
       $('.logoImg').addClass('header-scrolled');
       $('.logo > .navMenuImg').addClass('header-scrolled-detailbtn');
+      $('.back-to-top').css('display','block');
     } else {
       $('#header').removeClass('header-scrolled');
       $('.logoImg').removeClass('header-scrolled');
       $('.logo > .navMenuImg').removeClass('header-scrolled-detailbtn');
+      $('.back-to-top').css('display','none');
     }
   });
 
@@ -51,4 +53,9 @@ $( ".navMenuImg" ).click(() => {
   $(".navMenuImg").css('visibility','hidden');
   $('.detail').css('width','100%');
   $('.detail > .content').css('opacity', '1');
+});
+
+$('.back-to-top').click((e) => {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, 1000);
 });

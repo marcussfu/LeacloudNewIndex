@@ -97,7 +97,7 @@
 }
 
 .cooperation .galleryCooperationItem:hover {
-    box-shadow: 0 5px 10px rgba(68, 88, 144);
+    box-shadow: 0 0 20px rgba(33, 33, 33, .2);
 }
 
 .cooperation .galleryCooperationItemContent {

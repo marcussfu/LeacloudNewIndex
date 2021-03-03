@@ -1,25 +1,13 @@
-/**
-* Template Name: Selecao - v3.0.0
-* Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+/* General */
 body {
     font-family: "Open Sans", sans-serif;
-    /* color: #444444; */
 }
 
 a {
-    /* color: #ef6603; */
     text-decoration: none;
 }
 
 a:hover {
-    /* color: #fc8129; */
     text-decoration: none;
 }
 
@@ -44,11 +32,8 @@ a:hover {
 .sectionTitleDiv hr {
     width: 80%;
     margin: 20px auto 0px auto;
+    opacity: 0.1;
 }
-
-/* h1, h2, h3, h4, h5, h6 {
-    font-family: "Raleway", sans-serif;
-} */
 
 @media (prefers-reduced-motion: no-preference) {
     :root {
@@ -75,14 +60,15 @@ a:hover {
     width: 40px;
     height: 40px;
     border-radius: 50px;
-    background: #ef6603;
+    background: #1976D2;
     color: #fff;
     transition: all 0.4s;
   }
   
   .back-to-top i:hover {
-    background: #fc7c1f;
+    background: #1976D2;
     color: #fff;
+    opacity: 0.7;
   }
   
   /*--------------------------------------------------------------
@@ -152,8 +138,6 @@ a:hover {
     cursor: pointer;
   }
 
-  
-
   #header .logo .navMenuImg {
     display: none;
   }
@@ -166,8 +150,6 @@ a:hover {
   #header .normal-ul .navMenuImg {
     margin-left: 20px;
   }
-
-  
 
   .nav-menu, .nav-menu * {
     margin: 0;
@@ -523,7 +505,7 @@ a:hover {
   }
 
   .customerServiceButton {
-    background-color:#fff;
+    background-color: #fff;
     border-radius:50%;
     -moz-border-radius:50%;
     -webkit-border-radius:50%;
@@ -536,10 +518,29 @@ a:hover {
     margin: -40px auto;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
+    box-shadow: 0 0 20px rgba(33, 33, 33, .1);
+  }
+
+  .customerServiceButton i {
+    color: #1976D2;
+    font-size: 30px;
   }
 
   .customerServiceButton:hover {
-      box-shadow: 0 0 20px rgba(33, 33, 33, .2);
+    background-color: #1976D2;
+    color: #fff;
+  }
+
+  .customerServiceButton:hover i {
+    color: #fff;
+  }
+
+  @media (max-width: 991px) {
+    .customerServiceButton {
+      position: fixed;
+      right: 15px;
+      z-index: 99999;
+    }
   }
   
   /*--------------------------------------------------------------
@@ -588,7 +589,7 @@ a:hover {
   /*--------------------------------------------------------------
   # About
   --------------------------------------------------------------*/
-  .about {
+  /* .about {
     padding-top: 80px;
   }
   
@@ -645,16 +646,16 @@ a:hover {
     background: #ef6603;
     color: #fff;
     text-decoration: none;
-  }
+  } */
   
   /*--------------------------------------------------------------
   # Features
   --------------------------------------------------------------*/
-  .features .nav-tabs {
+  /* .features .nav-tabs {
     border: 0;
-  }
+  } */
   
-  .features .nav-link {
+  /* .features .nav-link {
     border: 1px solid #d4d6df;
     padding: 15px;
     transition: 0.3s;
@@ -684,7 +685,7 @@ a:hover {
     background: #ef6603;
     color: #fff;
     border-color: #ef6603;
-  }
+  } */
 
   .features p {
     text-align: center;
@@ -708,7 +709,7 @@ a:hover {
   }
 
   .features a:hover {
-    box-shadow: 0 5px 10px#1976D2;
+    box-shadow: 0 2px 5px#1976D2;
   }
 
   .features img {
@@ -785,7 +786,7 @@ a:hover {
   /*--------------------------------------------------------------
   # Portfolio
   --------------------------------------------------------------*/
-  .portfolio #portfolio-flters {
+  /* .portfolio #portfolio-flters {
     list-style: none;
     margin-bottom: 20px;
   }
@@ -911,12 +912,12 @@ a:hover {
   
   .portfolio .portfolio-item:hover .portfolio-info {
     opacity: 1;
-  }
+  } */
   
   /*--------------------------------------------------------------
   # Testimonials
   --------------------------------------------------------------*/
-  .testimonials .testimonial-item {
+  /* .testimonials .testimonial-item {
     box-sizing: content-box;
     padding: 30px 30px 0 30px;
     margin: 30px 15px;
@@ -990,7 +991,7 @@ a:hover {
     .testimonials {
       margin: 30px 10px;
     }
-  }
+  } */
 
   /* globe */
   .globe {
@@ -1766,6 +1767,10 @@ a:hover {
       display: flex;
       flex-direction: column;
     }
+
+    .footer p {
+      text-align: start;
+    }
   }
 
   /* #footer .copyright {
@@ -1832,8 +1837,8 @@ a:hover {
   }
 
   .detail .detailButton {
-    background: linear-gradient(to bottom, #80c3f3, #4a90e2);
-    border: 1px solid transparent;
+    background: transparent;
+    border: 1px solid #fff;
     padding: 10px 34px;
     color: #fff;
     transition: 0.4s;
@@ -1841,8 +1846,8 @@ a:hover {
   }
 
   .detail .detailButton:hover {
-    background: transparent;
-    border: 1px solid #fff;
+    background: linear-gradient(to bottom, #80c3f3, #4a90e2);
+    border: 1px solid transparent;
     transition: all 0.4s ease-in-out;
     cursor: pointer;
   }
@@ -1853,7 +1858,7 @@ a:hover {
 
   .detail h2 {
     font-size: 33px;
-    color: #fff;
+    color: #1976D2;
     margin: 18px 0px;
   }
 
@@ -1861,7 +1866,7 @@ a:hover {
     height: 1px;
     margin: 0px 0px 20px 0px;
     opacity: 1;
-    background-color: #ccc;
+    background-color: #1976D2;
   }
 
   .detail a {
@@ -1870,7 +1875,7 @@ a:hover {
   }
 
   .detail a:hover {
-    color: #1976D2;
+    color: #ffb600;
   }
 
   .detail .a-Interval {
@@ -1893,24 +1898,25 @@ a:hover {
 
     .detail h2 {
       font-size: 23px;
-      color: #fff;
       margin: 0px 0px;
-      padding: 2px 40px;
+      padding: 10px 40px;
     }
 
     .detail a {
-      padding: 0px 40px;
+      /* padding: 0px 40px; */
     }
 
     .detail .closebutton {
-      height: 15%;
+      height: 60px;
       width: 100%;
     }
 
     .detail .a-Interval {
       margin-bottom: 10px;
-      border-bottom: 1px solid #ccc;
-      padding: 2px 0px;
+      border-bottom: 1px solid rgb(204, 204, 204, 0.1);
+      padding: 8px 0px;
+      margin: 0px 40px;
+      
     }
 
     .detail .detailButtons {
@@ -1919,7 +1925,7 @@ a:hover {
 
     .detail hr {
       height: 2px;
-      margin: 0px 0px;
+      margin: 0px 40px;
     }
 
     .detail .interval {
