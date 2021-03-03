@@ -159,7 +159,7 @@ body,
 } */
 
 .globeDotsSection {
-    /* background-color: chartreuse;  */
+    background-color: chartreuse; 
     display: flex; 
     flex-direction: row; 
     justify-content: center;
@@ -173,7 +173,7 @@ body,
 }
 
 .js-globe {
-    /* background-color: darkturquoise; */
+    background-color: darkturquoise;
 }
 
 .globeDots svg {
@@ -196,7 +196,7 @@ body,
   margin: auto;
   transform: scale(0.5);
   transition: opacity 1s ease-out 1.6s, transform 1s ease-out 1.6s;
-  /* background-color: gold; */
+  background-color: rgb(228, 159, 255);
   display: flex;
   flex-direction: row;
   justify-content: center;

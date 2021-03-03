@@ -88,7 +88,6 @@ var isHidden = false;
 
 
 /* SETUP */
-
 function getData() {
 
 //   var request = new XMLHttpRequest();
@@ -116,17 +115,13 @@ function getData() {
 }
 
 function showFallback() {
-
   /*
     This function will display an alert if WebGL is not supported.
   */
-
   alert('WebGL not supported. Please use a browser that supports WebGL.');
-
 }
 
 function setupScene() {
-
   canvas = container.getElementsByClassName('js-canvas')[0];
 
   scene = new THREE.Scene();
@@ -138,7 +133,7 @@ function setupScene() {
   });
   renderer.setSize(canvas.clientWidth, canvas.clientHeight);
   renderer.setPixelRatio(1);
-  renderer.setClearColor(0x000000, 0);
+  renderer.setClearColor(0xffffff, 0);
 
   // Main group that contains everything
   groups.main = new THREE.Group();
@@ -194,10 +189,8 @@ function setupScene() {
 /* CAMERA AND CONTROLS */
 
 function addCamera() {
-
   camera.object = new THREE.PerspectiveCamera(60, canvas.clientWidth / canvas.clientHeight, 1, 10000);
   camera.object.position.z = props.globeRadius * 2.6;
-
 }
 
 function addControls() {
@@ -284,7 +277,7 @@ function animate() {
     animateCountryCycle();
   }
 
-  camera.controls.setAzimuthalAngle(Math.cos(Date.now()*0.0000005)*-360);
+  camera.controls.setAzimuthalAngle(Math.cos(Date.now()*0.000002)*-360);
   camera.controls.setPolarAngle(1);
 
   camera.controls.update();
@@ -307,29 +300,31 @@ function addGlobe() {
   var rings = 64;
 
   // Make gradient
-  var canvasSize = 128;
-  var textureCanvas = document.createElement('canvas');
-  textureCanvas.width = canvasSize;
-  textureCanvas.height = canvasSize;
-  var canvasContext = textureCanvas.getContext('2d');
-  canvasContext.rect(0, 0, canvasSize, canvasSize);
-  var canvasGradient = canvasContext.createLinearGradient(0, 0, 0, canvasSize);
-  canvasGradient.addColorStop(1, 'rgba(0,0,0,0.02)');
-  canvasGradient.addColorStop(1, 'rgba(0,0,0,0.02)');
-  canvasGradient.addColorStop(1, 'rgba(0,0,0,0.02)');
-  canvasContext.fillStyle = canvasGradient;
-  canvasContext.fill();
+  // var canvasSize = 128;
+  // var textureCanvas = document.createElement('canvas');
+  // textureCanvas.width = canvasSize;
+  // textureCanvas.height = canvasSize;
+  // var canvasContext = textureCanvas.getContext('2d');
+  // canvasContext.rect(0, 0, canvasSize, canvasSize);
+  // var canvasGradient = canvasContext.createLinearGradient(0, 0, 0, canvasSize);
+  // canvasGradient.addColorStop(1, 'rgba(0,0,0,0.02)');
+  // canvasGradient.addColorStop(1, 'rgba(0,0,0,0.02)');
+  // canvasGradient.addColorStop(1, 'rgba(0,0,0,0.02)');
+  // canvasContext.fillStyle = canvasGradient;
+  // canvasContext.fill();
 
   // Make texture
-  var texture = new THREE.Texture(textureCanvas);
-  texture.needsUpdate = true;
+  // var texture = textureLoader.load('assets/img/world1.jpg');//new THREE.Texture(textureCanvas);
+  // texture.needsUpdate = true;
 
-  var geometry = new THREE.SphereGeometry(radius, segments, rings);
+  var geometry = new THREE.SphereBufferGeometry(radius, segments, rings);//SphereBufferGeometry(0.2, 16, 8);
   var material = new THREE.MeshBasicMaterial({
-    map: texture,
+    // map: texture,
     transparent: true,
-    opacity: 0
+    opacity: 0,
+    color: 'black'
   });
+  
   globe = new THREE.Mesh(geometry, material);
 
   groups.globe = new THREE.Group();
@@ -339,31 +334,29 @@ function addGlobe() {
   groups.main.add(groups.globe);
 
   addGlobeDots();
-
 }
 
 function addGlobeDots() {
-
   var geometry = new THREE.Geometry();
 
   // Make circle
-  var canvasSize = 16;
-  var halfSize = canvasSize / 2;
-  var textureCanvas = document.createElement('canvas');
-  textureCanvas.width = canvasSize;
-  textureCanvas.height = canvasSize;
-  var canvasContext = textureCanvas.getContext('2d');
-  canvasContext.beginPath();
-  canvasContext.arc(halfSize, halfSize, halfSize, 0, 2 * Math.PI);
-  canvasContext.fillStyle = props.colours.globeDots;
-  canvasContext.fill();
+  // var canvasSize = 16;
+  // var halfSize = canvasSize / 2;
+  // var textureCanvas = document.createElement('canvas');
+  // textureCanvas.width = canvasSize;
+  // textureCanvas.height = canvasSize;
+  // var canvasContext = textureCanvas.getContext('2d');
+  // canvasContext.beginPath();
+  // canvasContext.arc(halfSize, halfSize, halfSize, 0, 2 * Math.PI);
+  // canvasContext.fillStyle = props.colours.globeDots;
+  // canvasContext.fill();
 
   // Make texture
-  var texture = new THREE.Texture(textureCanvas);
-  texture.needsUpdate = true;
+  // var texture = new THREE.Texture(textureCanvas);
+  // texture.needsUpdate = true;
 
   var material = new THREE.PointsMaterial({
-    map: texture,
+    // map: texture,
     size: props.globeRadius / 50,
     color: 0x1976D2
   });
@@ -380,7 +373,6 @@ function addGlobeDots() {
       targetY
     );
     animations.dots.points.push(new THREE.Vector3(result.x, result.y, result.z));
-
   };
 
   for (var i = 0; i < data.points.length; i++) {
