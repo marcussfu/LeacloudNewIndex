@@ -291,6 +291,7 @@ a:hover {
       flex-direction: row;
       justify-content: center;
       width: 100%;
+      height: 35px;
       background: linear-gradient(to bottom, #80c3f3, #4a90e2);
     }
 
@@ -539,6 +540,7 @@ a:hover {
     .customerServiceButton {
       position: fixed;
       right: 15px;
+      bottom: 150px;
       z-index: 99999;
     }
   }
@@ -998,12 +1000,14 @@ a:hover {
     /* padding-top: 0px;
     padding-bottom: 0px; */
     margin-bottom: -60px;
+    /* background-color: #FF9F00; */
   }
 
   .globe .container {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    /* background-color: #7ed321; */
   }
 
   .globe .sectionSubTitle {
@@ -1023,6 +1027,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* background-color: cadetblue; */
   }
 
   @media (max-width: 991px) {
