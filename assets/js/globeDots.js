@@ -280,7 +280,7 @@ const addGlobe = () => {
     // map: texture,
     transparent: true,
     opacity: 0,
-    color: '#cde4fb'
+    color: '#2A84DA'
   });
 
 
