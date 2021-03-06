@@ -283,8 +283,28 @@ const addGlobe = () => {
     color: '#2A84DA'
   });
 
+  var uniforms = {
+    "color1" : {
+      type : "c",
+      value : new THREE.Color('#0060BF')
+    },
+    "color2" : {
+      type : "c",
+      value : new THREE.Color('#FFFFFF')
+    },
+  };
+  
+  var fShader = document.getElementById('fragmentShader').text;
+  var vShader = document.getElementById('vertexShader').text;
 
-  globeElement = new THREE.Mesh(geometry, material);
+  var shaderMaterial = new THREE.ShaderMaterial({
+    uniforms: uniforms,
+    vertexShader: vShader,
+    fragmentShader: fShader,
+    transparent: true
+  });
+
+  globeElement = new THREE.Mesh(geometry, shaderMaterial);
 
   groups.globe = new THREE.Group();
   groups.globe.name = 'Globe';
