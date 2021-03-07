@@ -835,3 +835,5 @@ if (!window.WebGLRenderingContext) {
 } else {
   getData();
 }
+
+// ,"europe":{"x":135,"y":180,"name":"eur","country":"Europe"},"northamerica":{"x":1200,"y":250,"name":"U.S. dollar","country":"North America"}
