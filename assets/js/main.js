@@ -16,11 +16,11 @@
     }
   });
 
-  if ($(window).scrollTop() > 100) {
-    $('#header').addClass('header-scrolled');
-    $('.logoImg').addClass('header-scrolled');
-    $('.logo > .navMenuImg').addClass('header-scrolled-detailbtn');
-  }
+  // if ($(window).scrollTop() > 100) {
+  //   $('#header').addClass('header-scrolled');
+  //   $('.logoImg').addClass('header-scrolled');
+  //   $('.logo > .navMenuImg').addClass('header-scrolled-detailbtn');
+  // }
 })(jQuery);
 
 $('.pricingBoxCotent').hover(

@@ -829,11 +829,28 @@ const returnCameraAngles = (latitude, longitude) => {
 };
 
 /* INITIALISATION */
-
+var startOnce = false;
 if (!window.WebGLRenderingContext) {
   alert('WebGL not supported, please use a browser that supports WebGL');
 } else {
-  getData();
+
+  window.addEventListener('scroll', () => {
+    if (document.documentElement.scrollTop == 300) {
+      
+    }
+  });
+
+  $(window).scroll(() => {
+    if (!startOnce && 
+      ($(window).scrollTop() > $('.cooperation').offset().top && 
+       $(window).scrollTop() < $('.pricing').offset().top)) {
+      startOnce = true;
+      getData();
+    }
+    
+  })
+  
+  
 }
 
 // ,"europe":{"x":135,"y":180,"name":"eur","country":"Europe"},"northamerica":{"x":1200,"y":250,"name":"U.S. dollar","country":"North America"}
