@@ -33,7 +33,7 @@ const props = {
   startingCountry: 'taiwan', // The key of the country to rotate the camera to during the introduction animation (and which country to start the cycle at)
   colours: {
     // Cache the colours
-    globeDots: 'rgb(61, 137, 164)', // No need to use the Three constructor as this value is used for the HTML canvas drawing 'fillStyle' property
+    globeDots: 'rgb(153, 161, 176)', // No need to use the Three constructor as this value is used for the HTML canvas drawing 'fillStyle' property
     lines: new THREE.Color('#18FFFF'),
     lineDots: new THREE.Color('#18FFFF') },
 

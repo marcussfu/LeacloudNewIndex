@@ -325,7 +325,7 @@ a:hover {
   --------------------------------------------------------------*/
   #banner {
     background-color: #dfefff;
-    background-image: url('../../assets/img/Banner4.png');
+    background-image: url('../../assets/img/Banner.png');
     padding: 0px 0px;
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -352,7 +352,7 @@ a:hover {
 
   #banner .bannerContentTitle {
     margin-top: 10px;
-    font-size: 35px;
+    font-size: 37px;
     font-weight: bold;
     background: -webkit-linear-gradient(#696969, #b4ac9c 50% , #384456 55%, #696969 70%);
     -webkit-background-clip: text;
@@ -363,9 +363,10 @@ a:hover {
   #banner .bannerContentSubTitle {
     color: #1976D2;
     margin-top: 10px;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
     width: 95%;
+    margin-left: 3px;
   }
 
   #banner .bannerContentText {
@@ -410,6 +411,7 @@ a:hover {
     #banner .bannerContentSubTitle {
       font-size: 2.2vw;
       margin-top: 5px;
+      margin-left: 0px;
     }
   
     #banner .bannerContentText {
@@ -1063,10 +1065,11 @@ a:hover {
     margin-top: 60px;
     margin-bottom: -20px;
     color: #000;
+    font-weight: bold;
   }
 
   .pricing .helpButton:hover {
-    color: #1976D2;
+    color: #ffbf00;
   }
 
   .pricing .box {
@@ -1081,6 +1084,7 @@ a:hover {
     margin-left: -10px;
     margin-right: -10px;
     height: 100%;
+    width: 300px;
   }
 
   .pricing .onHover {
@@ -1090,7 +1094,7 @@ a:hover {
   }
 
   .pricing p {
-      /* color: #66757f; */
+      color: #66757f;
       margin-bottom: 40px;
   }
   
@@ -1217,6 +1221,10 @@ a:hover {
 
     .pricing ul li {
       width: 50%;
+    }
+
+    .pricing .box {
+      width: auto;
     }
   }
   
