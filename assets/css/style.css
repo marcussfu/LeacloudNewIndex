@@ -554,6 +554,13 @@ a:hover {
       right: 15px;
       bottom: 150px;
       z-index: 99999;
+      width: 80px;
+      height: 80px;
+      font-size: 14px;
+    }
+
+    .customerServiceButton i {
+      font-size: 27px;
     }
   }
   
