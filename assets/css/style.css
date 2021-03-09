@@ -1825,7 +1825,7 @@ a:hover {
   /* Detail*/
   .detail {
     background: #3a3a3a;
-    opacity: 0.95;
+    /* opacity: 0.95; */
     color: #fff;
     font-size: 14px;
     position: fixed;
