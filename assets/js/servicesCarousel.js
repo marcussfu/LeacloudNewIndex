@@ -18,6 +18,7 @@ class Carousel {
     this.carouselArray[2].classList.add('gallery-item-selected');
     this.carouselArray[3].classList.add('gallery-item-next');
     this.carouselArray[4].classList.add('gallery-item-last');
+    this.carouselArray[5].classList.add('gallery-item-end');
 
     // document.querySelector('.gallery-nav').childNodes[0].className = 'gallery-nav-item gallery-item-first';
     // document.querySelector('.gallery-nav').childNodes[1].className = 'gallery-nav-item gallery-item-previous';
@@ -27,7 +28,7 @@ class Carousel {
   }
 
   // Update the order state of the carousel with css classes
-  setCurrentState(target, selected, previous, next, first, last) {
+  setCurrentState(target, selected, previous, next, first, last, end) {
     
     selected.forEach(el => {
       el.classList.remove('gallery-item-selected');
@@ -64,7 +65,7 @@ class Carousel {
       if (target.className.includes('gallery-controls-previous')) {
         el.classList.add('gallery-item-previous');
       } else {
-        el.classList.add('gallery-item-last');
+        el.classList.add('gallery-item-end');
       }
     });
 
@@ -72,9 +73,19 @@ class Carousel {
       el.classList.remove('gallery-item-last');
 
       if (target.className.includes('gallery-controls-previous')) {
-        el.classList.add('gallery-item-first');
+        el.classList.add('gallery-item-end');
       } else {
         el.classList.add('gallery-item-next');
+      }
+    });
+
+    end.forEach(el => {
+      el.classList.remove('gallery-item-end');
+
+      if (target.className.includes('gallery-controls-previous')) {
+        el.classList.add('gallery-item-first');
+      } else {
+        el.classList.add('gallery-item-last');
       }
     });
   }
@@ -115,8 +126,9 @@ class Carousel {
         const nextSelectedItem = galleryContainer.querySelectorAll('.gallery-item-next');
         const firstCarouselItem = galleryContainer.querySelectorAll('.gallery-item-first');
         const lastCarouselItem = galleryContainer.querySelectorAll('.gallery-item-last');
+        const endCarouselItem = galleryContainer.querySelectorAll('.gallery-item-end');
 
-        this.setCurrentState(target, selectedItem, previousSelectedItem, nextSelectedItem, firstCarouselItem, lastCarouselItem);
+        this.setCurrentState(target, selectedItem, previousSelectedItem, nextSelectedItem, firstCarouselItem, lastCarouselItem, endCarouselItem);
       });
     });
   }

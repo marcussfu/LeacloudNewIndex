@@ -8,8 +8,8 @@ const galleryCooperationContent = document.querySelector('.cooperationContent');
 const cooperationControlPre = document.querySelector('#cooperationControlPre');
 const cooperationControlNex = document.querySelector('#cooperationControlNex');
 
-const galleryItemClassNames = ['gallery-item-first', 'gallery-item-previous', 
-                      'gallery-item-selected', 'gallery-item-next', 'gallery-item-last'];
+// const galleryItemClassNames = ['gallery-item-first', 'gallery-item-previous', 'gallery-item-selected', 'gallery-item-next', 'gallery-item-last'];
+const galleryItemClassNames = ['gallery-item-previous', 'gallery-item-selected', 'gallery-item-next'];
 
 class Carousel1 {
   constructor(container, items, controls) {
@@ -20,7 +20,8 @@ class Carousel1 {
 
   // Assign initial css classes for gallery and nav items
   setInitialState() {
-    for (let i=0; i<5; i++) {
+    // for (let i=0; i<5; i++) {
+    for (let i=0; i<3; i++) {
         this.carouselArray[i].classList.add(galleryItemClassNames[i]);
         galleryNav.childNodes[i].className = 'galleryNavItem ' +  galleryItemClassNames[i];
     }
@@ -43,7 +44,8 @@ class Carousel1 {
       if (target.className.includes('gallery-controls-previous')) {
         el.classList.add('gallery-item-selected');
       } else {
-        el.classList.add('gallery-item-first');
+        // el.classList.add('gallery-item-first');
+        el.classList.add('gallery-item-next');
       }
     });
 
@@ -51,31 +53,32 @@ class Carousel1 {
       el.classList.remove('gallery-item-next');
 
       if (target.className.includes('gallery-controls-previous')) {
-        el.classList.add('gallery-item-last');
+        // el.classList.add('gallery-item-last');
+        el.classList.add('gallery-item-previous');
       } else {
         el.classList.add('gallery-item-selected');
       }
     });
 
-    first.forEach(el => {
-      el.classList.remove('gallery-item-first');
+    // first.forEach(el => {
+    //   el.classList.remove('gallery-item-first');
 
-      if (target.className.includes('gallery-controls-previous')) {
-        el.classList.add('gallery-item-previous');
-      } else {
-        el.classList.add('gallery-item-last');
-      }
-    });
+    //   if (target.className.includes('gallery-controls-previous')) {
+    //     el.classList.add('gallery-item-previous');
+    //   } else {
+    //     el.classList.add('gallery-item-last');
+    //   }
+    // });
 
-    last.forEach(el => {
-      el.classList.remove('gallery-item-last');
+    // last.forEach(el => {
+    //   el.classList.remove('gallery-item-last');
 
-      if (target.className.includes('gallery-controls-previous')) {
-        el.classList.add('gallery-item-first');
-      } else {
-        el.classList.add('gallery-item-next');
-      }
-    });
+    //   if (target.className.includes('gallery-controls-previous')) {
+    //     el.classList.add('gallery-item-first');
+    //   } else {
+    //     el.classList.add('gallery-item-next');
+    //   }
+    // });
   }
 
   // Construct the carousel navigation
@@ -87,11 +90,14 @@ class Carousel1 {
     for(var child=galleryNav.firstChild; child!==null; child=child.nextSibling) {
         child.addEventListener('click', (event) => {
             var tempArray = [
-              [2,3,4,0,1],
-              [1,2,3,4,0],
-              [0,1,2,3,4],
-              [4,0,1,2,3],
-              [3,4,0,1,2],
+              // [2,3,4,0,1],
+              // [1,2,3,4,0],
+              // [0,1,2,3,4],
+              // [4,0,1,2,3],
+              // [3,4,0,1,2],
+              [1,2,0],
+              [0,1,2],
+              [2,0,1],
             ];
             var targetIndex = 0;
 
@@ -123,13 +129,6 @@ class Carousel1 {
             }
         });
     }
-
-    // galleryNav.appendChild(document.createElement('ul')).className = 'gallery-nav';
-
-    // this.carouselArray.forEach(item => {
-    //   const nav = galleryNav.lastElementChild;
-    //   nav.appendChild(document.createElement('li'));
-    // }); 
   }
 
   // Construct the carousel controls

@@ -101,18 +101,25 @@
     box-shadow: 0 0 20px rgba(33, 33, 33, .2);
 }
 
-.cooperation .galleryCooperationItemContent {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    
-    height: 45%;
+.cooperation .galleryCooperationTitleItemContent {
+    height: 40%;
     margin: 10px;
+    background-color: burlywood;
 }
 
-.cooperation .alignItemCenter {
-    align-items: center;
+.cooperation .galleryCooperationItemContent {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: flex-start; */
+    
+    height: 50%;
+    margin: 10px;
+    background-color: blueviolet;
 }
+
+/* .cooperation .alignItemCenter {
+    align-items: center;
+} */
 
 /* .cooperation .paddingTopRight {
     padding-top: 30px;
@@ -132,23 +139,25 @@
 }
 
 .cooperation .galleryCooperationItem img {
-    width: 18%;
+    width: 33%;
     height: auto;
     z-index: 3;
-    object-fit: contain;
+    position: absolute;
+    /* object-fit: contain; */
 }
 
-.cooperation .companyInfo {
+/* .cooperation .companyInfo {
     margin-left: 20px;
-}
+} */
 
-.cooperation .galleryCooperationItem .positionTitle {
+/* .cooperation .galleryCooperationItem .title {
     font-size: 1vw;
     color: #ffbf00;
-}
+} */
 
-.cooperation .galleryCooperationItem .companyName {
+.cooperation .galleryCooperationItem .title {
     font-size: 1vw;
+    margin-left: 10px;
 }
 
 .cooperation .galleryCooperationControls {
@@ -168,13 +177,17 @@
     z-index: 2;
 }
 
-.cooperation .galleryCooperationItem.gallery-item-selected .positionTitle {
+/* .cooperation .galleryCooperationItem.gallery-item-selected .positionTitle {
     font-size: 1.3vw;
-}
+} */
 
-.cooperation .galleryCooperationItem.gallery-item-selected .companyName {
+.cooperation .galleryCooperationItem.gallery-item-selected .title {
     font-size: 1.5vw;
     font-weight: bold;
+}
+
+.cooperation .galleryCooperationItem.gallery-item-selected img {
+    /* width: 30%; */
 }
 
 
@@ -247,6 +260,10 @@
         opacity: 1;
     }
 
+    .cooperation .galleryCooperationItem.gallery-item-selected img {
+        width: 11%;
+    }
+
     .cooperation .galleryCooperationItem.gallery-item-previous,
     .cooperation .galleryCooperationItem.gallery-item-next,
     .cooperation .galleryCooperationItem.gallery-item-first,
@@ -261,13 +278,17 @@
         width: 50px
     }
 
+    .cooperation .galleryCooperationTitleItemContent {
+        height: 40%;
+    }
+
     .cooperation .galleryCooperationItemContent {
-        height: 43%;
+        height: 50%;
     }
     
-    .cooperation .companyInfo {
+    /* .cooperation .companyInfo {
         margin-left: 20px;
-    }
+    } */
 
     .cooperation .galleryCooperationControls {
         display: flex;
