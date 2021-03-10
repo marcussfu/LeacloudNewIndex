@@ -44,15 +44,23 @@ $('.pricingBoxCotent').hover(
 );
 
 $( "#detailCloseBtn" ).click(() => {
-  $(".navMenuImg").css('visibility','visible');
-  $('.detail').css('width','0%');
+  // $(".navMenuImg").css('visibility','visible');
+  $('.detail').css('height','0%');
   $('.detail > .content').css('opacity', '0');
 });
 
-$( ".navMenuImg" ).click(() => {
-  $(".navMenuImg").css('visibility','hidden');
-  $('.detail').css('width','100%');
+$( ".navMenuImg" ).hover(() => {
+  // $(".navMenuImg").css('visibility','hidden');
+  $('.detail').css({'height': 'auto', 'opacity': '1'});
   $('.detail > .content').css('opacity', '1');
+});
+
+$('.detail').mouseover(() => {
+  $('.detail').css({'height': 'auto', 'opacity': '1'});
+  $('.detail > .content').css('opacity', '1');
+}).mouseout(() => {
+  $('.detail').css({'opacity': '0'});
+  $('.detail > .content').css('opacity', '0');
 });
 
 $('.back-to-top').click((e) => {
