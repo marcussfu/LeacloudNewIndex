@@ -56,10 +56,12 @@ $( ".navMenuImg" ).hover(() => {
 });
 
 $('.detail').mouseover(() => {
-  $('.detail').css({'height': 'auto', 'opacity': '1'});
-  $('.detail > .content').css('opacity', '1');
+  if ($('.detail').css('opacity') == '1') {
+    $('.detail').css({'height': 'auto', 'opacity': '1'});
+    $('.detail > .content').css('opacity', '1');
+  }
 }).mouseout(() => {
-  $('.detail').css({'opacity': '0'});
+  $('.detail').css({'height': '0%', 'opacity': '0'});
   $('.detail > .content').css('opacity', '0');
 });
 
