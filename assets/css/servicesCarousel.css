@@ -44,8 +44,9 @@
 
 .services .gallery-item img {
   width: 100%;
-  max-width: 72%;
+  max-width: 60%;
   height: auto;
+  /* background-color: darkturquoise; */
 }
 
 .services .gallery-item h3 {
@@ -164,6 +165,8 @@
 }
 
 .services .gallery-controls i:hover {
+  background: #fff;
+  color: #1976D2;
   box-shadow: 0 0 20px rgba(33, 33, 33, .2);
 }
 
@@ -214,10 +217,6 @@
   .services .gallery-controls {
     width: 84%;
     left: 8%;
-  }
-
-  .services .gallery-controls .controlButton {
-    font-size: 6vw;
   }
 
   .services .gallery-item img {
