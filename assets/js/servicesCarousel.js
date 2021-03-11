@@ -146,4 +146,4 @@ servicesCarousel.setControls();
 // servicesCarousel.setNav();
 servicesCarousel.setInitialState();
 servicesCarousel.useControls();
-servicesCarousel.autoPlay();
+// servicesCarousel.autoPlay();
