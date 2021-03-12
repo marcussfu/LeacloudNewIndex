@@ -160,9 +160,10 @@
 }
 
 .cooperation .galleryCooperationItem.gallery-item-selected {
-    height: 300px;
+    height: 250px;
     opacity: 1;
-    width: 50%;
+    /* width: 60%; */
+    width: 450px;
     z-index: 2;
     box-shadow: 0 0 20px rgba(33, 33, 33, .2);
 }
@@ -225,9 +226,10 @@
 
 .galleryCooperationItem.gallery-item-previous,
 .galleryCooperationItem.gallery-item-next {
-    height: 260px;
+    height: 200px;
     opacity: 1;
-    width: 35%;
+    /* width: 35%; */
+    width: 400px;
 }
 
 .cooperation .galleryCooperationItem.gallery-item-previous {
