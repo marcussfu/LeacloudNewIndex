@@ -4,6 +4,10 @@
     padding-bottom: 0px;
 }
 
+.cooperation .sectionSubTitle {
+    color: #ffbf00;
+}
+
 .cooperation .cooperationContainer {
     display: flex;
     flex-direction: column;
@@ -70,8 +74,9 @@
 
 .cooperation .cooperationIntro {
     margin: 10% 5%;
-    color: #ffbf00;
-    font-size: 1vw;
+    color: #66757f;
+    /* font-size: 14px; */
+    text-align: start;
 }
 
 .cooperation .cooperationCarousel {
@@ -95,14 +100,16 @@
     background-color: #ffffff;
     border-radius: 5px;
     border: 1px solid #ececec;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(139, 139, 139, 0.2);
 }
 
 .cooperation .galleryCooperationItem:hover {
-    box-shadow: 0 0 20px rgba(33, 33, 33, .2);
+    /* box-shadow: 0 0 20px rgba(33, 33, 33, .2); */
 }
 
 .cooperation .galleryCooperationTitleItemContent {
-    height: 40%;
+    height: 30%;
 
     display: flex;
     flex-direction: row;
@@ -110,32 +117,37 @@
 }
 
 .cooperation .galleryCooperationItemContent {
-    height: 50%;
-    margin: 10px;
+    height: 0%;
+    /* margin: 10px; */
+    margin: 0px 0.5vw;
 }
 
-.cooperation .galleryCooperationItem .fas {
-    font-size: 1vw;
+.cooperation .galleryCooperationItem i {
+    font-size: 4px;
+    /* font-size: 1.3vw; */
 }
 
 .cooperation .galleryCooperationItem p {
     margin-left: 10px;
-    /* text-align: center; */
+    margin-right: 5px;
+
     /* font-size: 1vw; */
-    font-size: 4px;
-    color: #535353;
+    font-size: 2px;
+    color: #66757f;
 }
 
 .cooperation .galleryCooperationItem img {
-    margin-top: 20px;
-    margin-left: 4px;
-    width: 80px;
+    margin-top: 30px;
+    margin-left: 8px;
+    width: 70px;
     z-index: 1;
 }
 
 .cooperation .galleryCooperationItem .title {
     font-size: 1.5vw;
     margin-left: 10px;
+    color: #fff;
+    margin-top: 50px;
 }
 
 .cooperation .galleryCooperationControls {
@@ -152,6 +164,7 @@
     opacity: 1;
     width: 50%;
     z-index: 2;
+    box-shadow: 0 0 20px rgba(33, 33, 33, .2);
 }
 
 .cooperation .galleryCooperationItem.gallery-item-selected .title {
@@ -160,24 +173,42 @@
 }
 
 .cooperation .galleryCooperationItem.gallery-item-selected img {
-    margin-top: 30px;
-    width: 95px;
+    margin-top: 40px;
+    margin-left: 8px;
+    width: 85px;
 }
 
 .cooperation .galleryCooperationItem.gallery-item-selected p {
-    font-size: 1vw;
+    margin-left: 26px;
+    margin-right: 14px;
+    font-size: 14px;
+}
+
+.cooperation .galleryCooperationItem.gallery-item-selected i {
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 7px;
+}
+
+.cooperation .galleryCooperationItem.gallery-item-selected .galleryCooperationItemContent {
+    margin-top: 10px;
+    
 }
 
 .cooperation .linegradientBlue {
-    background: linear-gradient(to right, #1976d2, #b9dcff);
+    background: url(../../assets/img/cooperation/background.png) no-repeat center center, linear-gradient(to right, #1976d2, #b9dcff);
+    background-size: 100%;
 }
 
 .cooperation .linegradientOrange {
-    background: linear-gradient(to right, #fc8b1c, #fdae0f);
+    background: url(../../assets/img/cooperation/background.png) no-repeat center center, linear-gradient(to right, #fc8b1c, #fdae0f);
+    background-size: 100%;
 }
 
 .cooperation .linegradientPink {
-    background: linear-gradient(to right, #b620e0, #e790ff);
+    background: url(../../assets/img/cooperation/background.png) no-repeat center center, linear-gradient(to right, #b620e0, #e790ff);
+    background-size: 100%;
 }
 
 .cooperation .fontBlue {
@@ -189,7 +220,7 @@
 }
 
 .cooperation .fontPink {
-    color: #e9d4f5;
+    color: #b620e0;
 }
 
 .galleryCooperationItem.gallery-item-previous,
@@ -276,9 +307,10 @@
         opacity: 0;
     }
 
-    /* .cooperation .galleryCooperationTitleItemContent {
-        height: 40%;
-    } */
+    .cooperation .galleryCooperationItem.gallery-item-selected .title {
+        font-size: 20px;
+        font-weight: bold;
+    }
 
     /* .cooperation .galleryCooperationItemContent {
         height: 50%;
