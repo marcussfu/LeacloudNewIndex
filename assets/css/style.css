@@ -441,6 +441,13 @@ a:hover {
     height: 60px;
     position: relative;
   }
+
+  .globe-pricing-waves {
+    display: block;
+    width: 100%;
+    height: 30px;
+    position: relative;
+  }
   
   .wave1 use {
     -webkit-animation: move-forever1 10s linear infinite;
@@ -1237,6 +1244,18 @@ a:hover {
     .pricing .box {
       width: auto;
     }
+  }
+
+  @media (max-width: 573px) {
+    .pricing .box {
+      width: 90%;
+    }
+
+    /* .test {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    } */
   }
   
   /*--------------------------------------------------------------
