@@ -109,7 +109,7 @@
 }
 
 .cooperation .galleryCooperationTitleItemContent {
-    height: 30%;
+    height: 35%;
 
     display: flex;
     flex-direction: row;
@@ -139,12 +139,13 @@
 .cooperation .galleryCooperationItem img {
     margin-top: 30px;
     margin-left: 8px;
-    width: 70px;
+    width: 60px;
     z-index: 1;
 }
 
-.cooperation .galleryCooperationItem .title {
-    font-size: 1.5vw;
+.cooperation .galleryCooperationItem h2 {
+    /* font-size: 1.5vw; */
+    font-size: 20px;
     margin-left: 10px;
     color: #fff;
     margin-top: 50px;
@@ -160,16 +161,17 @@
 }
 
 .cooperation .galleryCooperationItem.gallery-item-selected {
-    height: 250px;
+    height: 280px;
     opacity: 1;
     /* width: 60%; */
-    width: 450px;
+    width: 500px;
     z-index: 2;
     box-shadow: 0 0 20px rgba(33, 33, 33, .2);
 }
 
-.cooperation .galleryCooperationItem.gallery-item-selected .title {
-    font-size: 2vw;
+.cooperation .galleryCooperationItem.gallery-item-selected h2 {
+    /* font-size: 2vw; */
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -229,28 +231,32 @@
     height: 200px;
     opacity: 1;
     /* width: 35%; */
-    width: 400px;
+    width: 450px;
 }
 
 .cooperation .galleryCooperationItem.gallery-item-previous {
-    transform: translate(60%, -60%);
+    transform: translate(30%, -60%);
     z-index: 0;
 }
 
 .cooperation .galleryCooperationItem.gallery-item-next {
-    transform: translate(60%, 45%);
+    transform: translate(30%, 55%);
     z-index: 1;
 }
 
 .cooperation .galleryCooperationItem.gallery-item-first {
-    transform: translate(100%, -70%);
+    transform: translate(50%, -70%);
 }
 
 .cooperation .galleryCooperationItem.gallery-item-last {
-    transform: translate(100%, 60%);
+    transform: translate(50%, 70%);
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991px) and (min-width: 766px)  {
+    .cooperation {
+        height: 750px;
+    }
+
     .cooperation .galleryNavContainer {
         display: none;
     }
@@ -277,7 +283,6 @@
 
     .cooperation .cooperationIntro {
         /* margin: 20px 50px 5px 50px; */
-        background-color: lawngreen;
     }
 
     .cooperation .cooperationContent {
@@ -293,9 +298,14 @@
         width: 120%;
     }
 
+    .cooperation .galleryCooperationTitleItemContent {
+        height: 30%;
+    }
+
     .cooperation .galleryCooperationItem.gallery-item-selected {
         width: 80%;
-        height: 100%;
+        /* height: 100%; */
+        height: 260px;
         opacity: 1;
     }
 
@@ -313,8 +323,135 @@
         opacity: 0;
     }
 
-    .cooperation .galleryCooperationItem.gallery-item-selected .title {
+    .cooperation .galleryCooperationItem.gallery-item-selected h2 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .cooperation .galleryCooperationControls {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
+        top: 35%;
+        width: 86%;
+        margin-left: -3%;
+    }
+
+    .cooperation .galleryCooperationControls i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-size: 20px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        background: #ffbf00;
+        color: #fff;
+        transition: all 0.4s;
+        cursor: pointer;
+    }
+    
+    .cooperation .galleryCooperationControls i:hover {
+        color: #ffbf00;
+        background-color: #fff;
+        box-shadow: 0 0 20px rgba(33, 33, 33, .2);
+    }
+
+    .cooperation .galleryCooperationItem.gallery-item-previous {
+        left: 18%;
+        transform: translateX(-50%);
+    }
+    
+    .cooperation .galleryCooperationItem.gallery-item-next {
+        left: 82%;
+        transform: translateX(-50%);
+    }
+    
+    .cooperation .galleryCooperationItem.gallery-item-first {
+        left: 19%;
+        transform: translateX(-50%);
+    }
+    
+    .cooperation .galleryCooperationItem.gallery-item-last {
+        left: 81%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 765px) {
+    .cooperation {
+        height: 750px;
+    }
+
+    .cooperation .galleryNavContainer {
+        display: none;
+    }
+
+    .cooperation .cooperationSectionTitleContainer {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .cooperation .vertical {
+        height: 50px;
+    }
+
+    .cooperation .cooperationSectionContent {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cooperation .cooperationCarousel {
+        width: 80%
+    }
+
+    .cooperation .cooperationIntro {
+        /* margin: 20px 50px 5px 50px; */
+    }
+
+    .cooperation .cooperationContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .cooperation .galleryCooperationContainer {
+        align-items: flex-start;
+        height: 200px;
+        width: 120%;
+    }
+
+    .cooperation .galleryCooperationTitleItemContent {
+        height: 20%;
+    }
+
+    .cooperation .galleryCooperationItem.gallery-item-selected {
+        width: 80%;
+        /* height: 100%; */
+        height: 350px;
+        opacity: 1;
+    }
+
+    .cooperation .galleryCooperationItem.gallery-item-selected img {
+        width: 70px;
+    }
+
+    .cooperation .galleryCooperationItem.gallery-item-previous,
+    .cooperation .galleryCooperationItem.gallery-item-next,
+    .cooperation .galleryCooperationItem.gallery-item-first,
+    .cooperation .galleryCooperationItem.gallery-item-last {
+        width: 60%;
+        transform: none;
+        height: 100%;
+        opacity: 0;
+    }
+
+    .cooperation .galleryCooperationItem.gallery-item-selected h2 {
+        font-size: 30px;
         font-weight: bold;
     }
 
@@ -370,5 +507,24 @@
     .cooperation .galleryCooperationItem.gallery-item-last {
         left: 81%;
         transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 321px) {
+    .cooperation {
+        height: 800px;
+    }
+
+    .cooperation .galleryCooperationItem.gallery-item-selected {
+        height: 410px;
+    }
+
+    .cooperation .galleryCooperationTitleItemContent {
+        height: 18%;
+    }
+
+    .cooperation .galleryCooperationItem.gallery-item-selected h2 {
+        font-size: 20px;
+        font-weight: bold;
     }
 }
