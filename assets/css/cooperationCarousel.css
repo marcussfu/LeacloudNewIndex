@@ -62,8 +62,8 @@
 }
 
 .cooperation .cooperationSectionContent {
-      width: 400px;
-      text-align: center;
+    width: 400px;
+    text-align: center;
 }
 
 .cooperation .cooperationSectionContent hr {
@@ -233,21 +233,21 @@
 }
 
 .cooperation .galleryCooperationItem.gallery-item-previous {
-    transform: translate(120%, -60%);
+    transform: translate(60%, -60%);
     z-index: 0;
 }
 
 .cooperation .galleryCooperationItem.gallery-item-next {
-    transform: translate(120%, 45%);
+    transform: translate(60%, 45%);
     z-index: 1;
 }
 
 .cooperation .galleryCooperationItem.gallery-item-first {
-    transform: translate(140%, -70%);
+    transform: translate(100%, -70%);
 }
 
 .cooperation .galleryCooperationItem.gallery-item-last {
-    transform: translate(140%, 60%);
+    transform: translate(100%, 60%);
 }
 
 @media (max-width: 991px) {
@@ -266,6 +266,9 @@
 
     .cooperation .cooperationSectionContent {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .cooperation .cooperationCarousel {
@@ -273,7 +276,8 @@
     }
 
     .cooperation .cooperationIntro {
-        margin: 20px 50px 5px 50px;
+        /* margin: 20px 50px 5px 50px; */
+        background-color: lawngreen;
     }
 
     .cooperation .cooperationContent {

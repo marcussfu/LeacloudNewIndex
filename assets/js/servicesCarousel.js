@@ -147,3 +147,22 @@ servicesCarousel.setControls();
 servicesCarousel.setInitialState();
 servicesCarousel.useControls();
 servicesCarousel.autoPlay();
+
+
+if ($(window).width() <= 1400 && $(window).width() >= 992) {
+  if ($('#servicesContainer').hasClass('container')) {
+    $('#servicesContainer').removeClass('container');
+  }
+}
+$(window).resize(() => {
+  if ($(window).width() <= 1400 && $(window).width() >= 992) {
+    if ($('#servicesContainer').hasClass('container')) {
+      $('#servicesContainer').removeClass('container');
+    }
+  }
+  else {
+    if (!$('#servicesContainer').hasClass('container')) {
+      $('#servicesContainer').addClass('container');
+    }
+  }
+});
