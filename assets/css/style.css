@@ -737,6 +737,14 @@ a:hover {
     margin: 5px auto 20px;
   }
 
+  .features .paddingTop {
+    padding-top: 2px;
+  }
+
+  .features .paddingTop1 {
+    padding-top: 3px;
+  }
+
   .features .featuresCnameItemImg {
     margin-top: 0px;
   }
