@@ -207,7 +207,6 @@
 @media (max-width: 991px) {
   .services .gallery {
     padding-top: 100%;
-    background-color: rgb(207, 24, 85);
   }
 
   .services .gallery-item {
@@ -240,6 +239,7 @@
   .services .gallery-item img {
     /* max-width: 35%; */
     /* width: 35%; */
+    height: 80%;
   }
 
   .services .gallery-item-content {
@@ -251,5 +251,9 @@
 @media (max-width: 324px) {
   .services .gallery {
     padding-top: 160%;
+  }
+
+  .services .gallery-item img {
+    height: 55%;
   }
 }
