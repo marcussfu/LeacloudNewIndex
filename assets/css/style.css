@@ -1840,6 +1840,16 @@ a:hover {
     justify-content: center;
   }
 
+  .footer i {
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .footer i:hover {
+    color: #ffb600;
+  }
+
   @media (max-width: 991px) {
     .footer .container {
       display: flex;
