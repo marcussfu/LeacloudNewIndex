@@ -47,7 +47,7 @@
   background-color: #fff;
   border-radius: 20px;
   border: 1px solid #ececec;
-  box-shadow: 0 0 2px rgba(33, 33, 33, .2);
+  box-shadow: 0 0 5px rgba(139, 139, 139, 0.2);
 }
 
 .services .gallery-item img {

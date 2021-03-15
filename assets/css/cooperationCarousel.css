@@ -109,7 +109,7 @@
 }
 
 .cooperation .galleryCooperationTitleItemContent {
-    height: 35%;
+    height: 40%;
 
     display: flex;
     flex-direction: row;
@@ -195,7 +195,7 @@
 }
 
 .cooperation .galleryCooperationItem.gallery-item-selected .galleryCooperationItemContent {
-    margin-top: 10px;
+    margin-top: 0px;
     
 }
 
@@ -333,7 +333,7 @@
         justify-content: space-between;
         position: relative;
         z-index: 2;
-        top: 35%;
+        top: 65%;
         width: 86%;
         margin-left: -3%;
     }
@@ -426,13 +426,13 @@
     }
 
     .cooperation .galleryCooperationTitleItemContent {
-        height: 20%;
+        height: 30%;
     }
 
     .cooperation .galleryCooperationItem.gallery-item-selected {
         width: 80%;
         /* height: 100%; */
-        height: 350px;
+        height: 280px;
         opacity: 1;
     }
 
@@ -464,7 +464,7 @@
         justify-content: space-between;
         position: relative;
         z-index: 2;
-        top: 35%;
+        top: 65%;
         width: 86%;
         margin-left: -3%;
     }
@@ -483,7 +483,7 @@
         cursor: pointer;
     }
     
-    .cooperation .galleryCooperationControls i:hover {
+    /* .cooperation .galleryCooperationControls i:hover {
         color: #ffbf00;
         background-color: #fff;
         box-shadow: 0 0 20px rgba(33, 33, 33, .2);
@@ -507,6 +507,18 @@
     .cooperation .galleryCooperationItem.gallery-item-last {
         left: 81%;
         transform: translateX(-50%);
+    } */
+}
+
+@media (max-width: 450px) {
+    .cooperation .galleryCooperationItem.gallery-item-selected {
+        height: 350px;
+    }
+    .cooperation .galleryCooperationTitleItemContent {
+        height: 26%;
+    }
+    .cooperation .galleryCooperationControls {
+        top: 83%;
     }
 }
 
@@ -516,7 +528,7 @@
     }
 
     .cooperation .galleryCooperationItem.gallery-item-selected {
-        height: 410px;
+        height: 390px;
     }
 
     .cooperation .galleryCooperationTitleItemContent {
@@ -526,5 +538,9 @@
     .cooperation .galleryCooperationItem.gallery-item-selected h2 {
         font-size: 20px;
         font-weight: bold;
+    }
+
+    .cooperation .galleryCooperationControls {
+        top: 95%;
     }
 }
