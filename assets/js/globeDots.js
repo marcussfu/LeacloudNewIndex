@@ -6,6 +6,8 @@ let renderer;
 let data;
 let globeElement;
 
+var zRadius = 2.6;
+
 // Cache DOM selectors
 const container = document.querySelector('.js-globe');
 
@@ -175,7 +177,7 @@ const setupScene = () => {
 const addCamera = () => {
   const { clientWidth, clientHeight } = canvas;
   camera.object = new THREE.PerspectiveCamera(60, clientWidth / clientHeight, 1, 10000);
-  camera.object.position.z = props.globeRadius * 2.6;
+  camera.object.position.z = props.globeRadius * zRadius;
 };
 
 const addControls = () => {
@@ -845,12 +847,53 @@ if (!window.WebGLRenderingContext) {
       ($(window).scrollTop() > $('.cooperation').offset().top && 
        $(window).scrollTop() < $('.pricing').offset().top)) {
       startOnce = true;
+
+      if ($(window).width() <= 414) {
+        zRadius = 3.5
+        if ($(window).height() >= 800) {
+          zRadius = 4.2
+        }
+        if ($(window).width() <= 280 ) {
+          zRadius = 5
+        }
+      }
+      else if ($(window).height() == 1024 && $(window).width() == 768) {
+        zRadius = 2.8
+      }
+      else if ($(window).width() > 768 && $(window).width() < 1024) {
+        zRadius = 2.6
+      }
+      else if ($(window).width() > 3000) {
+        zRadius = 5
+      }
+      else {
+        zRadius = 3
+      }
+      
+
+      // console.log("TTTTTTTTTTTTTTTTTTT   ", $('#globe-container').width());
+      // if ($('#globe-container').width() <= 395 && $('#globe-container').width() > 387) {
+      //   zRadius = 3.8
+      // }
+      // else if ($('#globe-container').width() <= 387) {
+      //   zRadius = 3.7
+      // }
+      // $(window).resize(() => {
+      //   if ($('#globe-container').width() < 395) {
+      //     console.log("RRRRRRRRRRRRRRRRRR   ", $('#globe-container').width());
+
+      //   }
+      //   else {
+      //     zRadius = 2;
+      //     camera.object.position.z = props.globeRadius * zRadius;
+      //   }
+      // })
+
       getData();
     }
-    
   })
   
-  
+  // camera.object.position.z = props.globeRadius * zRadius;
 }
 
 // ,"europe":{"x":135,"y":180,"name":"eur","country":"Europe"},"northamerica":{"x":1200,"y":250,"name":"U.S. dollar","country":"North America"}

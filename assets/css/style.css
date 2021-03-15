@@ -561,13 +561,13 @@ a:hover {
       right: 15px;
       bottom: 150px;
       z-index: 99999;
-      width: 80px;
-      height: 80px;
-      font-size: 14px;
+      width: 70px;
+      height: 70px;
+      font-size: 12px;
     }
 
     .customerServiceButton i {
-      font-size: 27px;
+      font-size: 25px;
     }
   }
   
@@ -1777,6 +1777,7 @@ a:hover {
   .footer img {
     max-width: 240px; height: auto;
     margin-top: 20px;
+    margin-left: -6px;
   }
 
   .footer h4 {
