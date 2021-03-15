@@ -1246,6 +1246,17 @@ a:hover {
     }
   }
 
+  @media (max-width: 773px) {
+    .pricing .pricingBoxCotent {
+      width: 75%;
+    }
+
+    .pricingItemGroup {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
   @media (max-width: 573px) {
     .pricing .pricingBoxCotent {
       width: 80%;
