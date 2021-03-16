@@ -23,27 +23,27 @@
       <div class="headerContainer">
         <div class="logo">
           <a href="index.html"><img src="assets/img/LeaCloud_logo.png" class="img-fluid logoImg" loading="lazy"></a>
-          <img class="navMenuImg" src="assets/img/headerList.png" alt="" loading="lazy">
+          <!-- <img class="navMenuImg" src="assets/img/headerList.png" alt="" loading="lazy"> -->
         </div>
 
         <div class="normal-ul">
           <nav class="nav-menu">
             <!-- d-none -->
             <ul>
-              <li class="headerList-li"><a href="#" id="login">登入</a></li>
-              <li class="headerList-li"><a href="#" id="logup">註冊</a></li>
+              <li class="headerList-li"><a href="/cdn" id="login">登入</a></li>
+              <li class="headerList-li"><a href="/signup" id="logup">註冊</a></li>
               <li class="headerList-li drop-down"><a  id="languageSelect">語言選擇</a>
                 <ul>
                   <div class="triangle"></div>
-                  <li><a href="#" onclick="changeLng('en')">EN</a></li>
+                  <!-- <li><a href="#" onclick="changeLng('en')">EN</a></li> -->
                   <li><a href="#" onclick="changeLng('tw')">繁體中文</a></li>
                   <li><a href="#" onclick="changeLng('sc')">簡體中文</a></li>
                 </ul>
               </li>
-              <li class="headerList-li"><a href="#" id="contactUs">聯繫我們</a></li>
+              <li class="headerList-li"><a href="#contact" id="contactUs">聯繫我們</a></li>
             </ul>
           </nav>
-          <img class="navMenuImg" src="assets/img/headerList.png" alt="" loading="lazy">
+          <!-- <img class="navMenuImg" src="assets/img/headerList.png" alt="" loading="lazy"> -->
         </div>
       </div>
     </header>
@@ -53,7 +53,7 @@
         <div class="bannerContainer">
           <div class="bannerContent">
             <h1 class="bannerContentTitle" id="bannerTitle">網路拉近世界距離</h1>
-            <h2 class="bannerContentSubTitle" id="bannerSubtitle">Leacloud打通你我距離</h2>
+            <h2 class="bannerContentSubTitle" id="bannerSubtitle">LeaCloud打通你我距離</h2>
             <div class="bannerContentText">
               <div id="bannerContentText">立即試用</div>
               <!-- <svg width="100px" height="80px" viewbox="0 0 400 400">
@@ -65,7 +65,7 @@
               <!-- <a href="#">
                 <span class="right"></span>
               </a> -->
-              <a href="#">
+              <a href="/signup">
                 <i class="far fa-arrow-alt-circle-right tryNowBtn"></i>
               </a>
             </div>
@@ -125,18 +125,22 @@
         </div>
         
       </section>
-
-
-      <div class="customerServiceButton"><i class="fas fa-comments"></i><br>聯繫客服</div>
+      
+      <a href="https://telegram.me/leacloud" target="_blank"> 
+        <div class="customerServiceButton">
+          <i class="fas fa-comments"></i>
+          <div id="customerServiceText">聯繫客服</div> 
+        </div>
+      </a>
 
       <section id="features" class="features">
         <div class="container">
           <div class="sectionTitleDiv">
             <div class="sectionTitle">LEACLOUD</div>
-            <h1 class="sectionSubTitle">關於LeaCloud力雲</h1>
+            <h1 id="featuresSubTitle" class="sectionSubTitle">關於LeaCloud力雲</h1>
             <hr>
           </div>
-          <p>
+          <p id="featuresContentText">
             LeaCloud力雲科技長期活躍於北美及中國地區。<br>憑藉專業技術團隊於網路產業多年來的開發經驗，深耕於亞太地區，<br>致力於協助客戶經由網路將其事業推展至與全球接軌，並以與客戶共同創造最大效益為經營宗旨。
           </p>
           <ul class="nav featuresItemContainer">
@@ -161,13 +165,13 @@
             <li>
               <a class="" href="#tab-1">
                 <img src="assets/img/introMonitor.png" alt="" loading="lazy">
-                <h4>遠端辦公</h4>
+                <h4 id="featuresItemText">遠端辦公</h4>
               </a>
             </li>
             <li>
               <a class="" href="#tab-1">
                 <img src="assets/img/introSafe.png" alt="" loading="lazy">
-                <h4>安全防護</h4>
+                <h4 id="featuresItemText1">安全防護</h4>
               </a>
             </li>
           </ul>
@@ -571,7 +575,7 @@
             <h4>聯絡我們</h4>
             <!-- <div class="a-Interval"><a href="https://telegram.me/leacloud" target="_blank">Telegram</a></div> -->
             <div class="a-Interval"><a href="#">+886 966-625-710</a></div>
-            <div class="a-Interval"><a href="#">k3nnyart@gmail.com</a></div>
+            <div class="a-Interval"><a href="#">sales@leacloud.com</a></div>
             <div>
               <a href="https://telegram.me/leacloud" target="_blank"><i class="fab fa-telegram-plane"></i></a>
               <a href="skype:live:.cid.36d196aca11d6650?chat"><i class="fab fa-skype"></i></a>

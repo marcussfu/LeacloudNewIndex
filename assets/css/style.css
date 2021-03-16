@@ -536,9 +536,9 @@ a:hover {
     position: relative;
     z-index: 1;
     margin: -40px auto;
-    cursor: pointer;
     transition: all 0.4s ease-in-out;
     box-shadow: 0 0 20px rgba(33, 33, 33, .1);
+    color: #000;
   }
 
   .customerServiceButton i {
