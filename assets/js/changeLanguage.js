@@ -46,6 +46,28 @@ i18next.init({
           "pricingSectionSubTitle": "pricingSectionSubTitle",
           "pricingSectionSubText": "pricingSectionSubText",
           "helpButton": "helpButton",
+
+          "contactSectionSubTitle": "contactSectionSubTitle",
+          "contactOnLineServiceText": "contactOnLineServiceText",
+          "contactInputsTitle": "contactInputsTitle",
+          "contactSubmit": "contactSubmit",
+          "contactFormName": "Name",
+          "contactFormEmail": "Email",
+          "contactFormText": "Message",
+
+          "footerTitle": "footerTitle",
+          "footerSubTitle": "footerSubTitle",
+          "footerSubTitle1": "footerSubTitle1",
+          "footerSubTitle2": "footerSubTitle2",
+          "footerSubTitle3": "footerSubTitle3",
+          "footerSubItem": "footerSubItem",
+          "footerSubItem1": "footerSubItem1",
+          "footerSubItem2": "footerSubItem2",
+          "footerSubItem3": "footerSubItem3",
+          "footerSubItem4": "footerSubItem4",
+          "footerSubItem5": "footerSubItem5",
+          "footerSubItem6": "footerSubItem6",
+
         }
       },
       tw: {
@@ -89,6 +111,27 @@ i18next.init({
           "pricingSectionSubTitle": "選擇適合您的方案",
           "pricingSectionSubText": "您可依據您事業的需求，選擇適合您的方案。若有其他需求，請洽客服。",
           "helpButton": "需要協助?",
+
+          "contactSectionSubTitle": "想獲得更多資訊",
+          "contactOnLineServiceText": "線上客服",
+          "contactInputsTitle": "留下寶貴意見",
+          "contactSubmit": "送出",
+          "contactFormName": "名字",
+          "contactFormEmail": "信箱",
+          "contactFormText": "留言",
+
+          "footerTitle": "提供您最高品質網路使用體驗",
+          "footerSubTitle": "關於力雲",
+          "footerSubTitle1": "幫助中心",
+          "footerSubTitle2": "網站資訊",
+          "footerSubTitle3": "聯絡我們",
+          "footerSubItem": "力雲團隊",
+          "footerSubItem1": "公司沿革",
+          "footerSubItem2": "公司資訊",
+          "footerSubItem3": "聯繫客服",
+          "footerSubItem4": "創建帳戶",
+          "footerSubItem5": "隱私權政策",
+          "footerSubItem6": "Cookie政策",
         }
       },
       sc: {
@@ -132,6 +175,27 @@ i18next.init({
           "pricingSectionSubTitle": "选择适合您的方案",
           "pricingSectionSubText": "您可依据您事业的需求，选择适合您的方案。若有其他需求，请洽客服。",
           "helpButton": "需要协助?",
+
+          "contactSectionSubTitle": "想获得更多资讯",
+          "contactOnLineServiceText": "线上客服",
+          "contactInputsTitle": "留下宝贵意见",
+          "contactSubmit": "送出",
+          "contactFormName": "名字",
+          "contactFormEmail": "信箱",
+          "contactFormText": "留言",
+
+          "footerTitle": "提供您最高品质网路使用体验",
+          "footerSubTitle": "关于力云",
+          "footerSubTitle1": "帮助中心",
+          "footerSubTitle2": "网站资讯",
+          "footerSubTitle3": "联络我们",
+          "footerSubItem": "力云团队",
+          "footerSubItem1": "公司沿革",
+          "footerSubItem2": "公司资讯",
+          "footerSubItem3": "联繫客服",
+          "footerSubItem4": "创建帐户",
+          "footerSubItem5": "隐私权政策",
+          "footerSubItem6": "Cookie政策",
 
         }
       }
@@ -186,6 +250,30 @@ i18next.init({
     document.getElementById('pricingSectionSubTitle').innerHTML = i18next.t('pricingSectionSubTitle');
     document.getElementById('pricingSectionSubText').innerHTML = i18next.t('pricingSectionSubText');
     document.getElementById('helpButton').innerHTML = i18next.t('helpButton');
+
+
+    document.getElementById('contactSectionSubTitle').innerHTML = i18next.t('contactSectionSubTitle');
+    document.getElementById('contactOnLineServiceText').innerHTML = i18next.t('contactOnLineServiceText');
+    document.getElementById('contactInputsTitle').innerHTML = i18next.t('contactInputsTitle');
+    document.getElementById('contactSubmit').innerHTML = i18next.t('contactSubmit');
+
+
+    document.getElementById('contactFormName').placeholder = i18next.t('contactFormName');
+    document.getElementById('contactFormEmail').placeholder = i18next.t('contactFormEmail');
+    document.getElementById('contactFormText').placeholder = i18next.t('contactFormText');
+
+    document.getElementById('footerTitle').innerHTML = i18next.t('footerTitle');
+    document.getElementById('footerSubTitle').innerHTML = i18next.t('footerSubTitle');
+    document.getElementById('footerSubTitle1').innerHTML = i18next.t('footerSubTitle1');
+    document.getElementById('footerSubTitle2').innerHTML = i18next.t('footerSubTitle2');
+    document.getElementById('footerSubTitle3').innerHTML = i18next.t('footerSubTitle3');
+    document.getElementById('footerSubItem').innerHTML = i18next.t('footerSubItem');
+    document.getElementById('footerSubItem1').innerHTML = i18next.t('footerSubItem1');
+    document.getElementById('footerSubItem2').innerHTML = i18next.t('footerSubItem2');
+    document.getElementById('footerSubItem3').innerHTML = i18next.t('footerSubItem3');
+    document.getElementById('footerSubItem4').innerHTML = i18next.t('footerSubItem4');
+    document.getElementById('footerSubItem5').innerHTML = i18next.t('footerSubItem5');
+    document.getElementById('footerSubItem6').innerHTML = i18next.t('footerSubItem6');
 
   }
 

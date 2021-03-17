@@ -52,10 +52,10 @@
       <section id="banner">
         <div class="bannerContainer">
           <div class="bannerContent">
-            <h1 class="bannerContentTitle" id="bannerTitle">網路拉近世界距離</h1>
-            <h2 class="bannerContentSubTitle" id="bannerSubtitle">LeaCloud打通你我距離</h2>
+            <h1 class="bannerContentTitle" id="bannerTitle"></h1>
+            <h2 class="bannerContentSubTitle" id="bannerSubtitle"></h2>
             <div class="bannerContentText">
-              <div id="bannerContentText">立即試用</div>
+              <div id="bannerContentText"></div>
               <!-- <svg width="100px" height="80px" viewbox="0 0 400 400">
                 <path stroke="#000" stroke-width="30" fill="none" 
                       d="M100 350 A 100 100 0 0 1 200 150
@@ -491,7 +491,7 @@
             <div class="col-lg-6 contactInfo" data-aos="fade-right">
               <div class="sectionTitleDiv">
                 <div class="sectionTitle">LEACLOUD</div>
-                <h1 class="sectionSubTitle">想獲得更多資訊</h1>
+                <h1 class="sectionSubTitle" id="contactSectionSubTitle">想獲得更多資訊</h1>
                 <h2 class="sectionSubTitle1">MORE INFORMATION</h2>
               </div>
 
@@ -510,24 +510,24 @@
                 </div>
                 <div class="item">
                   <i class="fas fa-headset"></i>
-                  <p>線上客服</p>
+                  <p id="contactOnLineServiceText">線上客服</p>
                 </div>
               </div>
             </div>
             <div class="col-lg-1 mt-4 vhr"></div>
             <div class="col-lg-4 mt-4 mt-lg-0 contactInputs" data-aos="fade-left">
-              <h2 class="contactInputsTitle">留下寶貴意見</h2>
+              <h2 class="contactInputsTitle" id="contactInputsTitle">留下寶貴意見</h2>
               <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                 <div class="form-group mt-3">
-                  <input type="text" class="form-control" name="name" id="name" placeholder="名字" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" class="form-control" name="name" id="contactFormName" placeholder="名字" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <i class="far fa-user "></i>
                 </div>
                 <div class="form-group mt-3">
-                  <input type="text" class="form-control" name="email" id="email" placeholder="信箱" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="text" class="form-control" name="email" id="contactFormEmail" placeholder="信箱" data-rule="email" data-msg="Please enter a valid email" />
                   <i class="fas fa-envelope"></i>
                 </div>
                 <div class="form-group mt-3">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="留言"></textarea>
+                  <textarea class="form-control" name="message" rows="5" id="contactFormText" data-rule="required" data-msg="Please write something for us" placeholder="留言"></textarea>
                   <i class="fas fa-comment-alt"></i>
                 </div>
                 <div class="mb-3">
@@ -535,7 +535,7 @@
                   <div class="error-message"></div>
                   <div class="sent-message">Your message has been sent. Thank you!</div>
                 </div>
-                <div class=""><button type="submit">送出</button></div>
+                <div class=""><button type="submit" id="contactSubmit">送出</button></div>
               </form>
             </div>
           </div>
@@ -546,35 +546,35 @@
         <div class="container" >
           <div class="col-lg-3 col-md-12 interval footerLogo">
             <img src="assets/img/LeaCloud_logo_white.png" loading="lazy">
-            <p>提供您最高品質網路使用體驗</p>
+            <p id="footerTitle">提供您最高品質網路使用體驗</p>
           </div>
           <div class="col-lg-2 col-md-12 interval">
             <hr class="aboutUs" />
-            <h4>關於力雲</h4>
-            <div class="a-Interval"><a href="#">力雲團隊</a></div>
-            <div class="a-Interval"><a href="#features">公司沿革</a></div>
-            <div class="a-Interval"><a href="#contact">公司資訊</a></div>
+            <h4 id="footerSubTitle">關於力雲</h4>
+            <div class="a-Interval"><a href="#" id="footerSubItem">力雲團隊</a></div>
+            <div class="a-Interval"><a href="#features" id="footerSubItem1">公司沿革</a></div>
+            <div class="a-Interval"><a href="#contact" id="footerSubItem2">公司資訊</a></div>
           </div>
 
           <div class="col-lg-2 col-md-12 interval">
             <hr class="helpCenter" />
-            <h4>幫助中心</h4>
-            <div class="a-Interval"><a href="#">聯繫客服</a></div>
-            <div class="a-Interval"><a href="#signup">創建帳戶</a></div>
+            <h4 id="footerSubTitle1">幫助中心</h4>
+            <div class="a-Interval"><a href="#" id="footerSubItem3">聯繫客服</a></div>
+            <div class="a-Interval"><a href="#signup" id="footerSubItem4">創建帳戶</a></div>
             <!-- <div class="a-Interval"><a href="#">常見問題</a></div> -->
           </div>
 
           <div class="col-lg-2 col-md-12 interval">
             <hr class="toolsInfo" />
-            <h4>網站資訊</h4>
-            <div class="a-Interval"><a href="#">隱私權政策</a></div>
-            <div class="a-Interval"><a href="#">Cookie政策</a></div>
+            <h4 id="footerSubTitle2">網站資訊</h4>
+            <div class="a-Interval"><a href="#" id="footerSubItem5">隱私權政策</a></div>
+            <div class="a-Interval"><a href="#" id="footerSubItem6">Cookie政策</a></div>
             <!-- <div class="a-Interval"><a href="#">網站地圖</a></div> -->
           </div>
 
           <div class="col-lg-2 col-md-12 interval">
             <hr class="contactInfo" />
-            <h4>聯絡我們</h4>
+            <h4 id="footerSubTitle3">聯絡我們</h4>
             <!-- <div class="a-Interval"><a href="https://telegram.me/leacloud" target="_blank">Telegram</a></div> -->
             <div class="a-Interval"><a href="#">+886 966-625-710</a></div>
             <div class="a-Interval"><a href="#">sales@leacloud.com</a></div>
