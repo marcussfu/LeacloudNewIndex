@@ -168,9 +168,9 @@ class Carousel1 {
   }
 
   autoPlay() {
-    setInterval(function() {
+    setInterval(() => {
         cooperationControlNex.dispatchEvent(new Event('click'));
-     }, 5000);
+     }, 8000);
   }
 }
 

@@ -134,9 +134,9 @@ class Carousel {
   }
 
   autoPlay() {
-    setInterval(function() {
+    setInterval(() => {
       servicesControlPre.dispatchEvent(new Event('click'));
-     }, 6000);
+     }, 8000);
   }
 }
 
