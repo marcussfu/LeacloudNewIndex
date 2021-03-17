@@ -389,6 +389,7 @@ a:hover {
     font-size: 30px;
     position: relative;
     top: 20%;
+    border-radius: 50%;
     -webkit-animation: blinking 1s infinite;  /* Safari 4+ */
     -moz-animation: blinking 1s infinite;  /* Fx 5+ */
     -o-animation: blinking 1s infinite;  /* Opera 12+ */
@@ -402,10 +403,15 @@ a:hover {
   @keyframes blinking {
     50% {
       color: #1976D2;
+      box-shadow: 0 0 5px#678baf;
     }
   }
 
   @-webkit-keyframes blinking {
+    50% {
+      color: #1976D2;
+      box-shadow: 0 0 5px#678baf;
+    }
   }
   
   #banner p {

@@ -172,9 +172,9 @@ class Carousel1 {
   
   autoPlay() {
     if (autoPlayTimer === null) {
-      setTimeout(() => {
-        cooperationControlNex.dispatchEvent(new Event('click'));
-      }, 1000);
+      // setTimeout(() => {
+      //   cooperationControlNex.dispatchEvent(new Event('click'));
+      // }, 1000);
 
       autoPlayTimer = setInterval(() => {
         cooperationControlNex.dispatchEvent(new Event('click'));

@@ -73,10 +73,12 @@
 }
 
 .cooperation .cooperationIntro {
-    margin: 10% 5%;
+    /* margin: 10% 5%; */
+    margin: 10% 0% 10% 4%;
     color: #66757f;
-    /* font-size: 14px; */
     text-align: start;
+    padding-right: 30px;
+    /* background-color: rgb(236, 209, 169); */
 }
 
 .cooperation .cooperationCarousel {
@@ -134,6 +136,7 @@
     /* font-size: 1vw; */
     font-size: 2px;
     color: #66757f;
+    text-indent: 30px;
 }
 
 .cooperation .galleryCooperationItem img {
@@ -282,7 +285,7 @@
     }
 
     .cooperation .cooperationIntro {
-        /* margin: 20px 50px 5px 50px; */
+        padding-right: 0px;
     }
 
     .cooperation .cooperationContent {
@@ -409,7 +412,7 @@
     }
 
     .cooperation .cooperationIntro {
-        /* margin: 20px 50px 5px 50px; */
+        padding-right: 0px;
     }
 
     .cooperation .cooperationContent {
