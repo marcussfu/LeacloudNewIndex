@@ -11,6 +11,9 @@ const cooperationControlNex = document.querySelector('#cooperationControlNex');
 // const galleryItemClassNames = ['gallery-item-first', 'gallery-item-previous', 'gallery-item-selected', 'gallery-item-next', 'gallery-item-last'];
 const galleryItemClassNames = ['gallery-item-previous', 'gallery-item-selected', 'gallery-item-next'];
 
+var autoPlayTimer = null;
+var interval = 8000;
+
 class Carousel1 {
   constructor(container, items, controls) {
     this.carouselContainer = container;
@@ -155,7 +158,7 @@ class Carousel1 {
             return;
         }
         
-        const target = String(control.className).includes("previous") ? cooperationControlPre : cooperationControlNex;
+        const target = String(control.className).includes("previous") ? cooperationControlNex : cooperationControlPre;
         const selectedItem = galleryCooperationContent.querySelectorAll('.gallery-item-selected');
         const previousSelectedItem = galleryCooperationContent.querySelectorAll('.gallery-item-previous');
         const nextSelectedItem = galleryCooperationContent.querySelectorAll('.gallery-item-next');
@@ -166,11 +169,17 @@ class Carousel1 {
       });
     });
   }
-
+  
   autoPlay() {
-    setInterval(() => {
+    if (autoPlayTimer === null) {
+      setTimeout(() => {
         cooperationControlNex.dispatchEvent(new Event('click'));
-     }, 8000);
+      }, 1000);
+
+      autoPlayTimer = setInterval(() => {
+        cooperationControlNex.dispatchEvent(new Event('click'));
+      }, interval);
+    }
   }
 }
 
@@ -181,3 +190,12 @@ cooperationCarousel.setNav();
 cooperationCarousel.setInitialState();
 cooperationCarousel.useControls();
 cooperationCarousel.autoPlay();
+
+// start or stop autoplay
+$(document).on('mouseenter', '.galleryCooperationItem.gallery-item-selected', () => {
+  clearInterval(autoPlayTimer);
+  autoPlayTimer = null;
+});
+$(document).on('mouseleave', '.galleryCooperationItem.gallery-item-selected', () => {
+  cooperationCarousel.autoPlay();
+});

@@ -4,6 +4,9 @@ const galleryControls = ['previous', 'next'];
 const galleryItems = document.querySelectorAll('.gallery-item');
 const servicesControlPre = document.querySelector('#servicesControlPre');
 
+var autoPlayTimer = null;
+var interval = 8000;
+
 class Carousel {
   constructor(container, items, controls) {
     this.carouselContainer = container;
@@ -134,9 +137,11 @@ class Carousel {
   }
 
   autoPlay() {
-    setInterval(() => {
-      servicesControlPre.dispatchEvent(new Event('click'));
-     }, 8000);
+    if (autoPlayTimer === null) {
+      autoPlayTimer = setInterval(() => {
+        servicesControlPre.dispatchEvent(new Event('click'));
+      }, interval);
+    }
   }
 }
 
@@ -166,3 +171,14 @@ $(window).resize(() => {
     }
   }
 });
+
+// start or stop autoplay
+$('.services .gallery-container').hover(() => {
+  clearInterval(autoPlayTimer);
+  autoPlayTimer = null;
+}, () => {
+  //mouseleave
+  servicesCarousel.autoPlay();
+});
+
+

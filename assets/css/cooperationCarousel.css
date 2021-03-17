@@ -149,6 +149,7 @@
     margin-left: 10px;
     color: #fff;
     margin-top: 50px;
+    font-weight: bold;
 }
 
 .cooperation .galleryCooperationControls {
@@ -172,7 +173,6 @@
 .cooperation .galleryCooperationItem.gallery-item-selected h2 {
     /* font-size: 2vw; */
     font-size: 30px;
-    font-weight: bold;
 }
 
 .cooperation .galleryCooperationItem.gallery-item-selected img {
