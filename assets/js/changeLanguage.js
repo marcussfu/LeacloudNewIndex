@@ -101,13 +101,13 @@ i18next.init({
           "servicesGalleryItemContentText5": "LeaCloud CDN支援HTTP/HTTPS，加入憑證讓您的網站傳輸加密，數據可受保護。您可在LeaCloud CDN上傳您的自有憑證。或是經由NS託管，使用系統自動生成Wildcard SSL憑證，系統產生的憑證將會自動展延有效期限。",
           
           "cooperationSectionSubTitle": "LeaCloud還提供哪些服務？",
-          "cooperationIntro": "&emsp;&emsp;有鑑於資訊的快速推陳出新，LeaCloud建立起強大的團隊，提供專業貼心的服務項目，無論整體企業，小型部門或個人辦公室，您都可在這享有一站式的資訊服務。",
+          "cooperationIntro": "有鑑於資訊的快速推陳出新，LeaCloud建立起強大的團隊，提供專業貼心的服務項目，無論整體企業，小型部門或個人辦公室，您都可在這享有一站式的資訊服務。",
           "cooperationGalleryItemTitle": "LeaDNS 域名解析",
           "cooperationGalleryItemText": "為LeaCloud提供的域名解析服務。透過LeaDNS能更易於管理DNS，幫助您識別您的域名名稱和其IP位址判斷，藉此將用戶的訪問路由連結到相應的網站或應用服務。LeaDNS為您搭起DNS解析的最便捷的橋樑，達到快速穩定的域名解析體驗。",
           "cooperationGalleryItemTitle1": "資訊安全服務",
           "cooperationGalleryItemText1": "為保障您的辦公室環境及設備安全，不論是事前預防或事後調查，我們提供專業的檢測調查與顧問服務。<br>LeaSecurity團隊擁有市場資深的實務經驗，為您提供惡意程式檢測服務、事故調查、滲透測試服務、紅隊演練服務及弱點掃描服務，保障企業的資訊安全。",
           "cooperationGalleryItemTitle2": "企業遠端辦公",
-          "cooperationGalleryItemText2": "為企業的行動辦公需求而生。<br>&emsp;&emsp;LeaProtect、居家辦公以及LeaDesk，三線三護打造企業辦公最前道防線，保障貼身手機、電腦及伺服器安全隱蔽，打造員工個人化環境，不需擔心企業資料和行動位置洩漏。<br>&emsp;&emsp;還可透過LeaExpress快捷送達您的貨品，降低運送的負擔和風險。",
+          "cooperationGalleryItemText2": "為企業的行動辦公需求而生。<br>LeaProtect、居家辦公以及LeaDesk，三線三護打造企業辦公最前道防線，保障貼身手機、電腦及伺服器安全隱蔽，打造員工個人化環境，不需擔心企業資料和行動位置洩漏。<br>還可透過LeaExpress快捷送達您的貨品，降低運送的負擔和風險。",
         
           "globeSectionSubTitle": "提供全球化專業節點",
           "globeSectionSubText": "LeaCloudCDN在中國大陸多個省份城市、台灣、日本、南韓、香港、菲律賓、越南、泰國、新加坡、印尼、馬來西亞、印度、歐洲、北美等<br>均有專屬節點及專線，讓您的網站及各項服務暢行無阻。",
@@ -168,13 +168,13 @@ i18next.init({
           "servicesGalleryItemContentText5": "LeaCloud CDN支援HTTP/HTTPS，加入凭证让您的网站传输加密，数据可受保护。您可在LeaCloud CDN上传您的自有凭证。或是经由NS託管，使用系统自动生成Wildcard SSL凭证，系统产生的凭证将会自动展延有效期限。",
 
           "cooperationSectionSubTitle": "LeaCloud还提供哪些服务？",
-          "cooperationIntro": "&emsp;&emsp;有鑑于资讯的快速推陈出新，LeaCloud建立起强大的团队，提供专业贴心的服务项目，无论整体企业，小型部门或个人办公室，您都可在这享有一站式的资讯服务。",
+          "cooperationIntro": "有鑑于资讯的快速推陈出新，LeaCloud建立起强大的团队，提供专业贴心的服务项目，无论整体企业，小型部门或个人办公室，您都可在这享有一站式的资讯服务。",
           "cooperationGalleryItemTitle": "LeaDNS 域名解析",
           "cooperationGalleryItemText": "为LeaCloud提供的域名解析服务。透过LeaDNS能更易于管理DNS，帮助您识别您的域名名称和其IP位址判断，藉此将用户的访问路由连结到相应的网站或应用服务。LeaDNS为您搭起DNS解析的最便捷的桥樑，达到快速稳定的域名解析体验。",
           "cooperationGalleryItemTitle1": "资讯安全服务",
           "cooperationGalleryItemText1": "为保障您的办公室环境及设备安全，不论是事前预防或事后调查，我们提供专业的检测调查与顾问服务。<br>LeaSecurity团队拥有市场资深的实务经验，为您提供恶意程式检测服务、事故调查、渗透测试服务、红队演练服务及弱点扫描服务，保障企业的资讯安全。",
           "cooperationGalleryItemTitle2": "企业远端办公",
-          "cooperationGalleryItemText2": "为企业的行动办公需求而生。<br>&emsp;&emsp;LeaProtect、居家办公以及LeaDesk，三线三护打造企业办公最前道防线，保障贴身手机、电脑及伺服器安全隐蔽，打造员工个人化环境，不需担心企业资料和行动位置洩漏。<br>&emsp;&emsp;还可透过LeaExpress快捷送达您的货品，降低运送的负担和风险。",
+          "cooperationGalleryItemText2": "为企业的行动办公需求而生。<br>LeaProtect、居家办公以及LeaDesk，三线三护打造企业办公最前道防线，保障贴身手机、电脑及伺服器安全隐蔽，打造员工个人化环境，不需担心企业资料和行动位置洩漏。<br>还可透过LeaExpress快捷送达您的货品，降低运送的负担和风险。",
         
           "globeSectionSubTitle": "提供全球化专业节点",
           "globeSectionSubText": "LeaCloudCDN在中国大陆多个省份城市、台湾、日本、南韩、香港、菲律宾、越南、泰国、新加坡、印尼、马来西亚、印度、欧洲、北美等<br>均有专属节点及专线，让您的网站及各项服务畅行无阻。",

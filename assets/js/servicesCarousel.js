@@ -4,8 +4,8 @@ const galleryControls = ['previous', 'next'];
 const galleryItems = document.querySelectorAll('.gallery-item');
 const servicesControlPre = document.querySelector('#servicesControlPre');
 
-var autoPlayTimer = null;
-var interval = 8000;
+var servicesAutoPlayTimer = null;
+var servicesInterval = 8000;
 
 class Carousel {
   constructor(container, items, controls) {
@@ -137,10 +137,10 @@ class Carousel {
   }
 
   autoPlay() {
-    if (autoPlayTimer === null) {
-      autoPlayTimer = setInterval(() => {
+    if (servicesAutoPlayTimer === null) {
+      servicesAutoPlayTimer = setInterval(() => {
         servicesControlPre.dispatchEvent(new Event('click'));
-      }, interval);
+      }, servicesInterval);
     }
   }
 }
@@ -173,12 +173,26 @@ $(window).resize(() => {
 });
 
 // start or stop autoplay
-$('.services .gallery-container').hover(() => {
-  clearInterval(autoPlayTimer);
-  autoPlayTimer = null;
-}, () => {
-  //mouseleave
-  servicesCarousel.autoPlay();
+$(document).ready(function(){
+  $(".services .gallery-item-container").hover(function(){
+    clearInterval(servicesAutoPlayTimer);
+    servicesAutoPlayTimer = null;
+
+    if ($(this).parent().prop('className').includes('frameOrange')) {
+      $(this).css('border', '1px solid rgba(253, 175, 97, 0.5)');
+    }
+    else if ($(this).parent().prop('className').includes('framePurple')) {
+      $(this).css('border', '1px solid rgba(206, 88, 255, 0.5)');
+    }
+    else if ($(this).parent().prop('className').includes('frameBlue')) {
+      $(this).css('border', '1px solid rgba(25, 118, 210, 0.5)');
+    }
+  },
+  function(){
+    //mouseleave
+    servicesCarousel.autoPlay();
+    $(this).css('border', 'none');
+  });
 });
 
 
