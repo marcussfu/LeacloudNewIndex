@@ -12,7 +12,7 @@ i18next.init({
           "contactUs": "contactUs",
           "bannerTitle": "bannerTitle",
           "bannerSubtitle": "bannerSubtitle",
-          "bannerContentText": "bannerContentText",
+          "bannerContentSubText": "bannerContentSubText",
           "customerServiceButton": "customerServiceButton",
           "featuresSubTitle": "featuresSubTitle",
           "featuresContentText": "featuresContentText",
@@ -81,7 +81,7 @@ i18next.init({
           "contactUs": "聯繫我們",
           "bannerTitle": "網路無遠弗屆",
           "bannerSubtitle": "LeaCloud拉近您與世界的距離",
-          "bannerContentText": "立即試用",
+          "bannerContentSubText": "立即試用",
           "customerServiceText": "聯繫客服",
           "featuresSubTitle": "關於LeaCloud力雲科技",
           "featuresContentText": "LeaCloud力雲科技長期活躍於北美及中國地區。<br>憑藉專業技術團隊於網路產業多年來的開發經驗，深耕於亞太地區，<br>致力於協助客戶經由網路將其事業推展至與全球接軌，並以與客戶共同創造最大效益為經營宗旨。",
@@ -148,7 +148,7 @@ i18next.init({
           "contactUs": "联繫我们",
           "bannerTitle": "网路无远弗届",
           "bannerSubtitle": "LeaCloud拉近您与世界的距离",
-          "bannerContentText": "立即试用",
+          "bannerContentSubText": "立即试用",
           "customerServiceText": "联繫客服",
           "featuresSubTitle": "关于LeaCloud力云科技",
           "featuresContentText": "LeaCloud力云科技长期活跃于北美及中国地区。<br>凭藉专业技术团队于网路产业多年来的开發经验，深耕于亚太地区，<br>致力于协助客户经由网路将其事业推展至与全球接轨，并以与客户共同创造最大效益为经营宗旨。",
@@ -222,7 +222,7 @@ i18next.init({
 
     document.getElementById('bannerTitle').innerHTML = i18next.t('bannerTitle');
     document.getElementById('bannerSubtitle').innerHTML = i18next.t('bannerSubtitle');
-    document.getElementById('bannerContentText').innerHTML = i18next.t('bannerContentText');
+    document.getElementById('bannerContentSubText').innerHTML = i18next.t('bannerContentSubText');
 
     document.getElementById('customerServiceText').innerHTML = i18next.t('customerServiceText');
 
