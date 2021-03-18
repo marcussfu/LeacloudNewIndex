@@ -1,13 +1,23 @@
 
+
+/* english font */
 @font-face {
-  font-family: 'Lato-Regular';
+  font-family: custom;
   src: url('../../assets/fonts/Lato-Regular.ttf');
+  unicode-range: U+00-024F;
 }
+
+/* chinese font */
+/* @font-face {
+  font-family: custom;
+  src: url('../../assets/fonts/Lato-Regular.ttf');
+  unicode-range: U+4E00-9FFF;
+} */
 
 /* General */
 body {
     /* font-family: "Open Sans", sans-serif; */
-    font-family: Lato-Regular, sans-serif;
+    font-family: custom, sans-serif;
 }
 
 a {
