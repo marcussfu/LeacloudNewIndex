@@ -399,12 +399,23 @@ a:hover {
       margin-left: 15px;
   }
 
-  /* #banner a {
+  #banner a {
     color: #8b8f94;
-  } */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #banner #bannerContentSubText {
+    font-size: 22px;
+    -webkit-animation: blinkingWithoutBoxShadow 1s infinite;  /* Safari 4+ */
+    -moz-animation: blinkingWithoutBoxShadow 1s infinite;  /* Fx 5+ */
+    -o-animation: blinkingWithoutBoxShadow 1s infinite;  /* Opera 12+ */
+    animation: blinkingWithoutBoxShadow 1s infinite;  /* IE 10+, Fx 29+ */
+  }
 
   #banner .tryNowBtn {
-    color: #8b8f94;
+    /* color: #8b8f94; */
     font-size: 30px;
     /* position: relative;
     top: 20%; */
@@ -431,6 +442,18 @@ a:hover {
     50% {
       color: #1976D2;
       box-shadow: 0 0 5px#678baf;
+    }
+  }
+
+  @keyframes blinkingWithoutBoxShadow {
+    50% {
+      color: #1976D2;
+    }
+  }
+
+  @-webkit-keyframes blinkingWithoutBoxShadow {
+    50% {
+      color: #1976D2;
     }
   }
   
@@ -467,6 +490,10 @@ a:hover {
     #banner .tryNowBtn {
       font-size: 4vw;
     }
+
+    #banner #bannerContentSubText {
+      font-size: 2vw;
+      }
   }
 
   @media (max-width: 625px) {
