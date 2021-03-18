@@ -498,7 +498,7 @@
               <div class="info">
                 <div class="item">
                   <i class="fas fa-envelope"></i>
-                  <p>sales@leacloud.com</p>
+                  <a href="mailto:sales@leacloud.com">sales@leacloud.com</a>
                 </div>
                 <div class="item">
                   <i class="fab fa-telegram-plane"></i>
@@ -517,17 +517,17 @@
             <div class="col-lg-1 mt-4 vhr"></div>
             <div class="col-lg-4 mt-4 mt-lg-0 contactInputs" data-aos="fade-left">
               <h2 class="contactInputsTitle" id="contactInputsTitle">留下寶貴意見</h2>
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <form action="mailto:sales@leacloud.com" method="post" role="form" class="php-email-form" enctype="text/plain">
                 <div class="form-group mt-3">
-                  <input type="text" class="form-control" name="name" id="contactFormName" placeholder="名字" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" class="form-control" required name="name" id="contactFormName" placeholder="名字" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <i class="far fa-user "></i>
                 </div>
                 <div class="form-group mt-3">
-                  <input type="text" class="form-control" name="email" id="contactFormEmail" placeholder="信箱" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="text" class="form-control" required name="email" id="contactFormEmail" placeholder="信箱" data-rule="email" data-msg="Please enter a valid email" />
                   <i class="fas fa-envelope"></i>
                 </div>
                 <div class="form-group mt-3">
-                  <textarea class="form-control" name="message" rows="5" id="contactFormText" data-rule="required" data-msg="Please write something for us" placeholder="留言"></textarea>
+                  <textarea class="form-control" required name="message" rows="5" id="contactFormText" placeholder="留言" data-rule="required" data-msg="Please write something for us" ></textarea>
                   <i class="fas fa-comment-alt"></i>
                 </div>
                 <div class="mb-3">
@@ -577,7 +577,7 @@
             <h4 id="footerSubTitle3">聯絡我們</h4>
             <!-- <div class="a-Interval"><a href="https://telegram.me/leacloud" target="_blank">Telegram</a></div> -->
             <div class="a-Interval"><a href="#">+886 966-625-710</a></div>
-            <div class="a-Interval"><a href="#">sales@leacloud.com</a></div>
+            <div class="a-Interval"><a href="mailto:sales@leacloud.com">sales@leacloud.com</a></div>
             <div>
               <a href="https://telegram.me/leacloud" target="_blank"><i class="fab fa-telegram-plane"></i></a>
               <a href="skype:live:.cid.36d196aca11d6650?chat"><i class="fab fa-skype"></i></a>

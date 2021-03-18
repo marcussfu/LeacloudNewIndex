@@ -54,6 +54,9 @@ i18next.init({
           "contactFormName": "Name",
           "contactFormEmail": "Email",
           "contactFormText": "Message",
+          "contactFormNameValidity": "Name is Required!",
+          "contactFormEmailValidity": "Email is Required!",
+          "contactFormTextValidity": "Message is Required!",
 
           "footerTitle": "footerTitle",
           "footerSubTitle": "footerSubTitle",
@@ -119,6 +122,9 @@ i18next.init({
           "contactFormName": "名字",
           "contactFormEmail": "信箱",
           "contactFormText": "留言",
+          "contactFormNameValidity": "請填寫名字",
+          "contactFormEmailValidity": "請填寫Email",
+          "contactFormTextValidity": "請填寫意見",
 
           "footerTitle": "提供您最高品質網路使用體驗",
           "footerSubTitle": "關於力雲",
@@ -183,6 +189,9 @@ i18next.init({
           "contactFormName": "名字",
           "contactFormEmail": "信箱",
           "contactFormText": "留言",
+          "contactFormNameValidity": "请填写名字",
+          "contactFormEmailValidity": "请填写Email",
+          "contactFormTextValidity": "请填写意见",
 
           "footerTitle": "提供您最高品质网路使用体验",
           "footerSubTitle": "关于力云",
@@ -261,6 +270,10 @@ i18next.init({
     document.getElementById('contactFormName').placeholder = i18next.t('contactFormName');
     document.getElementById('contactFormEmail').placeholder = i18next.t('contactFormEmail');
     document.getElementById('contactFormText').placeholder = i18next.t('contactFormText');
+
+    // document.getElementById('contactFormName').setCustomValidity(i18next.t('contactFormNameValidity'));
+    // document.getElementById('contactFormEmail').setCustomValidity(i18next.t('contactFormEmailValidity'));
+    // document.getElementById('contactFormText').setCustomValidity(i18next.t('contactFormTextValidity'));
 
     document.getElementById('footerTitle').innerHTML = i18next.t('footerTitle');
     document.getElementById('footerSubTitle').innerHTML = i18next.t('footerSubTitle');
