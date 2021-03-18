@@ -901,10 +901,6 @@ a:hover {
     font-weight: 300;
   }
   
-  .pricing img {
-    padding: 30px 40px;
-  }
-  
   .pricing ul {
     /* padding: 0; */
     list-style: none;
@@ -977,6 +973,83 @@ a:hover {
     margin-left: -30px;
     margin-top: 10px;
   }
+
+  /* new section ================== */
+
+  .pricing .pricingContentRow {
+    background-color: darkseagreen; 
+    height: 200px; 
+    width: 100%; 
+  }
+
+  .pricing img {
+    /* padding: 30px 40px; */
+    width: 100%;
+    height: 200px;
+  }
+
+  .pricing .pricingSubContentColumn {
+    background-color: coral; 
+    padding-left: 0px; 
+    padding-right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .pricing .pricingSubContentColumn1 {
+    background-color: darkgoldenrod;  
+    padding-left: 0px; 
+    padding-right: 0px;
+  }
+
+  .pricing .detailButtons {
+    /* height: 35%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+  }
+
+  .pricing .detailButton {
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 24px;
+    font-size: 8px;
+  }
+
+  .pricing .detailButton:hover {
+    background: linear-gradient(to bottom, #80c3f3, #4a90e2);
+    border: 1px solid transparent;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+  }
+
+  .pricing .pricingContentTitle, .pricing .pricingContentSubTitle {
+    /* margin-top: 10px; */
+    /* font-size: 37px; */
+    font-weight: bold;
+    background: -webkit-linear-gradient(#696969, #b4ac9c 50% , #384456 55%, #696969 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .pricing .pricingContentTitle{
+    font-size: 28px;
+  }
+
+  .pricing .pricingContentSubTitle {
+    font-size: 30px;
+  }
+
+
+  /* =================================== */
 
   @media (max-width: 991px) {
     .pricing .featured .star {
