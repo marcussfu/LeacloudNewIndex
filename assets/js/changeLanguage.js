@@ -12,8 +12,8 @@ i18next.init({
           "contactUs": "contactUs",
           "bannerTitle": "bannerTitle",
           "bannerSubtitle": "bannerSubtitle",
-          "bannerContentSubText": "bannerContentSubText",
-          "customerServiceButton": "customerServiceButton",
+          // "bannerContentSubText": "bannerContentSubText",
+          // "customerServiceText": "customerServiceText",
           "featuresSubTitle": "featuresSubTitle",
           "featuresContentText": "featuresContentText",
           "featuresItemText": "featuresItemText",
@@ -43,8 +43,17 @@ i18next.init({
 
           "globeSectionSubTitle": "globeSectionSubTitle",
           "globeSectionSubText": "globeSectionSubText",
+
           "pricingSectionSubTitle": "pricingSectionSubTitle",
           "pricingSectionSubText": "pricingSectionSubText",
+
+          "pricingContentTitle": "pricingContentTitle",
+          "pricingContentSubTitle": "pricingContentSubTitle",
+          "pricingImgContentSubTitle": "pricingImgContentSubTitle",
+          "contactCustomService": "contactCustomService",
+          "trynow": "trynow",
+          "pricingSubColumn1Img": "assets/img/pricing/pricingRightMapTW.png",
+          
           "helpButton": "helpButton",
 
           "contactSectionSubTitle": "contactSectionSubTitle",
@@ -81,8 +90,8 @@ i18next.init({
           "contactUs": "聯繫我們",
           "bannerTitle": "網路無遠弗屆",
           "bannerSubtitle": "LeaCloud拉近您與世界的距離",
-          "bannerContentSubText": "立即試用",
-          "customerServiceText": "聯繫客服",
+          // "bannerContentSubText": "立即試用",
+          // "customerServiceText": "聯繫客服",
           "featuresSubTitle": "關於LeaCloud力雲科技",
           "featuresContentText": "LeaCloud力雲科技長期活躍於北美及中國地區。<br>憑藉專業技術團隊於網路產業多年來的開發經驗，深耕於亞太地區，<br>致力於協助客戶經由網路將其事業推展至與全球接軌，並以與客戶共同創造最大效益為經營宗旨。",
           "featuresItemText": "遠端辦公",
@@ -95,24 +104,33 @@ i18next.init({
           "servicesGalleryItemContentTitle5": "憑證管理",
           "servicesGalleryItemContentText": "您可依據您網站的市場規劃，針對個別域名的訪問管理，「開放」（白名單）或「阻擋」（黑名單）訪問來源的國家地區以及使用者IP位置，保障網站精準的訪問用戶群，或是僅內部管理人員得以存取。",
           "servicesGalleryItemContentText1": "LeaCloud擁有豐富的地理節點資源，遍布範圍有中國多個省份城市、東亞、東南亞及歐美地區。虛、實整合的主機線路，強大而靈活的CDN互聯網結構設計，提供最短、最快的分辨率路由，以確保您網站的競爭力。",
-          "servicesGalleryItemContentText2": "依照您的管理規劃，在LeaCloud CDN上您可彈性選擇NS託管或CNAME託管，介面簡潔明瞭、操作簡便，輕鬆將網站一鍵加速。支援 HTTP/HTTPS網頁，並可自訂域名的緩存時間、憑證、導轉頁等，依需求細節配置。",
-          "servicesGalleryItemContentText3": "在LeaCloud CDN平台上，您可監控和查詢期間內您託管的所有或個別網站域名的CDN使用狀態，包含傳輸流量、頻寬、訪問次數、HTTP狀態數，便以了解用戶訪問狀態。",
+          "servicesGalleryItemContentText2": "依照您的管理規劃，在LeaCloud CDN上您可彈性選擇NS託管或CNAME託管，介面簡潔明瞭、操作簡便，輕鬆將網站一鍵加速。支援HTTP/HTTPS網頁，並可自訂域名的緩存時間、憑證、導轉頁等，依需求細節配置。",
+          "servicesGalleryItemContentText3": "在LeaCloud CDN平台上，您可監控和查詢期間內您託管的所有或個別網站域名的CDN使用狀態，包含傳輸流量、頻寬、訪問次數、HTTP狀態數，以便了解用戶訪問狀態。",
           "servicesGalleryItemContentText4": "透過對訪問來源設置過濾的機制，避免您的網站資源輕易受盜用。設置防盜鏈功能，以防止站台內容透過他人程式鑲嵌，或是獲取鏈結而開啟。",
           "servicesGalleryItemContentText5": "LeaCloud CDN支援HTTP/HTTPS，加入憑證讓您的網站傳輸加密，數據可受保護。您可在LeaCloud CDN上傳您的自有憑證。或是經由NS託管，使用系統自動生成Wildcard SSL憑證，系統產生的憑證將會自動展延有效期限。",
           
           "cooperationSectionSubTitle": "LeaCloud還提供哪些服務？",
-          "cooperationIntro": "有鑑於資訊的快速推陳出新，LeaCloud建立起強大的團隊，提供專業貼心的服務項目，無論整體企業，小型部門或個人辦公室，您都可在這享有一站式的資訊服務。",
+          "cooperationIntro": "有鑑於資訊快速推陳出新，LeaCloud建立起強大的團隊，提供專業貼心的服務項目，無論整體企業，小型部門或個人辦公室，您都可在這享有一站式的資訊服務。",
           "cooperationGalleryItemTitle": "LeaDNS 域名解析",
           "cooperationGalleryItemText": "為LeaCloud提供的域名解析服務。透過LeaDNS能更易於管理DNS，幫助您識別您的域名名稱和其IP位址判斷，藉此將用戶的訪問路由連結到相應的網站或應用服務。LeaDNS為您搭起DNS解析的最便捷的橋樑，達到快速穩定的域名解析體驗。",
           "cooperationGalleryItemTitle1": "資訊安全服務",
-          "cooperationGalleryItemText1": "為保障您的辦公室環境及設備安全，不論是事前預防或事後調查，我們提供專業的檢測調查與顧問服務。<br>LeaSecurity團隊擁有市場資深的實務經驗，為您提供惡意程式檢測服務、事故調查、滲透測試服務、紅隊演練服務及弱點掃描服務，保障企業的資訊安全。",
+          "cooperationGalleryItemText1": "為保障您的辦公室環境及設備安全，我們提供專業的檢測調查與顧問服務。LeaSecurity團隊對於市場擁有資深實務經驗，為您提供惡意程式檢測服務、事故調查、滲透測試服務、紅隊演練服務及弱點掃描服務，保障企業的資訊安全。",
           "cooperationGalleryItemTitle2": "企業遠端辦公",
-          "cooperationGalleryItemText2": "為企業的行動辦公需求而生。<br>LeaProtect、居家辦公以及LeaDesk，三線三護打造企業辦公最前道防線，保障貼身手機、電腦及伺服器安全隱蔽，打造員工個人化環境，不需擔心企業資料和行動位置洩漏。<br>還可透過LeaExpress快捷送達您的貨品，降低運送的負擔和風險。",
+          "cooperationGalleryItemText2": "LeaProtect、居家辦公以及LeaDesk，三線三護打造企業辦公最前道防線，保障貼身手機、電腦及伺服器安全隱蔽，打造員工個人化環境，不需擔心企業資料和行動位置洩漏。透過LeaExpress快捷送達您的貨品，降低運送的負擔和風險。",
         
           "globeSectionSubTitle": "提供全球化專業節點",
           "globeSectionSubText": "LeaCloudCDN在中國大陸多個省份城市、台灣、日本、南韓、香港、菲律賓、越南、泰國、新加坡、印尼、馬來西亞、印度、歐洲、北美等<br>均有專屬節點及專線，讓您的網站及各項服務暢行無阻。",
+          
           "pricingSectionSubTitle": "選擇適合您的方案",
           "pricingSectionSubText": "您可依據您事業的需求，選擇適合您的方案。若有其他需求，請洽客服。",
+          
+          "pricingContentTitle": "加入LeaCloud",
+          "pricingContentSubTitle": "即可獲取免費方案",
+          "pricingImgContentSubTitle": "體驗更多功能",
+          "contactCustomService": "聯繫客服",
+          "trynow": "立即試用",
+          "pricingSubColumn1Img": "assets/img/pricing/pricingRightMapTW.png",
+
           "helpButton": "需要協助?",
 
           "contactSectionSubTitle": "想獲得更多資訊",
@@ -142,14 +160,14 @@ i18next.init({
       },
       sc: {
         translation: {
-          "login": "登入",
-          "logup": "註册",
+          "login": "登录",
+          "logup": "注册",
           "languageSelect": "语言选择",
-          "contactUs": "联繫我们",
+          "contactUs": "联系我们",
           "bannerTitle": "网路无远弗届",
           "bannerSubtitle": "LeaCloud拉近您与世界的距离",
-          "bannerContentSubText": "立即试用",
-          "customerServiceText": "联繫客服",
+          // "bannerContentSubText": "立即试用",
+          // "customerServiceText": "联繫客服",
           "featuresSubTitle": "关于LeaCloud力云科技",
           "featuresContentText": "LeaCloud力云科技长期活跃于北美及中国地区。<br>凭藉专业技术团队于网路产业多年来的开發经验，深耕于亚太地区，<br>致力于协助客户经由网路将其事业推展至与全球接轨，并以与客户共同创造最大效益为经营宗旨。",
           "featuresItemText": "远端办公",
@@ -159,27 +177,36 @@ i18next.init({
           "servicesGalleryItemContentTitle2": "域名託管",
           "servicesGalleryItemContentTitle3": "自动监控",
           "servicesGalleryItemContentTitle4": "防盗链功能",
-          "servicesGalleryItemContentTitle5": "凭证管理",
-          "servicesGalleryItemContentText": "您可依据您网站的市场规划，针对个别域名的访问管理，「开放」（白名单）或「阻挡」（黑名单）访问来源的国家地区以及使用者IP位置，保障网站精准的访问用户群，或是仅内部管理人员得以存取。",
+          "servicesGalleryItemContentTitle5": "证书管理",
+          "servicesGalleryItemContentText": "您可依据您网站的市场规划，针对个别域名的访问管理，「开放」（白名单）或「阻挡」（黑名单）访问来源的国家地区以及使用者IP地址，保障网站精准的访问用户群，或是仅内部管理人员得以存取。",
           "servicesGalleryItemContentText1": "LeaCloud拥有丰富的地理节点资源，遍布范围有中国多个省份城市、东亚、东南亚及欧美地区。虚、实整合的主机线路，强大而灵活的CDN互联网结构设计，提供最短、最快的分辨率路由，以确保您网站的竞争力。",
-          "servicesGalleryItemContentText2": "依照您的管理规划，在LeaCloud CDN上您可弹性选择NS託管或CNAME託管，介面简洁明瞭、操作简便，轻鬆将网站一键加速。支援 HTTP/HTTPS网页，并可自订域名的缓存时间、凭证、导转页等，依需求细节配置。",
-          "servicesGalleryItemContentText3": "在LeaCloud CDN平台上，您可监控和查询期间内您託管的所有或个别网站域名的CDN使用状态，包含传输流量、频宽、访问次数、HTTP状态数，便以了解用户访问状态。",
-          "servicesGalleryItemContentText4": "透过对访问来源设置过滤的机制，避免您的网站资源轻易受盗用。设置防盗链功能，以防止站台内容透过他人程式镶嵌，或是获取链结而开启。",
-          "servicesGalleryItemContentText5": "LeaCloud CDN支援HTTP/HTTPS，加入凭证让您的网站传输加密，数据可受保护。您可在LeaCloud CDN上传您的自有凭证。或是经由NS託管，使用系统自动生成Wildcard SSL凭证，系统产生的凭证将会自动展延有效期限。",
+          "servicesGalleryItemContentText2": "依照您的管理规划，在LeaCloud CDN上您可弹性选择NS托管或CNAME托管，介面简洁明了、操作简便，轻松将网站一键加速。支持HTTP/HTTPS网页，并可自定义域名的缓存时间、证书、跳转页等，依需求细节配置。",
+          "servicesGalleryItemContentText3": "在LeaCloud CDN平台上，您可监控和查询期间内您托管的所有或个别网站域名的CDN使用状态，包含传输流量、帶寬、访问次数、HTTP状态数，以便了解用户访问状态。",
+          "servicesGalleryItemContentText4": "透过对访问来源设置过滤的机制，避免您的网站资源轻易受盗用。设置防盗链功能，以防止网站内容透过他人程序镶嵌，或是获取链结而开启。",
+          "servicesGalleryItemContentText5": "LeaCloud CDN支持HTTP/HTTPS，加入证书让您的网站传输加密，数据可受保护。您可在LeaCloud CDN上传您的自有证书。或是经由NS托管，使用系统自动生成Wildcard SSL证书，系统产生的证书将会自动更新。",
 
           "cooperationSectionSubTitle": "LeaCloud还提供哪些服务？",
-          "cooperationIntro": "有鑑于资讯的快速推陈出新，LeaCloud建立起强大的团队，提供专业贴心的服务项目，无论整体企业，小型部门或个人办公室，您都可在这享有一站式的资讯服务。",
+          "cooperationIntro": "有鉴于信息快速推陈出新，LeaCloud建立起强大的团队，提供专业贴心的服务项目，无论整体企业，小型部门或个人办公室，您都可在这享有一站式的网络服务。",
           "cooperationGalleryItemTitle": "LeaDNS 域名解析",
-          "cooperationGalleryItemText": "为LeaCloud提供的域名解析服务。透过LeaDNS能更易于管理DNS，帮助您识别您的域名名称和其IP位址判断，藉此将用户的访问路由连结到相应的网站或应用服务。LeaDNS为您搭起DNS解析的最便捷的桥樑，达到快速稳定的域名解析体验。",
-          "cooperationGalleryItemTitle1": "资讯安全服务",
-          "cooperationGalleryItemText1": "为保障您的办公室环境及设备安全，不论是事前预防或事后调查，我们提供专业的检测调查与顾问服务。<br>LeaSecurity团队拥有市场资深的实务经验，为您提供恶意程式检测服务、事故调查、渗透测试服务、红队演练服务及弱点扫描服务，保障企业的资讯安全。",
-          "cooperationGalleryItemTitle2": "企业远端办公",
-          "cooperationGalleryItemText2": "为企业的行动办公需求而生。<br>LeaProtect、居家办公以及LeaDesk，三线三护打造企业办公最前道防线，保障贴身手机、电脑及伺服器安全隐蔽，打造员工个人化环境，不需担心企业资料和行动位置洩漏。<br>还可透过LeaExpress快捷送达您的货品，降低运送的负担和风险。",
+          "cooperationGalleryItemText": "为LeaCloud提供的域名解析服务。透过LeaDNS能更易于管理DNS，帮助您识别您的域名名称和其IP地址判断，藉此将用户的访问路由连结到相应的网站或应用服务。LeaDNS为您搭起DNS解析的最便捷的桥樑，达到快速稳定的域名解析体验。",
+          "cooperationGalleryItemTitle1": "信息安全服务",
+          "cooperationGalleryItemText1": "为保障您的办公室环境及设备安全，我们提供专业的检测调查与顾问服务。LeaSecurity团队对于市场拥有资深实务经验，为您提供恶意程式检测服务、事故调查、渗透测试服务、红队演练服务及弱点扫描服务，保障企业的信息安全。",
+          "cooperationGalleryItemTitle2": "企业远程办公",
+          "cooperationGalleryItemText2": "LeaProtect、居家办公以及LeaDesk，三线三护打造企业办公第一道防线，保障贴身手机、计算机及服务器安全隐蔽，打造员工个人化环境，不需担心企业资料和行动位置洩漏。透过LeaExpress快捷送达您的货品，降低运送的负担和风险。",
         
           "globeSectionSubTitle": "提供全球化专业节点",
           "globeSectionSubText": "LeaCloudCDN在中国大陆多个省份城市、台湾、日本、南韩、香港、菲律宾、越南、泰国、新加坡、印尼、马来西亚、印度、欧洲、北美等<br>均有专属节点及专线，让您的网站及各项服务畅行无阻。",
+          
           "pricingSectionSubTitle": "选择适合您的方案",
           "pricingSectionSubText": "您可依据您事业的需求，选择适合您的方案。若有其他需求，请洽客服。",
+          
+          "pricingContentTitle": "加入LeaCloud",
+          "pricingContentSubTitle": "即可获取免费方案",
+          "pricingImgContentSubTitle": " 体验更多功能",
+          "contactCustomService": "联系客服",
+          "trynow": "立即试用",
+          "pricingSubColumn1Img": "assets/img/pricing/pricingRightMapSC.png",
+          
           "helpButton": "需要协助?",
 
           "contactSectionSubTitle": "想获得更多资讯",
@@ -222,9 +249,9 @@ i18next.init({
 
     document.getElementById('bannerTitle').innerHTML = i18next.t('bannerTitle');
     document.getElementById('bannerSubtitle').innerHTML = i18next.t('bannerSubtitle');
-    document.getElementById('bannerContentSubText').innerHTML = i18next.t('bannerContentSubText');
+    document.getElementById('bannerContentSubText').innerHTML = i18next.t('trynow');
 
-    document.getElementById('customerServiceText').innerHTML = i18next.t('customerServiceText');
+    document.getElementById('customerServiceText').innerHTML = i18next.t('contactCustomService');
 
     document.getElementById('featuresSubTitle').innerHTML = i18next.t('featuresSubTitle');
     document.getElementById('featuresContentText').innerHTML = i18next.t('featuresContentText');
@@ -256,9 +283,9 @@ i18next.init({
 
     document.getElementById('globeSectionSubTitle').innerHTML = i18next.t('globeSectionSubTitle');
     document.getElementById('globeSectionSubText').innerHTML = i18next.t('globeSectionSubText');
-    document.getElementById('pricingSectionSubTitle').innerHTML = i18next.t('pricingSectionSubTitle');
-    document.getElementById('pricingSectionSubText').innerHTML = i18next.t('pricingSectionSubText');
-    document.getElementById('helpButton').innerHTML = i18next.t('helpButton');
+    // document.getElementById('pricingSectionSubTitle').innerHTML = i18next.t('pricingSectionSubTitle');
+    // document.getElementById('pricingSectionSubText').innerHTML = i18next.t('pricingSectionSubText');
+    // document.getElementById('helpButton').innerHTML = i18next.t('helpButton');
 
 
     document.getElementById('contactSectionSubTitle').innerHTML = i18next.t('contactSectionSubTitle');
@@ -287,6 +314,15 @@ i18next.init({
     document.getElementById('footerSubItem4').innerHTML = i18next.t('footerSubItem4');
     document.getElementById('footerSubItem5').innerHTML = i18next.t('footerSubItem5');
     document.getElementById('footerSubItem6').innerHTML = i18next.t('footerSubItem6');
+
+
+    document.getElementById('pricingContentTitle').innerHTML = i18next.t('pricingContentTitle');
+    document.getElementById('pricingContentSubTitle').innerHTML = i18next.t('pricingContentSubTitle');
+    document.getElementById('pricingImgContentSubTitle').innerHTML = i18next.t('pricingImgContentSubTitle');
+    document.getElementById('contactCustomService').innerHTML = i18next.t('contactCustomService');
+    document.getElementById('trynow').innerHTML = i18next.t('trynow');
+
+    document.getElementById('pricingSubColumn1Img').src = i18next.t('pricingSubColumn1Img');
 
   }
 

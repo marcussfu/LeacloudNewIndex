@@ -828,11 +828,6 @@ a:hover {
   }
   
   /* pricing */
-  .pricing {
-      background-color: #dfefff;
-      padding-top: 0px;
-  }
-
   .pricing .container {
       display: flex;
       flex-direction: column;
@@ -975,34 +970,49 @@ a:hover {
   }
 
   /* new section ================== */
+  .pricing {
+    background-color: #dfefff;
+    /* background-color: #b200c2; */
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
 
   .pricing .pricingContentRow {
-    background-color: darkseagreen; 
     height: 200px; 
     width: 100%; 
+    /* background-color: teal; */
+    /* background: url(../../assets/img/pricing/pricingRowBackground.png) no-repeat center center; */
   }
 
   .pricing img {
-    /* padding: 30px 40px; */
-    width: 100%;
-    height: 200px;
+    max-height: 200px;
+    width: auto;
+
+    /* width: 100%;
+    height: 200px; */
   }
 
   .pricing .pricingSubContentColumn {
-    background-color: coral; 
+    /* background-color: coral;  */
+    background: url(../../assets/img/pricing/pricingLeftBackgorund.png) no-repeat center center;
     padding-left: 0px; 
     padding-right: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    /* height: 100%; */
   }
 
   .pricing .pricingSubContentColumn1 {
-    background-color: darkgoldenrod;  
+    /* background-color: darkgoldenrod;   */
     padding-left: 0px; 
     padding-right: 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .pricing .detailButtons {
@@ -1015,8 +1025,8 @@ a:hover {
   }
 
   .pricing .detailButton {
-    background: transparent;
-    border: 1px solid #fff;
+    background: linear-gradient(to bottom, #80c3f3, #4a90e2);
+    border: 1px solid transparent;
     padding: 10px 30px;
     color: #fff;
     transition: 0.4s;
@@ -1025,15 +1035,13 @@ a:hover {
   }
 
   .pricing .detailButton:hover {
-    background: linear-gradient(to bottom, #80c3f3, #4a90e2);
-    border: 1px solid transparent;
+    background: transparent;
+    border: 1px solid #fff;
     transition: all 0.4s ease-in-out;
     cursor: pointer;
   }
 
   .pricing .pricingContentTitle, .pricing .pricingContentSubTitle {
-    /* margin-top: 10px; */
-    /* font-size: 37px; */
     font-weight: bold;
     background: -webkit-linear-gradient(#696969, #b4ac9c 50% , #384456 55%, #696969 70%);
     -webkit-background-clip: text;
@@ -1048,6 +1056,14 @@ a:hover {
     font-size: 30px;
   }
 
+  .pricing .sectionTitleDiv {
+    position: absolute;
+  }
+
+  .pricing .sectionSubTitle {
+    color: #ffbf00;
+  }
+
 
   /* =================================== */
 
@@ -1058,19 +1074,14 @@ a:hover {
       font-size: 20px;
     }
 
-    /* .pricing ul {
-      columns: 2;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      width: 100%;
-      text-align: start;
+    .pricing .pricingContentRow {
+      height: 400px; 
+      width: 100%; 
     }
 
-    .pricing ul li {
-      width: 50%;
-    } */
+    .pricing .pricingSubContentColumn {
+      height: 50%;
+    }
 
     .pricing .box {
       width: auto;
@@ -1096,6 +1107,39 @@ a:hover {
     .pricingItemGroup {
       display: flex;
       justify-content: center;
+    }
+  }
+
+  @media (max-width: 424px) {
+    .pricing img {
+      width: 100%;
+    }
+
+    .pricing .pricingContentRow {
+      height: 300px;
+    }
+  }
+
+  @media (max-width: 352px) {
+    .pricing .pricingContentTitle{
+      font-size: 18px;
+    }
+  
+    .pricing .pricingContentSubTitle {
+      font-size: 20px;
+    }
+
+    .pricing .detailButtons {
+      width: 200px;
+    }
+  
+    .pricing .detailButton {
+      padding: 5px 20px;
+      font-size: 8px;
+    }
+
+    .pricing .pricingContentRow {
+      height: 250px;
     }
   }
   
@@ -1320,144 +1364,6 @@ a:hover {
       border-bottom: 1px solid #1a76d2;
       width: 80%;
       margin-left: 10%;
-    }
-  }
-  
-  /*--------------------------------------------------------------
-  # Breadcrumbs
-  --------------------------------------------------------------*/
-  .breadcrumbs {
-    padding: 15px 0;
-    margin-top: 70px;
-    background: #f7f8f9;
-    min-height: 40px;
-  }
-  
-  .breadcrumbs h2 {
-    font-size: 28px;
-    font-weight: 400;
-    margin: 0;
-  }
-  
-  .breadcrumbs ol {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 14px;
-  }
-  
-  @media (max-width: 992px) {
-    .breadcrumbs ol {
-      margin-top: 10px;
-    }
-  }
-  
-  .breadcrumbs ol li + li {
-    padding-left: 10px;
-  }
-  
-  .breadcrumbs ol li + li::before {
-    display: inline-block;
-    padding-right: 10px;
-    color: #404356;
-    content: "/";
-  }
-  
-  @media (max-width: 768px) {
-    .breadcrumbs .d-flex {
-      display: block !important;
-    }
-    .breadcrumbs ol {
-      display: block;
-    }
-    .breadcrumbs ol li {
-      display: inline-block;
-    }
-  }
-  
-  /*--------------------------------------------------------------
-  # Portfolio Details
-  --------------------------------------------------------------*/
-  .portfolio-details {
-    padding-top: 40px;
-  }
-  
-  .portfolio-details .portfolio-details-container {
-    position: relative;
-  }
-  
-  .portfolio-details .portfolio-details-carousel {
-    position: relative;
-    z-index: 1;
-  }
-  
-  .portfolio-details .portfolio-details-carousel .owl-nav, .portfolio-details .portfolio-details-carousel .owl-dots {
-    margin-top: 5px;
-    text-align: left;
-  }
-  
-  .portfolio-details .portfolio-details-carousel .owl-dot {
-    display: inline-block;
-    margin: 0 10px 0 0;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: #ddd !important;
-  }
-  
-  .portfolio-details .portfolio-details-carousel .owl-dot.active {
-    background-color: #ef6603 !important;
-  }
-  
-  .portfolio-details .portfolio-info {
-    padding: 30px;
-    position: absolute;
-    right: 0;
-    bottom: -70px;
-    background: #fff;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-    z-index: 2;
-  }
-  
-  .portfolio-details .portfolio-info h3 {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #eee;
-  }
-  
-  .portfolio-details .portfolio-info ul {
-    list-style: none;
-    padding: 0;
-    font-size: 15px;
-  }
-  
-  .portfolio-details .portfolio-info ul li + li {
-    margin-top: 10px;
-  }
-  
-  .portfolio-details .portfolio-description {
-    padding-top: 50px;
-  }
-  
-  .portfolio-details .portfolio-description h2 {
-    width: 50%;
-    font-size: 26px;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
-  
-  .portfolio-details .portfolio-description p {
-    padding: 0 0 0 0;
-  }
-  
-  @media (max-width: 768px) {
-    .portfolio-details .portfolio-info {
-      position: static;
-      margin-top: 30px;
     }
   }
   
