@@ -514,6 +514,7 @@ a:hover {
     width: 100%;
     height: 30px;
     position: relative;
+    z-index: 5;
   }
   
   .wave1 use {
@@ -807,6 +808,7 @@ a:hover {
   .globe p {
     color: #66757f;
     text-align: center;
+    font-size: 15px;
   }
 
   .globe #globeSection {
@@ -824,6 +826,10 @@ a:hover {
     .globe .container {
       display: flex;
       flex-direction: column-reverse;
+    }
+
+    .globe p {
+      font-size: 16px;
     }
   }
   
@@ -973,8 +979,9 @@ a:hover {
   .pricing {
     background-color: #dfefff;
     /* background-color: #b200c2; */
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 0px;
+    /* margin-top: -4px; */
   }
 
   .pricing .pricingContentRow {
@@ -985,8 +992,16 @@ a:hover {
   }
 
   .pricing img {
-    max-height: 200px;
-    width: auto;
+    max-width: 550px;
+    height: auto;
+    position: absolute;
+    margin-top: 16px;
+
+    /* margin-top: -30px; */
+    z-index: 2;
+
+    /* max-height: 200px;
+    width: auto; */
 
     /* width: 100%;
     height: 200px; */
@@ -1005,7 +1020,7 @@ a:hover {
   }
 
   .pricing .pricingSubContentColumn1 {
-    /* background-color: darkgoldenrod;   */
+    /* background-color: rgb(245, 227, 184);   */
     padding-left: 0px; 
     padding-right: 0px;
 
