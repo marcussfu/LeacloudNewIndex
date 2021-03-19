@@ -808,7 +808,7 @@ a:hover {
   .globe p {
     color: #66757f;
     text-align: center;
-    font-size: 15px;
+    font-size: 1vw;
   }
 
   .globe #globeSection {
@@ -820,6 +820,12 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     /* background-color: cadetblue; */
+  }
+
+  @media (min-width: 1705px) {
+    .globe p {
+      font-size: 15px;
+    }
   }
 
   @media (max-width: 991px) {
@@ -998,7 +1004,7 @@ a:hover {
     margin-top: 16px;
 
     /* margin-top: -30px; */
-    z-index: 2;
+    z-index: 5;
 
     /* max-height: 200px;
     width: auto; */

@@ -181,7 +181,7 @@ i18next.init({
           "servicesGalleryItemContentText": "您可依据您网站的市场规划，针对个别域名的访问管理，「开放」（白名单）或「阻挡」（黑名单）访问来源的国家地区以及使用者IP地址，保障网站精准的访问用户群，或是仅内部管理人员得以存取。",
           "servicesGalleryItemContentText1": "LeaCloud拥有丰富的地理节点资源，遍布范围有中国多个省份城市、东亚、东南亚及欧美地区。虚、实整合的主机线路，强大而灵活的CDN互联网结构设计，提供最短、最快的分辨率路由，以确保您网站的竞争力。",
           "servicesGalleryItemContentText2": "依照您的管理规划，在LeaCloud CDN上您可弹性选择NS托管或CNAME托管，介面简洁明了、操作简便，轻松将网站一键加速。支持HTTP/HTTPS网页，并可自定义域名的缓存时间、证书、跳转页等，依需求细节配置。",
-          "servicesGalleryItemContentText3": "在LeaCloud CDN平台上，您可监控和查询期间内您托管的所有或个别网站域名的CDN使用状态，包含传输流量、帶寬、访问次数、HTTP状态数，以便了解用户访问状态。",
+          "servicesGalleryItemContentText3": "在LeaCloud CDN平台上，您可监控和查询期间内您托管的所有或个别网站域名的CDN使用状态，包含传输流量、带宽、访问次数、HTTP状态数，以便了解用户访问状态。",
           "servicesGalleryItemContentText4": "透过对访问来源设置过滤的机制，避免您的网站资源轻易受盗用。设置防盗链功能，以防止网站内容透过他人程序镶嵌，或是获取链结而开启。",
           "servicesGalleryItemContentText5": "LeaCloud CDN支持HTTP/HTTPS，加入证书让您的网站传输加密，数据可受保护。您可在LeaCloud CDN上传您的自有证书。或是经由NS托管，使用系统自动生成Wildcard SSL证书，系统产生的证书将会自动更新。",
 
@@ -195,7 +195,7 @@ i18next.init({
           "cooperationGalleryItemText2": "LeaProtect、居家办公以及LeaDesk，三线三护打造企业办公第一道防线，保障贴身手机、计算机及服务器安全隐蔽，打造员工个人化环境，不需担心企业资料和行动位置洩漏。透过LeaExpress快捷送达您的货品，降低运送的负担和风险。",
         
           "globeSectionSubTitle": "提供全球化专业节点",
-          "globeSectionSubText": "LeaCloud在中国大陆多个省份城市、台湾、日本、南韩、香港、菲律宾、越南、<br>泰国、新加坡、印尼、马来西亚、印度、欧洲、北美等区域，均有专属节点及专线。<br>LeaCloud CDN让您的网站及各项服务畅行无阻。",
+          "globeSectionSubText": "LeaCloud在中国大陆多个省份城市、香港、台湾、日本、南韩、菲律宾、越南、<br>泰国、新加坡、印尼、马来西亚、印度、欧洲、北美等区域，均拥有专属节点及专线。<br>LeaCloud CDN让您的网站及各项服务畅行无阻。",
           
           "pricingSectionSubTitle": "选择适合您的方案",
           "pricingSectionSubText": "您可依据您事业的需求，选择适合您的方案。若有其他需求，请洽客服。",
