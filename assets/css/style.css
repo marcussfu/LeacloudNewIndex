@@ -512,7 +512,7 @@ a:hover {
   .globe-pricing-waves {
     display: block;
     width: 100%;
-    height: 30px;
+    height: 90px;
     position: relative;
     z-index: 5;
   }
@@ -532,10 +532,10 @@ a:hover {
   }
   
   .wave3 use {
-    -webkit-animation: move-forever3 6s linear infinite;
+    /* -webkit-animation: move-forever3 6s linear infinite;
     animation: move-forever3 6s linear infinite;
     -webkit-animation-delay: -2s;
-    animation-delay: -2s;
+    animation-delay: -2s; */
   }
   
   @-webkit-keyframes move-forever1 {
@@ -1011,7 +1011,7 @@ a:hover {
 
     /* width: 100%;
     height: 200px; */
-    clip:rect(0px,550px,232px,0px);
+    clip: rect(10px,550px,232px,0px);
   }
 
   .pricing .pricingSubContentColumn {
@@ -1111,7 +1111,15 @@ a:hover {
     }
 
     .pricing img {
+      clip: unset;
+      z-index: 1;
+      width: 100%;
       margin-top: -30px;
+      position: relative;
+    }
+
+    .pricing .sectionTitleDiv {
+      margin-top: -70px;
     }
   }
 
@@ -1126,6 +1134,12 @@ a:hover {
     }
   }
 
+  @media (max-width: 763px) {
+    .pricing img {
+      margin-top: -20px;
+    }
+  }
+
   @media (max-width: 573px) {
     .pricing .pricingBoxCotent {
       width: 80%;
@@ -1135,15 +1149,24 @@ a:hover {
       display: flex;
       justify-content: center;
     }
+    .pricing img {
+      width: 120%;
+      margin-left: -20px;
+      margin-top: -30px;
+    }
   }
 
   @media (max-width: 424px) {
     .pricing img {
-      width: 100%;
+      margin-top: -10px;
     }
 
     .pricing .pricingContentRow {
-      height: 300px;
+      height: 380px;
+    }
+
+    .pricing .sectionTitleDiv {
+      margin-top: -40px;
     }
   }
 
@@ -1166,7 +1189,24 @@ a:hover {
     }
 
     .pricing .pricingContentRow {
-      height: 250px;
+      height: 300px;
+    }
+
+    .pricing img {
+      margin-top: -10px;
+    }
+
+    .pricing .sectionTitleDiv {
+      margin-top: 0px;
+    }
+
+    .pricing .sectionTitle {
+      font-size: 40px;
+    }
+  
+    .pricing .sectionSubTitle {
+      margin-top: -30px;
+      font-size: 25px;
     }
   }
   
