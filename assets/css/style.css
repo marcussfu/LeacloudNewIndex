@@ -1038,25 +1038,25 @@ a:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 300px;
+    width: 330px;
     margin-top: 14px;
   }
 
   .pricing .detailButton {
     background: linear-gradient(to bottom, #80c3f3, #4a90e2);
     border: 1px solid transparent;
-    padding: 10px 40px;
-    color: #fff;
+    padding: 10px 48px;
     transition: 0.4s;
     border-radius: 24px;
-    font-size: 8px;
+    font-size: 14px;
+    color: #fff;
   }
 
   .pricing .detailButton:hover {
     background: transparent;
-    border: 1px solid #fff;
+    border: 1px solid #000;
     transition: all 0.4s ease-in-out;
-    cursor: pointer;
+    color: #000;
   }
 
   .pricing .pricingContentTitle, .pricing .pricingContentSubTitle {
@@ -1067,11 +1067,11 @@ a:hover {
   }
 
   .pricing .pricingContentTitle{
-    font-size: 24px;
+    font-size: 30px;
   }
 
   .pricing .pricingContentSubTitle {
-    font-size: 26px;
+    font-size: 30px;
   }
 
   .pricing .sectionTitleDiv {
