@@ -514,7 +514,7 @@ a:hover {
     width: 100%;
     height: 90px;
     position: relative;
-    z-index: 5;
+    z-index: 4;
   }
   
   .wave1 use {
@@ -991,7 +991,7 @@ a:hover {
   }
 
   .pricing .pricingContentRow {
-    height: 200px; 
+    height: 230px; 
     width: 100%; 
     /* background-color: teal; */
     /* background: url(../../assets/img/pricing/pricingRowBackground.png) no-repeat center center; */
@@ -1000,18 +1000,9 @@ a:hover {
   .pricing img {
     max-width: 550px;
     height: auto;
-    position: relative;
-    margin-top: -30px;
-
-    /* margin-top: -30px; */
+    /* position: relative; */
+    margin-top: -10px;
     z-index: 5;
-
-    /* max-height: 200px;
-    width: auto; */
-
-    /* width: 100%;
-    height: 200px; */
-    /* clip: rect(10px,550px,232px,0px); */
   }
 
   .pricing .pricingSubContentColumn {
@@ -1024,6 +1015,8 @@ a:hover {
     align-items: center;
     justify-content: center;
     /* height: 100%; */
+
+    margin-top: -70px;
   }
 
   .pricing .pricingSubContentColumn1 {
@@ -1035,6 +1028,8 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+
   }
 
   .pricing .detailButtons {
@@ -1072,17 +1067,17 @@ a:hover {
   }
 
   .pricing .pricingContentTitle{
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .pricing .pricingContentSubTitle {
-    font-size: 30px;
+    font-size: 26px;
   }
 
   .pricing .sectionTitleDiv {
     position: absolute;
-    margin-top: -50px;
-    margin-left: 20px;
+    margin-top: -30px;
+    margin-left: 40px;
   }
 
   .pricing .sectionSubTitle {
@@ -1106,6 +1101,7 @@ a:hover {
 
     .pricing .pricingSubContentColumn {
       height: 50%;
+      margin-top: 0px;
     }
 
     .pricing .box {
@@ -1169,6 +1165,7 @@ a:hover {
 
     .pricing .sectionTitleDiv {
       margin-top: -40px;
+      margin-left: 20px;
     }
   }
 
@@ -1199,7 +1196,7 @@ a:hover {
     }
 
     .pricing .sectionTitleDiv {
-      margin-top: 0px;
+      margin-top: -20px;
     }
 
     .pricing .sectionTitle {
