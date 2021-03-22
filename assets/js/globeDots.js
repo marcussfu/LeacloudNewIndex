@@ -20,7 +20,9 @@ const groups = {
   globe: null, // A group containing the globe sphere (and globe dots)
   globeDots: null, // A group containing the globe dots
   lines: null, // A group containing the lines between each country
-  lineDots: null // A group containing the line dots
+  lineDots: null, // A group containing the line dots
+  lineGeometrys: [],
+  lineDrawCounts: [],
 };
 
 // Map properties for creation and rendering
@@ -36,7 +38,7 @@ const props = {
   colours: {
     // Cache the colours
     globeDots: 'rgb(153, 161, 176)', // No need to use the Three constructor as this value is used for the HTML canvas drawing 'fillStyle' property
-    lines: new THREE.Color('#18FFFF'),
+    lines: ['red', 'blue', 'green', 'orange'],//new THREE.Color('red'),//#18FFFF
     lineDots: new THREE.Color('#18FFFF') },
 
   alphas: {
@@ -136,6 +138,10 @@ const setupScene = () => {
   groups.lineDots.name = 'Dots';
   groups.main.add(groups.lineDots);
 
+  // groups.lineGeometrys = new THREE.Group();
+  // groups.lineGeometrys.name = 'lineGeometrys';
+  // groups.main.add(groups.lineGeometrys);
+
   // Add the main group to the scene
   scene.add(groups.main);
 
@@ -163,7 +169,7 @@ const setupScene = () => {
     container.style.height = `${innerHeight}px`;
 
     camera.object.aspect = container.offsetWidth / container.offsetHeight;
-    camera.object.updateProjectionMatrix();
+    camera.object.updateProjectionMatrix();console.log("RRRRRRRRRRRRRRRRRR    ", camera.object.aspect);
     renderer.setSize(container.offsetWidth, container.offsetHeight);
   };
 
@@ -238,6 +244,7 @@ const animate = () => {
 
   if (animations.finishedIntro) {
     animateDots();
+    animateLines();
   }
 
   if (animations.countries.animating) {
@@ -397,17 +404,18 @@ const addLines = () => {
 
 
       // Get verticies from curve
-      geometry.vertices = curve.getPoints(200);
+      geometry.vertices = curve.getPoints(50);
 
       // Create mesh line using plugin and set its geometry
       const line = new MeshLine();
       line.setGeometry(geometry);
-
+      
       // Create the mesh line material using the plugin
       const material = new MeshLineMaterial({
-        color: props.colours.lines,
+        color: props.colours.lines[Math.round(Math.random() * (props.colours.lines.length - 1))],//props.colours.lines,
         transparent: true,
-        opacity: props.alphas.lines });
+        opacity: props.alphas.lines 
+      });
 
 
       // Create the final object to add to the scene
@@ -415,12 +423,38 @@ const addLines = () => {
       curveObject._path = geometry.vertices;
 
       group.add(curveObject);
+
+      line.geometry.setDrawRange(0, 1);
+      groups.lineGeometrys.push(line.geometry);
+      groups.lineDrawCounts.push(1);
+      // this.drawAnimatedLine(line.geometry);
     }
 
     group.visible = false;
     groups.lines.add(group);
   }
 };
+
+// drawAnimatedLine = (lineGeometry) => {
+  // let drawRangeCount = lineGeometry.drawRange.count;
+  // const timeElapsed = Date.now(); //- this.startTime;
+
+  // // Animate the curve for 2.5 seconds
+  // const progress = timeElapsed / 2500;
+
+  // // Arcs are made up of roughly 3000 vertices
+  // drawRangeCount = progress * 3000;
+
+  // if (progress < 0.999) {
+  //   // Update the draw range to reveal the curve
+  //   lineGeometry.setDrawRange(0, drawRangeCount);
+  //   requestAnimationFrame(this.drawAnimatedLine);
+  // }
+  
+  // requestAnimationFrame(this.drawAnimatedLine);
+  // render();
+
+// }
 
 const addLineDots = () => {
   /*
@@ -460,6 +494,7 @@ const assignDotsToRandomLine = target => {
 
   // Assign the random country path to the dot and set the index at 0
   target._path = randomLine._path;
+  target.material.color = randomLine.material.color;
 };
 
 const reassignDotsToNewLines = () => {
@@ -500,6 +535,17 @@ const animateDots = () => {
       dot.visible = false;
       dot._path = null;
     }
+  }
+};
+
+const maxPoint = 400;
+const animateLines = () => {
+  for (let i = 0; i < groups.lineGeometrys.length; i++) {
+    const line = groups.lineGeometrys[i];
+    // console.log("VVVVVVVVVVVVVVV   ", line);
+    groups.lineDrawCounts[i] = (groups.lineDrawCounts[i] + 5) % maxPoint;
+    line.setDrawRange(0, groups.lineDrawCounts[i]);
+
   }
 };
 
