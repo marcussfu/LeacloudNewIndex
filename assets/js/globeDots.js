@@ -169,7 +169,7 @@ const setupScene = () => {
     container.style.height = `${innerHeight}px`;
 
     camera.object.aspect = container.offsetWidth / container.offsetHeight;
-    camera.object.updateProjectionMatrix();console.log("RRRRRRRRRRRRRRRRRR    ", camera.object.aspect);
+    camera.object.updateProjectionMatrix();
     renderer.setSize(container.offsetWidth, container.offsetHeight);
   };
 
@@ -397,10 +397,15 @@ const addLines = () => {
 
 
       // Calcualte the curve in order to get points from
+      // const curve = new THREE.QuadraticBezierCurve3(
+      // new THREE.Vector3(start.x, start.y, start.z),
+      // new THREE.Vector3(mid.x, mid.y, mid.z),
+      // new THREE.Vector3(end.x, end.y, end.z));
+
       const curve = new THREE.QuadraticBezierCurve3(
-      new THREE.Vector3(start.x, start.y, start.z),
-      new THREE.Vector3(mid.x, mid.y, mid.z),
-      new THREE.Vector3(end.x, end.y, end.z));
+        new THREE.Vector3(end.x, end.y, end.z),
+        new THREE.Vector3(mid.x, mid.y, mid.z),
+        new THREE.Vector3(start.x, start.y, start.z));
 
 
       // Get verticies from curve
@@ -542,7 +547,6 @@ const maxPoint = 400;
 const animateLines = () => {
   for (let i = 0; i < groups.lineGeometrys.length; i++) {
     const line = groups.lineGeometrys[i];
-    // console.log("VVVVVVVVVVVVVVV   ", line);
     groups.lineDrawCounts[i] = (groups.lineDrawCounts[i] + 5) % maxPoint;
     line.setDrawRange(0, groups.lineDrawCounts[i]);
 
@@ -562,6 +566,7 @@ const createListElements = () => {
 
     const { country } = data.countries[target];
     element.innerHTML = `<span class="text">${country}</span>`;
+    // element.style.background = '#000';
 
     const object = { position: coordinates, element };
 
@@ -574,7 +579,7 @@ const createListElements = () => {
   let i = 0;
   for (const country in data.countries) {
     const group = groups.lines.getObjectByName(country);
-    const coordinates = group.children[0]._path[0];
+    const coordinates = group.children[0]._path[group.children[0]._path.length-1];
     pushObject(coordinates, country);
 
     if (country === props.startingCountry) {
@@ -915,31 +920,9 @@ if (!window.WebGLRenderingContext) {
       else {
         zRadius = 3
       }
-      
-
-      // console.log("TTTTTTTTTTTTTTTTTTT   ", $('#globe-container').width());
-      // if ($('#globe-container').width() <= 395 && $('#globe-container').width() > 387) {
-      //   zRadius = 3.8
-      // }
-      // else if ($('#globe-container').width() <= 387) {
-      //   zRadius = 3.7
-      // }
-      // $(window).resize(() => {
-      //   if ($('#globe-container').width() < 395) {
-      //     console.log("RRRRRRRRRRRRRRRRRR   ", $('#globe-container').width());
-
-      //   }
-      //   else {
-      //     zRadius = 2;
-      //     camera.object.position.z = props.globeRadius * zRadius;
-      //   }
-      // })
-
       getData();
     }
   })
-  
-  // camera.object.position.z = props.globeRadius * zRadius;
 }
 
 // ,"europe":{"x":135,"y":180,"name":"eur","country":"Europe"},"northamerica":{"x":1200,"y":250,"name":"U.S. dollar","country":"North America"}

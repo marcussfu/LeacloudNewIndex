@@ -97,7 +97,7 @@ body,
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: #00FFD3;
+  /* background: #00FFD3; */
   transition: opacity 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -113,7 +113,7 @@ body,
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: #00FFD3;
+  /* background: #00FFD3; */
   -webkit-animation: 2s pulse infinite linear;
           animation: 2s pulse infinite linear;
 }
