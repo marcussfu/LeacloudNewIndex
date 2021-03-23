@@ -129,7 +129,7 @@ i18next.init({
           "pricingImgContentSubTitle": "體驗更多功能",
           "contactCustomService": "聯繫客服",
           "trynow": "立即試用",
-          "pricingSubColumn1Img": "assets/img/pricing/pricingMap.png",
+          "pricingSubColumn1Img": "assets/img/pricing/pricingRightMapTW.png",
 
           "helpButton": "需要協助?",
 
@@ -205,7 +205,7 @@ i18next.init({
           "pricingImgContentSubTitle": " 体验更多功能",
           "contactCustomService": "联系客服",
           "trynow": "立即试用",
-          "pricingSubColumn1Img": "assets/img/pricing/pricingMap.png",
+          "pricingSubColumn1Img": "assets/img/pricing/pricingRightMapSC.png",
           
           "helpButton": "需要协助?",
 
