@@ -90,7 +90,8 @@ body,
 }
 
 .globe-list > li {
-  opacity: 0.4;
+  /* opacity: 0.4; */
+  opacity: 0;
   position: absolute;
   margin-left: -42px;
   margin-top: -8px;

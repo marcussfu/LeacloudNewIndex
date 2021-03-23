@@ -38,7 +38,7 @@ const props = {
   colours: {
     // Cache the colours
     globeDots: 'rgb(153, 161, 176)', // No need to use the Three constructor as this value is used for the HTML canvas drawing 'fillStyle' property
-    lines: ['red', 'blue', 'green', 'orange'],//new THREE.Color('red'),//#18FFFF
+    lines: ['#FDAF61', '#1976D2', '#CE58FF'],//new THREE.Color('red'),//#18FFFF
     lineDots: new THREE.Color('#18FFFF') },
 
   alphas: {
