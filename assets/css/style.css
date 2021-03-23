@@ -532,10 +532,10 @@ a:hover {
   }
   
   .wave3 use {
-    /* -webkit-animation: move-forever3 6s linear infinite;
+    -webkit-animation: move-forever3 6s linear infinite;
     animation: move-forever3 6s linear infinite;
     -webkit-animation-delay: -2s;
-    animation-delay: -2s; */
+    animation-delay: -2s;
   }
   
   @-webkit-keyframes move-forever1 {
