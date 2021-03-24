@@ -434,14 +434,14 @@ a:hover {
   @keyframes blinking {
     50% {
       color: #1976D2;
-      box-shadow: 0 0 5px#678baf;
+      /* box-shadow: 0 0 5px#678baf; */
     }
   }
 
   @-webkit-keyframes blinking {
     50% {
       color: #1976D2;
-      box-shadow: 0 0 5px#678baf;
+      /* box-shadow: 0 0 5px#678baf; */
     }
   }
 
@@ -833,6 +833,7 @@ a:hover {
     .globe .container {
       display: flex;
       flex-direction: column-reverse;
+      align-items: center;
     }
 
     .globe p {

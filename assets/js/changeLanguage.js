@@ -119,7 +119,7 @@ i18next.init({
           "cooperationGalleryItemText2": "LeaProtect、居家辦公以及LeaDesk，三線三護打造企業辦公最前道防線，保障貼身手機、電腦及伺服器安全隱蔽，打造員工個人化環境，不需擔心企業資料和行動位置洩漏。透過LeaExpress快捷送達您的貨品，降低運送的負擔和風險。",
         
           "globeSectionSubTitle": "提供全球化專業節點",
-          "globeSectionSubText": "LeaCloud在中國大陸多個省份城市、香港、台灣、日本、南韓、菲律賓、越南、<br>泰國、新加坡、印尼、馬來西亞、印度、歐洲、北美等區域，均擁有專屬節點及專線。<br>LeaCloud CDN讓您的網站及各項服務暢行無阻。",
+          "globeSectionSubText": "LeaCloud在中國大陸多個省份城市、香港、台灣、<br>日本、南韓、菲律賓、越南、泰國、新加坡、印尼、<br>馬來西亞、印度、歐洲、北美等區域，均擁有專屬節點及專線。<br>LeaCloud CDN讓您的網站及各項服務暢行無阻。",
           
           "pricingSectionSubTitle": "選擇適合您的方案",
           "pricingSectionSubText": "您可依據您事業的需求，選擇適合您的方案。若有其他需求，請洽客服。",
@@ -195,7 +195,7 @@ i18next.init({
           "cooperationGalleryItemText2": "LeaProtect、居家办公以及LeaDesk，三线三护打造企业办公第一道防线，保障贴身手机、计算机及服务器安全隐蔽，打造员工个人化环境，不需担心企业资料和行动位置洩漏。透过LeaExpress快捷送达您的货品，降低运送的负担和风险。",
         
           "globeSectionSubTitle": "提供全球化专业节点",
-          "globeSectionSubText": "LeaCloud在中国大陆多个省份城市、香港、台湾、日本、南韩、菲律宾、越南、<br>泰国、新加坡、印尼、马来西亚、印度、欧洲、北美等区域，均拥有专属节点及专线。<br>LeaCloud CDN让您的网站及各项服务畅行无阻。",
+          "globeSectionSubText": "LeaCloud在中国大陆多个省份城市、香港、台湾、<br>日本、南韩、菲律宾、越南、泰国、新加坡、印尼、<br>马来西亚、印度、欧洲、北美等区域，均拥有专属节点及专线。<br>LeaCloud CDN让您的网站及各项服务畅行无阻。",
           
           "pricingSectionSubTitle": "选择适合您的方案",
           "pricingSectionSubText": "您可依据您事业的需求，选择适合您的方案。若有其他需求，请洽客服。",

@@ -61,7 +61,7 @@ $('.back-to-top').click((e) => {
 });
 
 $('#contactSubmit').click(() => {
-  $("#contactSubmit").attr("href", "mailto:sales@leacloud.com?subject="+$('#contactFormName').val()+"&body="+$('#contactFormText').val());
+  $("#contactSubmit").attr("href", "mailto:sales@leacloud.com?subject=LeaCloud客服請求&body=客戶 "+$('#contactFormName').val()+"%0A 意見:"+$('#contactFormText').val());
 });
 
 
