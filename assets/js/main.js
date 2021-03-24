@@ -1,27 +1,44 @@
-!(function($) {
-    "use strict";
 
-    // Toggle .header-scrolled class to #header when page is scrolled
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
-      $('#header').addClass('header-scrolled');
-      $('.logoImg').addClass('header-scrolled');
-      $('.logo > .navMenuImg').addClass('header-scrolled-detailbtn');
-      $('.back-to-top').css('display','block');
-    } else {
-      $('#header').removeClass('header-scrolled');
-      $('.logoImg').removeClass('header-scrolled');
-      $('.logo > .navMenuImg').removeClass('header-scrolled-detailbtn');
-      $('.back-to-top').css('display','none');
+const headerBackgroundBlack = () => {
+  $('#header').addClass('header-scrolled');
+  $('.logoImg').addClass('header-scrolled');
+  $('.logo > .navMenuImg').addClass('header-scrolled-detailbtn');
+  $('.back-to-top').css('display','block');
+};
+
+const headerBackgroundWhite = () => {
+  $('#header').removeClass('header-scrolled');
+  $('.logoImg').removeClass('header-scrolled');
+  $('.logo > .navMenuImg').removeClass('header-scrolled-detailbtn');
+  $('.back-to-top').css('display','none');
+};
+
+const setHeader = () => {
+  if ($(window).width() <= 625) {
+    headerBackgroundBlack();
+  }
+  else {
+    if ($(this).scrollTop() < 100) {
+      headerBackgroundWhite(); 
     }
-  });
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 100) {
+        headerBackgroundBlack();
+      } 
+      else {
+        if ($(window).width() > 625) {
+          headerBackgroundWhite();
+        }
+      }
+    });
+  }
+};
 
-  // if ($(window).scrollTop() > 100) {
-  //   $('#header').addClass('header-scrolled');
-  //   $('.logoImg').addClass('header-scrolled');
-  //   $('.logo > .navMenuImg').addClass('header-scrolled-detailbtn');
-  // }
-})(jQuery);
+// Toggle .header-scrolled class to #header when page is scrolled
+$(window).resize(() => {
+  setHeader();
+});
+setHeader();
 
 $('.pricingBoxCotent').hover(
   function() { // entry
@@ -61,7 +78,7 @@ $('.back-to-top').click((e) => {
 });
 
 $('#contactSubmit').click(() => {
-  $("#contactSubmit").attr("href", "mailto:sales@leacloud.com?subject=LeaCloud客服請求&body=客戶 "+$('#contactFormName').val()+"%0A 意見:"+$('#contactFormText').val());
+  $("#contactSubmit").attr("href", "mailto:sales@leacloud.com?subject=LeaCloud客服請求&body=客戶 "+$('#contactFormName').val()+"%0A "+$('#contactFormText').val().replaceAll('\n', '%0A'));
 });
 
 
