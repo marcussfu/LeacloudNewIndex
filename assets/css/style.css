@@ -1030,8 +1030,6 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-
   }
 
   .pricing .detailButtons {
@@ -1090,13 +1088,17 @@ a:hover {
     }
 
     .pricing .pricingContentRow {
-      height: 400px; 
+      height: 200px; 
       width: 100%;
     }
 
     .pricing .pricingSubContentColumn {
-      height: 50%;
+      height: 100%;
       margin-top: 0px;
+    }
+
+    .pricing .pricingSubContentColumn1 {
+      display: none;
     }
 
     .pricing .box {
@@ -1104,15 +1106,17 @@ a:hover {
     }
 
     .pricing img {
-      clip: unset;
+      /* clip: unset;
       z-index: 1;
       width: 100%;
       margin-top: -30px;
-      position: relative;
+      position: relative; */
+      display: none;
     }
 
     .pricing .sectionTitleDiv {
-      margin-top: -70px;
+      /* margin-top: -70px; */
+      display: none;
     }
   }
 
@@ -1127,11 +1131,11 @@ a:hover {
     }
   }
 
-  @media (max-width: 763px) {
+  /* @media (max-width: 763px) {
     .pricing img {
       margin-top: -20px;
     }
-  }
+  } */
 
   @media (max-width: 573px) {
     .pricing .pricingBoxCotent {
@@ -1142,26 +1146,26 @@ a:hover {
       display: flex;
       justify-content: center;
     }
-    .pricing img {
+    /* .pricing img {
       width: 120%;
       margin-left: -20px;
       margin-top: -30px;
-    }
+    } */
   }
 
   @media (max-width: 424px) {
-    .pricing img {
+    /* .pricing img {
       margin-top: -10px;
-    }
+    } */
 
-    .pricing .pricingContentRow {
+    /* .pricing .pricingContentRow {
       height: 380px;
-    }
+    } */
 
-    .pricing .sectionTitleDiv {
+    /* .pricing .sectionTitleDiv {
       margin-top: -40px;
       margin-left: 20px;
-    }
+    } */
   }
 
   @media (max-width: 352px) {
@@ -1182,17 +1186,17 @@ a:hover {
       font-size: 8px;
     }
 
-    .pricing .pricingContentRow {
+    /* .pricing .pricingContentRow {
       height: 300px;
-    }
+    } */
 
-    .pricing img {
+    /* .pricing img {
       margin-top: -10px;
-    }
+    } */
 
-    .pricing .sectionTitleDiv {
+    /* .pricing .sectionTitleDiv {
       margin-top: -20px;
-    }
+    } */
 
     .pricing .sectionTitle {
       font-size: 40px;
