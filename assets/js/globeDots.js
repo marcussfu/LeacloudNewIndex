@@ -38,7 +38,7 @@ const props = {
   colours: {
     // Cache the colours
     globeDots: 'rgb(153, 161, 176)', // No need to use the Three constructor as this value is used for the HTML canvas drawing 'fillStyle' property
-    lines: ['#FDAF61', '#1976D2', '#CE58FF'],//new THREE.Color('red'),//#18FFFF
+    lines: ['#daa301', '#1976D2', '#CE58FF'],//new THREE.Color('red'),//#18FFFF   daa301
     lineDots: new THREE.Color('#18FFFF') },
 
   alphas: {
@@ -419,7 +419,8 @@ const addLines = () => {
       const material = new MeshLineMaterial({
         color: props.colours.lines[Math.round(Math.random() * (props.colours.lines.length - 1))],//props.colours.lines,
         transparent: true,
-        opacity: props.alphas.lines 
+        opacity: props.alphas.lines,
+        lineWidth: 2,
       });
 
 

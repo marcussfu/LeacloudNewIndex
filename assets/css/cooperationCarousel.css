@@ -175,7 +175,7 @@
 
 .cooperation .galleryCooperationItem.gallery-item-selected h2 {
     /* font-size: 2vw; */
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .cooperation .galleryCooperationItem.gallery-item-selected img {
@@ -235,6 +235,10 @@
     opacity: 1;
     /* width: 35%; */
     width: 450px;
+}
+
+.cooperation .galleryCooperationItem.gallery-item-previous p, .cooperation .galleryCooperationItem.gallery-item-next p {
+    font-size: 14px;
 }
 
 .cooperation .galleryCooperationItem.gallery-item-previous {
