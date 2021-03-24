@@ -192,7 +192,7 @@ const addControls = () => {
   camera.controls.enablePan = false;
   camera.controls.enableZoom = false;
   camera.controls.enableDamping = false;
-  camera.controls.enableRotate = true;
+  camera.controls.enableRotate = false;
 
   // Set the initial camera angles to something crazy for the introduction animation
   camera.angles.current.azimuthal = -Math.PI;

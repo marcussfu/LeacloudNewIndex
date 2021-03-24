@@ -59,3 +59,9 @@ $('.back-to-top').click((e) => {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, 1000);
 });
+
+$('#contactSubmit').click(() => {
+  $("#contactSubmit").attr("href", "mailto:sales@leacloud.com?subject="+$('#contactFormName').val()+"&body="+$('#contactFormText').val());
+});
+
+
