@@ -177,7 +177,7 @@ class Carousel1 {
       // }, 1000);
 
       autoPlayTimer = setInterval(() => {
-        cooperationControlNex.dispatchEvent(new Event('click'));
+        cooperationControlPre.dispatchEvent(new Event('click'));
       }, interval);
     }
   }
@@ -192,10 +192,10 @@ cooperationCarousel.useControls();
 cooperationCarousel.autoPlay();
 
 // start or stop autoplay
-$(document).on('mouseenter', '.galleryCooperationItem.gallery-item-selected', () => {
+$(document).on('mouseenter', '.galleryCooperationItem.gallery-item-selected, .galleryCooperationItem.gallery-item-previous, .galleryCooperationItem.gallery-item-next', () => {
   clearInterval(autoPlayTimer);
   autoPlayTimer = null;
 });
-$(document).on('mouseleave', '.galleryCooperationItem.gallery-item-selected', () => {
+$(document).on('mouseleave', '.galleryCooperationItem.gallery-item-selected, .galleryCooperationItem.gallery-item-previous, .galleryCooperationItem.gallery-item-next', () => {
   cooperationCarousel.autoPlay();
 });

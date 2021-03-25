@@ -174,7 +174,7 @@ $(window).resize(() => {
 
 // start or stop autoplay
 $(document).ready(function(){
-  $(".services .gallery-item-container").hover(function(){
+  $(".services .gallery-item-container, .services #servicesControlPre, .services #servicesControlNex").hover(function(){
     clearInterval(servicesAutoPlayTimer);
     servicesAutoPlayTimer = null;
 
