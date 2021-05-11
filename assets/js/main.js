@@ -82,3 +82,63 @@ $('#contactSubmit').click(() => {
 });
 
 
+const getSearchDomainResult = () => {
+  let searchInput = $("#searchInput").val();
+  if (searchInput === '') {
+    alert('must input data!');
+    return;
+  }
+  $.ajax({
+    url: "https://api.nicecun.com/api/v1/domain/available",//'https://' + window.location.hostname + '/api/v1/domain/available'
+    type: "GET",
+    data: {
+      domain: searchInput,
+      // currency: 'CNY'
+    },
+    success: function(result) {
+      localStorage.setItem('searchDomainResult', JSON.stringify(result.data));
+      getSuggestDomainResult();
+      console.log(result);
+    },
+    error: function(error) {
+      console.log(error);
+    }
+  });
+};
+
+const getSuggestDomainResult = () => {
+  let searchInput = $("#searchInput").val().split('.');
+  console.log("RRRRRRRRRRRRRRRRRRRR   ", searchInput[0]);
+
+  $.ajax({
+    url: "https://api.nicecun.com/api/v1/domain/suggest",
+    type: "GET",
+    data: {
+      query: searchInput[0],
+      limit: 10,
+      // currency: 'CNY',
+      tlds: 'com,net,xyz',
+    },
+    success: function(result) {
+      localStorage.setItem('suggestDomainResult', JSON.stringify(result.data));
+      console.log(result);
+    },
+    error: function(error) {
+      console.log(error);
+    }
+  });
+};
+
+$('#searchDomainName').click(() => {
+  // console.log("XXXXXXXXXXXXXXXXX   ", JSON.parse(localStorage.getItem('searchDomainResult')));
+  getSearchDomainResult();
+  // $("#contactSubmit").attr("href", "mailto:sales@leacloud.com?subject=LeaCloud客服請求&body=客戶 "+$('#contactFormName').val()+"%0A "+$('#contactFormText').val().replaceAll('\n', '%0A'));
+});
+
+$('#searchInput').on('keyup', function (e) {
+  if (e.key === 'Enter' || e.keyCode === 13) {
+    getSearchDomainResult();
+  }
+});
+
+
